@@ -1,0 +1,223 @@
+\section{Preliminaries}
+
+%\subsection*{Preliminaries}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\e}{\operatorname{exp}}
+\newcommand{\re}{\operatorname{Re}}
+\newcommand{\im}{\operatorname{Im}}
+
+%\subsection*{Arithmetic and Geometry}
+Let \(\C := \R[i] \) the extension field of \(\R\), obtained by adjoining \(i\), the \emph{imaginary unity}, which satisfies \(i^2 = -1\). Some important details about \(\C\): 
+\begin{itemize}[left = 0.3cm]
+    \item Any \(z \in \C\) can be written as \( z =  x + i y  \), where \( x, y \in \R\) are the \emph{real} and \emph{imaginary parts} of \(z\). Also, \(\overline{z}:= x -iy\) denotes the \emph{complex conjugate} of \(z\). 
+    \[x = \operatorname{Re}(z) = \frac{z + \overline{z}}{2} \ \ \ \text{and} \ \ \ y = \operatorname{Im}(z)= \frac{z - \overline{z}}{2i}.\]
+    \item \(\C \simeq \R^2\), so there are natural geometric interpretations for the operations on complex numbers. 
+    \item The map \((z,w) \mapsto \langle z, w\rangle := z \overline{w}\) is a Hermitian inner product and induces the norm \(|z|^2 = z\overline{z} = x^2 + y^2\) (the same as the usual for \(\R^2\)). Useful inequalities:  
+    \begin{enumerate}[label = \roman*., left = 1.7cm]
+        \item \(|z + w| \leq |z| + |w|\). \hspace{2cm} ii. \(\displaystyle\frac{1}{z} = \frac{\overline{z}}{|z|^2} \) (em \(\C^\times\)). 
+        \item[iii.] \(||z| - |w|| \leq |z-w|\).  \hspace{1.4cm} iv. \(|\re(z)|, |\im(z) |\leq |z|\).
+    \end{enumerate}
+    \item We can write \(z \in \C^\times\) in \emph{polar form} as \(z = r\e(i\theta) = r\operatorname{cis}(\theta)\), where \(\theta = \operatorname{arg}(z) \) is the \emph{argument} of \(z\) and \(r = |z| > 0 \) is the modulus. 
+\end{itemize}
+
+%\begin{definition}
+%    A sequence \((z_n)_{n\in \N}\subset \C\) \emph{converges} to \(w \in \C\), denoted \(z_n \to w \), iff \(\displaystyle\lim_{n\to \infty} |z_n - w| = 0 \). Moreover \((z_n)\) is \emph{Cauchy} iff \(\forall \epsilon > 0, \exists N \in \N : \forall n,m\geq N, \ |z_n -z_m| < \epsilon \).   
+%\end{definition}
+
+\newcommand{\D}{\mathbb{D}}
+Following the standard topology notation, given \(z_0 \in \C\) and \(r>0\), \(B(z_0; r) := \{z \in \C : |z- z_0| < r\}, \ B[z_0; r] := \overline{B(z_0; r)}\) and \( \partial B(z_0; r) = \{z \in \C : |z-z_0| = r\}\). 
+\begin{definition}
+    \centering \(\D := \{z \in \C : |z| <1\}\). 
+\end{definition}
+Naturally, \(\C\) is a metric space and we work with the topology induced by the metric. In this context, open sets are completely characterized by the basis \(\mathcal{B} := \{B(z_0;r) : z_0 \in \C, \ r>0\}\), along with all the associated facts and theory (compactness and connectedness in particular). 
+
+\newcommand{\comentario}[1]{\textcolor{gray}{\(\rightarrow \) #1}}
+%\begin{theorem}
+%    \textbf{1.1.} \(\C\) is complete (all Cauchy sequence converges to some \(w \in \C\)). \comentario{Follows from natural identification with \(\R^2 \)}
+%\end{theorem}
+
+%\begin{definition}
+%    \(\Omega \subset \C\) is \emph{bounded} if \(\exists M > 0 : \forall z \in \Omega, \ |z| < M \ \leftrightharpoons \ \exists B(z_0;r) : \Omega \subset B(z_0;r)\). 
+%\end{definition}
+
+\begin{definition}
+    \centering \(\operatorname{diam}\Omega := \displaystyle\sup_{\Omega} |z -w|\).
+\end{definition}
+
+\subsection*{Holomorphic functions}
+
+\begin{definition}
+    A function \(f: \Omega\ab \subset \C \to \C\) is \emph{holomorphic} at \(z_0 \in \Omega\) if the limit,  
+    \[\- \hspace{2.5cm}\lim_{h\to 0} \frac{f(z_0 + h) -f(z_0)}{h}, \ \ \textcolor{red}{ \ \ \ \ \ !! \ h = h_1 + i h_2 \in \C}\]% \ \ \ \textcolor{red}{\ !!\  h \in \C }\]
+    exists. When it exists, \(f'(z_0)\) is called the \emph{derivative} of \(f\) at \(z_0\). We say holomorphic in \(\Omega\) if \(\forall z_0 \in \Omega, \ \exists f'(z_0)\), and \emph{entire} if it is holomorphic on all \(\C\). %\comentario{Remember that \(h \in \C  \)!!}
+\end{definition}
+
+\begin{example}
+    Any polynomial function \(p \in \C[z]\) is entire and \(\nicefrac{1}{z}\) is holomorphic on \(\C^\times\). On the other hand, the conjugation \(z \mapsto \overline{z}\) is not holomorphic. \comentario{Make the limit}
+\end{example}
+
+\begin{note}
+    An equivalent and useless formulation for holomorphic at \(z_0\) is that \(\exists \alpha \in \C : f(z_0 + h) = f(z_0)+ \alpha\cdot h  + o(h) \), of course that \(\alpha = f'(z_0)\). 
+\end{note}
+
+\begin{proposition}
+    \textbf{2.2.} If \(f\) and \(g\) are holomorphic (in appropriate domains), then \(f+g, \ fg, \ \nicefrac{f}{g}\) and \(g \circ f\) are holomorphic too. \comentario{Same formulas and proof of analysis on \(\R^n\)} 
+    %\[(f+g)' = f' + g'; \ \ (fg)' = f'g + fg'; \ \ \left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}; \ \ ((g\circ f)(z))' \]
+\end{proposition}
+
+\alerta{ \centering \(F : \R^2 \to \R^2\) diff \(\textcolor{red}{\nRightarrow}\) \(F \sim f: \C \to \C\) homorphic
+\tcblower
+\begin{example}
+    \(F: (x,y) \mapsto (x,-y)  \sim  f : z \mapsto \overline{z}\). 
+\end{example}
+}
+
+\renewcommand{\hom}{\mathcal{L}}
+%\begin{note}
+%    Remember that \(F: \R^2 \to \R^2\) is diff in \(p\) iff \(\exists L \in \hom (\R^2, \R^2) : F(p+v) = F(p) + L\cdot v + o \|v\|\) as \(\|v\| \to 0\). When exists, \(L = JF(p)\) is unique.          
+%\end{note}
+
+\begin{definition}
+    \centering\(\displaystyle \partial_z := \nicefrac{1}{2} \ (\partial_x + \nicefrac{1}{i} \ \partial_y)\) \ and \ \(\displaystyle \partial_{\overline{z}} := \nicefrac{1}{2}\  (\partial_x - \nicefrac{1}{i} \  \partial_y)\).   
+\end{definition}
+
+\begin{proposition}
+    \textbf{2.3.} If \(f(z) = u(x,y) + iv(x,y)\) is holomorphic at \(z_0 = x_0 + i y_0\), then 
+    \[f_{\overline{z}}(z_0) = 0 \text{ \ \ and \ \ } f'(z_0) = f_z(z_0) = 2u_z (z_0).\]
+    Also, \(F(x,y) = (u(x,y), v(x,y))\) is diff (real sense) and \(\det JF(x_0,y_0) = |f'(z_0)|^2\). 
+\end{proposition}
+
+\demo{For first equal (Cauchy-Riemann equations) take the limits,
+\[\lim_{h_1 \to 0}\frac{f(z_0+ h_1)}{h_1} = f'(z_0) = \lim_{ih_2 \to 0} \frac{f(z_0 + ih_2)}{ih_2} \Rightarrow \begin{cases}
+    u_x = v_y \\ 
+    u_y = -v_x
+\end{cases}.\] 
+Other affirmations are consequence of C-R equations, 
+\[JF(x_0, y_0)(h)= \begin{bmatrix}
+u_x & u_y \\ 
+-u_y & u_x
+\end{bmatrix} \begin{bmatrix}
+h_1 \\ h_2
+\end{bmatrix} = (u_x - i u_y)(h_1 + ih_2) = f'(z_0) \cdot h,\]
+also \(\det JF(x_0,y_0) = u_x^2 + u_y^2 = |f'(z_0)|^2\).  }
+
+\begin{theorem}
+    \textbf{2.4.} Let \(\Omega \simeq U\ab\subset \R^2\), \(u,v \in C^1(U, \R^2)\) and \(f = u+ iv :  \Omega \to \C \). If \(u\) and \( v\) satisfies the C-R equations, then \(f\) is holomorphic on \(\Omega\) and \(f'(z) = f_z\).  
+\end{theorem}
+
+\demo{Write \(du \) and \(dv\) by extension and group them. }
+
+\subsection*{Power series}
+
+The most important examples are the exponential series, which converges absolutely on compact sets, and the geometric series, which converges absolutely on \(\D\).  
+\begin{itemize}
+    \item \(\displaystyle \exp(z) = \sum_{n=0}^\infty \frac{z^n}{n!}\). \comentario{\(\displaystyle \left|\sum \frac{z^n}{n!}\right| \leq \sum \frac{|z|^n}{n!} = \exp|z| < \infty\)} 
+    \item \(\displaystyle \frac{1}{1-z} = \sum_{n=0}^\infty z^n, \ |z| <1\). \comentario{\(\displaystyle S_N = \frac{1-z}{1-z}\sum^N z^n = \frac{1- z^{N+1}}{1-z} \to \frac{1}{1-z}\)}
+\end{itemize}
+In general, a \emph{power series} is a sum of terms of the form \( (a_nz^n)_{n\geq 0 }  \) and we interest in its absolute convergence.  
+
+\begin{theorem}
+    \textbf{2.5.} Given a power series \(\sum a_n z^n\), there exists \(R \in [0, \infty]\) such that:  
+    \[\sum_{n=0}^\infty |a_n||z|^n = \begin{cases}
+        L, &|z| < R \\ 
+        \infty,  &|z|>R 
+    \end{cases}.\]
+    Moreover, if we use the convention that \(\nicefrac{1}{0} = \infty\) and \(\nicefrac{1}{\infty} = 0\), then \(R\) is given by \emph{Hadamard's formula}: \(\nicefrac{1}{R} = \lim \sup |a_n|^{\nicefrac{1}{n}}\). 
+\end{theorem}
+
+\demo{Let \(L := \nicefrac{1}{R}\), for \(|z| < R\) chooses \(0< \epsilon \ll 1 : (L+\epsilon)|z|< r < 1\). Follows that \(|a_n||z|^n \leq \{(L+ \epsilon)|z|\}^n = r^n\), geometric series. Similiar argument concludes divergence for case \(|z| > R\).  }
+
+\alerta{
+    \centering
+    The case \(|z| = R\) is not conclusive 
+    \tcblower
+    \begin{example}
+        sdfjksjs
+    \end{example}
+}
+
+\ejemplo{
+    Euler's formulas for sine and cosine \centering 
+    \tcblower
+     \- \hspace{0.5cm} {\scriptsize \(\bullet\)} \ \(\displaystyle \cos (z) = \sum^\infty_{n=0} (-1)^n\frac{z^{2n}}{(2n)!} = \frac{e^{iz}+ e^{-iz}}{2}\) \\ 
+    \- \hfill {\scriptsize \(\bullet\)} \ \(\displaystyle \sin (z) = \sum_{n=0}^\infty (-1)^n \frac{z^{2n+1}}{(2n+1)!} = \frac{e^{iz} - e^{-iz}}{2i}\) \-\hspace{0.5cm}
+}
+
+\begin{theorem}
+    \textbf{2.6.} The power series \(f(z) = \sum a_n z^n\) defines a holomorphic function in its disc of convergence. The derivative of \(f\) is also a power series, 
+    \[f'(z) = \sum_{n=0}^\infty na_nz^{n-1} \textcolor{gray}{=:g(z)}  \text{ (termwise differentiation)}, \] 
+    with same radius of converges as \(f\).
+\end{theorem}
+
+\demo{
+    Remember that \(n^{\nicefrac{1}{n}} \to 1\) as \(n\to \infty\), so from Hadamard's formula follows the affimation of radius of convergence of \(g\). The first assertion doesn't admite summaries, look if wants \cite[Pág. 17]{stein}. Consists of an argument \(\nicefrac{\epsilon }{3}\), using, \vspace{-0.3cm}
+    \[f(z) = S_N(z) + E_N(z) = \sum_{n=0}^N a_nz^n + \sum_{N+1}^\infty a_nz^n.\] 
+    \vspace{-0.3cm}
+}
+
+\begin{corollary}
+    \textbf{2.7.} A power series is an infinitely differentiable in its disc of convergence, and the higher derivatives are also a power series obtained by termwise differentiation.
+\end{corollary}
+
+\begin{note}
+    The same holds for series centered at \(z_0 \in \C^\times\), it's simply translations. 
+\end{note}
+
+\subsection*{Integration along curves }
+
+\begin{definition}
+    A \emph{smooth parametrized curve} is a function \(z: [a,b] \to \C \) such that \(  \exists z'(t)\neq 0\) continuous on \([a,b]\), with lateral limits for \(t = a,b\).   
+\end{definition}
+
+\begin{definition}
+    Two parametrizations \(z: [a,b] \to \C\) and \(\widetilde{z}:[c,d] \to \C\) are \emph{equivalent}, denote \(z \sim \widetilde{z}\), if \(\exists \ ^1t :[a,b] \simeq [c,d]\) such that \(t'(s)>0\) and \( \widetilde{z}(s) = z(t(s))\). The clases \([z]\) determines a \emph{smooth curve} \( \operatorname{Im}z =: \gamma \subset \C\) with orientation \(z(a) \leadsto z(b)\). 
+\end{definition}
+
+\begin{note}
+    It's possible to extend this definitions naturally for \emph{piecewise-smooth curve}. We have particular interest in \emph{closed curves} \(z \mid z(a) = z(b)\).
+\end{note}
+
+\begin{example}
+    \(\partial B(z_0; r) = z_0 + r e^{it}, \ t\in [0, 2\pi]\) (positive orientation). 
+\end{example}
+
+\begin{definition}
+    Given a smooth curve \(\gamma \subset C\) parametrized by \(z:[a,b] \to \C\), and \(f\) a continuous function on \(\gamma\), we define, 
+    \[\int_\gamma f(z) \ dz := \int_a^b f(z(t))z'(t) \ dt.\]
+\end{definition}
+
+\begin{note}
+    It's easy to see that the integral is independent of the parametrization. \comentario{Just use an equivalent parametrization and chain's rule}
+\end{note}
+
+\begin{definition}
+    \centering
+    \(\displaystyle \operatorname{length}(\gamma):= \int_a^b |z'(t) | \ dt\). 
+\end{definition}
+
+\begin{proposition}
+    \textbf{3.1.} Integration of continuous functions on curves satisfies:% properties: 
+    \vspace{-0.3cm}
+    \begin{enumerate}[label = \roman*., left = 0.6cm]
+        \item \(\displaystyle \int_\gamma f(z) + \alpha g(z) \ dz = \int_\gamma f(z) \ dz + \alpha \int_\gamma g(z) \ dz \). 
+        \item \(\displaystyle \int_\gamma f(z) \ dz = - \int_{\gamma^-} f(z) \ dz\).\hfill iii. \ \(\displaystyle \left|\int_\gamma f(z) \ dz\right| \leq \sup_{z \in \gamma } |f(z)| \cdot \operatorname{length}(\gamma)\). 
+    \end{enumerate}
+\end{proposition}
+
+\hypertarget{thm33}{}
+
+\begin{theorem}
+    \textbf{3.2.} Let \(F: \Omega\ab \subset \C\to \C\) holomorphic, \( \Omega \supset \gamma : w_1 \leadsto w_2\) smooth curve and \(dF(z)= F'(z) = f(z) \ dz\). Then, 
+    \[\int_\gamma f(z) \ dz = \int_{\partial \gamma} F(z) = F(w_2) - F(w_1). \]
+\end{theorem}
+
+\demo{It follows by \(\blacksquare\) (\emph{Stokes}) or \(\blacksquare\) (\emph{TFC}) if you prefer. }
+
+\begin{corollary}
+    \textbf{3.3.} In the setting of \(\blacksquare\) \hyperlink{thm33}{3.3.} if \(\gamma\) is a closed curve, then, \(\displaystyle \int_\gamma f(z) \ dz = 0 \).
+\end{corollary}
+
+\begin{corollary}
+    \textbf{3.4.} If \(f\) is holomorphic on \(\Omega\ab\subset \C\) connected and \(f'\equiv 0\), then \(f\) is constant. \comentario{It suffices to take a smooth curve \(\gamma: w_0 \leadsto w\) and apply \(\blacksquare\) \hyperlink{thm33}{3.3.}}
+\end{corollary}
+

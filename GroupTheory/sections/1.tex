@@ -1,0 +1,133 @@
+\section{Groups and Homomorphisms}
+
+\newcommand{\comentario}[1]{\textcolor{gray}{\(\rightarrow \) #1}}
+\subsection*{Permutations}
+\begin{definition}
+    Let \(S_X:= \{\alpha: X \to X \mid \alpha \text{ is and bijection}\}\) the set of all permutations of \(X\) and \(*: S_X \times S_X \to S_X\) such that \(\alpha * \beta := \alpha \circ \beta\).  Usual notation:   
+    \[ X := \{1, 2, \ldots, n\}\text{ \  and \ } \alpha =  \begin{pmatrix}
+        1 & 2 & \cdots & n \\ 
+        \alpha(1) & \alpha(2) & \cdots & \alpha(n)
+    \end{pmatrix}.\]
+\end{definition}
+\vspace{-0.7cm}
+\begin{definition}
+    We call \(\alpha  \in S_n\) by \emph{cycle} of length \(r\) if \(\alpha\) fixes \(n-r\) positions and \(\alpha :  i_1 \mapsto i_2 \mapsto \cdots \mapsto i_r \mapsto i_1\), in this case we write, \(\alpha = \begin{pmatrix}
+        i_1 & i_2 & \ldots & i_r
+    \end{pmatrix}\). Every \(1\)-cycle is the identity, \(\id_X\), and \(2\)-cycles are called by \emph{transpositions}. 
+\end{definition}
+
+\ejemplo{
+    \begin{example}
+        \(S_3 \ni \alpha \beta = \begin{pmatrix}
+            1 & 2 & 3 \\ 
+            3 & 2 & 1  
+        \end{pmatrix} \begin{pmatrix}
+            1 & 2 & 3 \\ 
+            2 & 3 & 1
+        \end{pmatrix} = 
+        (1 \ \ 3 )( 1 \ \ 3 \ \  2) 
+        = (1)(2 \ \ 3) \). 
+    \end{example}
+}
+
+\begin{definition}
+    Two cycles \(\alpha, \beta \in S_X\) are \emph{disjoint} when they affect different elements. In other words, \(\{x \in X : \alpha (x) \neq x  \text{ \ and \ } \beta(x)\neq x\}= \varnothing\). %A family \((\alpha_j)\) is disjoint if each pair of them is disjoint.   
+\end{definition}
+
+\begin{theorem}
+    \textbf{1.1.} Every \(\alpha \in S_n\) is either a cycle or a product of disjoint cycles. 
+\end{theorem}
+
+\demo{The proof is by induction on \(k\), points moved by \(\alpha\). Given \(\alpha \), let \(i_1\) moved by \(\alpha\), construct a cycle \(\sigma = (i_1 \ \ i_2 \ \  \ldots \ \ i_r)\), conclude that \(\alpha = \sigma \alpha'\), with \(\sigma \) and \(\alpha'\) disjoint, how \(\alpha'\) moved fewer positions than \(\alpha\), the result follows.  }
+
+\begin{definition}
+    A \emph{complete factorization} of \(\alpha\) is an expresion of \(\alpha\) as a product of disjoint cycles that includes \(1\)-cycles for every \(j\) fixed by \(\alpha\). 
+\end{definition}
+
+\begin{theorem}
+    \textbf{1.2.} Let \(\alpha \in S_n\). A complete factorization \(\alpha = \beta_1\beta_2 \ldots\beta_k\) is unique except for the order in which the factors occur. %\comentario{\textcolor{rojoscuro}{Ex. 6, 8 and 14}}
+\end{theorem}
+
+\demo{Suppose \(\alpha = \gamma_1 \gamma_2 \ldots \gamma_s\) a second complete factorization. If \(\beta_t\) moves \(i_1\), then \(\exists \gamma_j \) that moves \(i_1\), let \(j=s\) (\textcolor{rojoscuro}{Ex. 8}). Now, \(\forall k \in \N,\ \beta_t^k(i_1) = \alpha^k(i_1) = \gamma_s^k(i_1)\) (\textcolor{rojoscuro}{Ex. 14}), so \(\beta_t = \gamma_s\) and \(\beta_1 \ldots \beta_{s-1} = \gamma_1\ldots \gamma_{t-1}\) (\textcolor{rojoscuro}{Ex. 6}), the result follows by induction on \(\max\{s,t\}\). }
+
+\begin{theorem}
+    \textbf{1.3.} Every \(\alpha \in S_n\) is a product of transpositions. 
+\end{theorem}
+
+\demo{By \(\blacksquare\) \hyperlink{thm11}{1.1.} it suffices to factor cycles: \((1 \ \ 2 \ \ \ldots \ \ r) = (1 \ \ r) (1 \ \ r-1)\cdots(1 \ \ 2)\). }
+
+\newcommand{\sgn}{\operatorname{sgn}}
+\begin{definition}
+    For a permutation \(S_n \ni \alpha = \beta_1 \ldots\beta_t \) (complete factorization), the \emph{signum} of \(\alpha \) is \(\sgn(\alpha):= (-1)^{n-t}\). \emph{Even} or \emph{odd} depends on the quantities of transpositions in the decomposition of \( \alpha\) (in traspositions).  
+\end{definition}
+
+\begin{theorem}
+    \textbf{1.7.} For all \(\alpha, \beta \in S_n, \ \sgn(\alpha\beta)= \sgn(\alpha) \sgn(\beta)\). Also, 
+    \vspace{-0.3cm}
+    \begin{enumerate}[label = \roman*., left = 0.35cm]
+        \item \(\alpha\) is \emph{even} \(\leftrightharpoons\) \(\sgn(\alpha) = 1\).\hfill ii. \ \(\alpha \)  is \emph{odd} \(\leftrightharpoons\) it's product of odd transpositions. 
+    \end{enumerate}
+\end{theorem}
+
+\vspace{-0.2cm}
+\comentario{Doesn't support summaries, look if you want \cite[pag. 9]{stein}}
+
+\subsection*{Groups}
+
+\begin{definition}
+    A \emph{group} \((G, *)\) is a nonemptyset \(G\), equipped with an associative binary operation \(* : G \times G \to G\) such that: 
+    \begin{enumerate}[left = 1.33cm]
+        %\item[G1.] \(\forall a,b,c \in G, \ (a* b)*c = a * (b*c)\). 
+        \item[G1.] \(\exists e \in G : \forall a \in G, \ a*e = e *a = a\). \comentario{Identity element}
+        \item[G2.] \(\forall a \in G, \ \exists b \in G  :  \ a*b = b *a = e\). \comentario{Existence of inverses}
+    \end{enumerate}
+    If, in addition, the operation \(*\) is commutative, then \(G\) is called an \emph{abelian group}.
+\end{definition}
+
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\SL}{\operatorname{SL}}
+\ejemplo{
+   \textcolor{verdeoscuro}{\underline{\textbf{Examples}}} \ \  {\scriptsize\(\bullet\)} \ \((S_n, \circ)\) the \emph{symetric group}. \hfill \(\mid\) \hfill  {\scriptsize\(\bullet\)} \ \((\F, +)\), usual addition in fields. \vspace{0.3cm} \\ 
+   {\scriptsize\(\bullet\)} \ \((\Z_n, + ) \), where \(\Z_n := \{[a] \in \nicefrac{\Z}{\sim} :  a\sim b \ \leftrightharpoons \ a \equiv b \ (\operatorname{mod} n)\}\)  \hfill {\scriptsize\(\bullet\)}  \ \((\GL_n(\F), \cdot)\) %\footnote{Special mention for \(n=1\), in this case \(\GL(\F) = \F^\times\), abelian group. } 
+}
+
+\begin{theorem}
+    \textbf{1.10.} If \(G\) is a group, the identity and the inverse of each element are unique. \comentario{It's simply, suppose another verifying the propertie as always}
+\end{theorem}
+
+\begin{corollary}
+    \textbf{1.11.} We denote the inverse of \(a\) by \(a^{-1}\). It follows inmediately that \((a^{-1})^{-1} = a\). 
+\end{corollary}
+
+\begin{definition}
+    Given \(a \in G, \ n \in \N\), we define \(a^n := \overbrace{a * a * \cdots * a}^\text{n \text{ times}}\). We also set \(a^0 := e\) and \(a^{-n} := (a^{-1})^n\), all this expresions are \emph{powers} of \(a\).
+\end{definition}
+
+\subsection*{Homomorphisms}
+%
+%If \(G = \{a_1 , a_2, \ldots, a_n\}\), we can write \(a_i * a_j = a_ia_j\) and draw a \emph{multiplication table}:  
+%\begin{table*}[!h]
+%\centering    
+%\begin{tabular}{c | c c c c}
+%    \(*\) & \(a_1\) & \(a_2\) & \(\cdots\)& \(a_n\)  \\ \hline
+%    \(a_1\) & \(a_1a_1\) & \(a_1a_2\) & \(\cdots\)& \(a_1a_n\)\\ 
+%%    \(a_2\) & \(a_2a_1\) & \(a_2a_2\) & \(\cdots\)& \(a_2a_n\)\\ 
+%    \(\vdots\) & \(\vdots\) & \(\vdots\) & \(\ddots\)& \(\vdots\)\\ 
+%    \(a_n\) & \(a_na_1\) & \(a_na_2\) & \(\cdots\)& \(a_na_n\)\\ 
+%\end{tabular}
+%\end{table*}
+\begin{definition}
+    Let \((G, *)\) and \((H,\circ )\) be groups. A function \(f: G \to H\) is a \emph{homomorphism} if \(\forall a,b \in G\), \(f(a*b) = f(a) \circ f(b)\); If \(f\) is a bijection, \(f:G\cong H\) (\emph{isomorphism}).  
+\end{definition}
+
+\begin{theorem}
+    \textbf{1.13.} Let \(f : (G,*) \to (G', \circ)\) homomorphism. Then,  
+    \vspace{-0.3cm}
+    \begin{enumerate}[label = \roman*., left = 0.3cm]
+        \item \(f(e) = e'\). \hfill  ii. \ \(f(a^{-1}) = f(a)^{-1}\). \hfill  iii. \ \(f(a^n) = f(a)^n\). 
+    \end{enumerate} 
+\end{theorem}
+
+\demo{For (i) and (ii) apply \(f\) to the equations \(e = e *e\) and \(a*a^{-1} = e = a^{-1} * a\). The affirmation (iii) follows by induction in \(n\) and (ii).}
