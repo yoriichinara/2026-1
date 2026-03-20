@@ -61,7 +61,7 @@ Naturally, \(\C\) is a metric space and we work with the topology induced by the
 \end{note}
 
 \begin{proposition}
-    \textbf{2.2.} If \(f\) and \(g\) are holomorphic (in appropriate domains), then \(f+g, \ fg, \ \nicefrac{f}{g}\) and \(g \circ f\) are holomorphic too. \comentario{Same formulas and proof of analysis on \(\R^n\)} 
+    \textbf{2.2.} If \(f\) and \(g\) are holomorphic (in appropriate domains), then \(f+g, \ fg, \ \nicefrac{f}{g}\) and \(g \circ f\) are holomorphic too. \comentario{Same formulas and proof of analysis in \(\R^n\)} 
     %\[(f+g)' = f' + g'; \ \ (fg)' = f'g + fg'; \ \ \left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}; \ \ ((g\circ f)(z))' \]
 \end{proposition}
 
@@ -102,10 +102,8 @@ h_1 \\ h_2
 also \(\det JF(x_0,y_0) = u_x^2 + u_y^2 = |f'(z_0)|^2\).  }
 
 \begin{theorem}
-    \textbf{2.4.} Let \(\Omega \simeq U\ab\subset \R^2\), \(u,v \in C^1(U, \R^2)\) and \(f = u+ iv :  \Omega \to \C \). If \(u\) and \( v\) satisfies the C-R equations, then \(f\) is holomorphic on \(\Omega\) and \(f'(z) = f_z\).  
+    \textbf{2.4.} Let \(\Omega \simeq U\ab\subset \R^2\), \(u,v \in C^1(U, \R^2)\) and \(f = u+ iv :  \Omega \to \C \). If \(u\) and \( v\) satisfies the C-R equations, then \(f\) is holomorphic on \(\Omega\) and \(f'(z) = f_z\). \comentario{Write \(du \) and \(dv\) by extension and group them, see \cite[pag. 13]{stein} }
 \end{theorem}
-
-\demo{Write \(du \) and \(dv\) by extension and group them. }
 
 \subsection*{Power series}
 
@@ -150,7 +148,7 @@ In general, a \emph{power series} is a sum of terms of the form \( (a_nz^n)_{n\g
 \end{theorem}
 
 \demo{
-    Remember that \(n^{\nicefrac{1}{n}} \to 1\) as \(n\to \infty\), so from Hadamard's formula follows the affimation of radius of convergence of \(g\). The first assertion doesn't admite summaries, look if wants \cite[Pág. 17]{stein}. Consists of an argument \(\nicefrac{\epsilon }{3}\), using, \vspace{-0.3cm}
+    Remember that \(n^{\nicefrac{1}{n}} \to 1\) as \(n\to \infty\), so from Hadamard's formula follows the affimation of radius of convergence of \(g\). The first assertion doesn't admite summaries, see \cite[Pág. 17]{stein}. Consists of an \(\nicefrac{\epsilon }{3}\) argument, using, \vspace{-0.3cm}
     \[f(z) = S_N(z) + E_N(z) = \sum_{n=0}^N a_nz^n + \sum_{N+1}^\infty a_nz^n.\] 
     \vspace{-0.3cm}
 }
@@ -213,10 +211,12 @@ In general, a \emph{power series} is a sum of terms of the form \( (a_nz^n)_{n\g
 
 \demo{It follows by \(\blacksquare\) (\emph{Stokes}) or \(\blacksquare\) (\emph{TFC}) if you prefer. }
 
+\hypertarget{coro133}{}
 \begin{corollary}
     \textbf{3.3.} In the setting of \(\blacksquare\) \hyperlink{thm33}{3.3.} if \(\gamma\) is a closed curve, then, \(\displaystyle \int_\gamma f(z) \ dz = 0 \).
 \end{corollary}
 
+\hypertarget{coro134}{}
 \begin{corollary}
     \textbf{3.4.} If \(f\) is holomorphic on \(\Omega\ab\subset \C\) connected and \(f'\equiv 0\), then \(f\) is constant. \comentario{It suffices to take a smooth curve \(\gamma: w_0 \leadsto w\) and apply \(\blacksquare\) \hyperlink{thm33}{3.3.}}
 \end{corollary}

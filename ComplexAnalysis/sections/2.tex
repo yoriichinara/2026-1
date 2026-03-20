@@ -1,1 +1,121 @@
 \section{Cauchy's Theorem and Its Applications}
+
+\hypertarget{thm11}{}
+\parbox[a]{0.7\linewidth}{
+\begin{theorem}
+    \textbf{1.1. (\emph{Goursat})} Let \(f \) holomorphic in \(\Omega \ab \subset \C\) and \(T\subset \Omega \) a triangle whose interior is also contained in \(\Omega\), then 
+    \[\int_T f(z) \ dz = 0. \]
+\end{theorem}
+}
+
+
+
+\comentario{Doesn't support summaries, but rather on a bisection argument, see \cite[pag. 34]{stein}}
+
+\begin{corollary}
+    \textbf{1.2.} If \(R\) is a rectangle \( : R, \operatorname{int}R \subset \Omega\), then \(\displaystyle \int_R f(z) \ dz  = 0\).
+\end{corollary}
+
+\vspace{-0.3cm}
+\hypertarget{thm221}{}
+\begin{theorem}
+    \textbf{2.1.} If \(f\) is holomorphic in \(D := B(z_0;r)\), then \(f\) has a primitive in \(D\). \comentario{Doesn't support summaries, see \cite[pag. 37]{stein}} 
+\end{theorem}
+
+\hypertarget{thm222}{}
+\begin{theorem}
+    \textbf{2.2. (\emph{Cauchy's theorem for a disc})} If \(f\) is holomorphic in \(D\), then 
+    \[\displaystyle \int_\gamma f(z) \ dz = 0 \ : \ \gamma  \subset D, \text{ closed curve}.\] 
+\end{theorem}
+
+\demo{By \(\blacksquare\) \hyperlink{thm221}{2.1.} \(f\) has a primitive, so from {\scriptsize \(\boxtimes\)} \hyperlink{coro133}{3.3.} the result follows.}
+
+\begin{corollary}
+    \textbf{2.3.} If  \ \(f\) is holomorphic in \(\Omega \) and \(\overline{D} \subset \Omega \), then \(\displaystyle\int_{\partial D} f(z) \ dz\). 
+\end{corollary}
+
+\begin{textblock*}{6cm}(13cm, 3.6cm)
+        \includegraphics[width = \linewidth]{Imagens/T.pdf}
+\end{textblock*}
+
+\begin{textblock*}{5cm}(13.5cm, 18cm)
+        \includegraphics[width = \linewidth]{Imagens/ExInt.pdf}
+\end{textblock*}
+
+\begin{textblock*}{5cm}(14cm, 23cm)
+        \includegraphics[width = \linewidth]{Imagens/Cauchy.pdf}
+\end{textblock*}
+
+\ejemplo{
+    \centering Motivation behind theorem
+    \tcblower
+%    \parbox[a]{0.8\linewidth}{
+    \begin{example}
+        Evaluate integral using \(\blacksquare\) \hyperlink{thm222}{2.2.}, making \(\epsilon \to 0\), 
+        \[\displaystyle \textcolor{gray}{\frac{\pi}{2}=}  \int_0^\infty \frac{1- \cos x}{x^2} \ dx \ \ \textcolor{gray}{\sim f(z) = \frac{1 - e^{iz}}{z^2}}.\hspace{5cm}\]  
+    \end{example}
+%    }
+}
+
+\subsection*{Cauchy's integral formula}
+
+\hypertarget{thm241}{}
+\parbox[a]{0.7\linewidth}{
+\begin{theorem}
+    \textbf{4.1.} If \(f\) is holomorphic in \(\Omega\ab\subset \C\) and \(D : \overline{D}\subset \Omega\), then 
+    \[f(z) = \frac{1}{2\pi i } \int_{\partial D} \underset{\textcolor{gray}{\overset{\uparrow }{F(\zeta)}}}{\frac{f(\zeta)}{\zeta - z}} \ d\zeta, \  \ z \in D. \]
+\end{theorem}
+}
+
+\demo{
+        \[0 =  \lim_{\epsilon \to 0} \int_{\Gamma_{\delta, \epsilon}} F(\zeta) \ d\zeta = \int_{\partial D} F(\zeta ) \ d\zeta + I_\epsilon  + \int_{\partial D_\epsilon} \frac{f(z)}{\zeta - z} \ d\zeta. \]
+        \hrule 
+        \vspace{0.3cm}
+        \textcolor{gray}{\[I_\epsilon = \int_{\partial D_\epsilon} \frac{f(\zeta) - f(z)}{\zeta - z} \ d\zeta \to 0 \text{ \ and \ }\int_{\partial D_\epsilon} \frac{f(z)}{\zeta - z} \ d\zeta = - f(z) 2\pi i.\]} 
+        \vspace{-0.2cm}
+}
+
+\hypertarget{coro242}{}
+\begin{corollary}
+    \textbf{4.2. (\emph{Cauchy integral formula})} If \( f\) is holomorphic in \(\Omega\ab \subset \C\), then \(f\) has infinitely many complex derivatives in \(\Omega\). Moreover, if \(\overline{D}\subset \Omega \), then 
+    \[f^{(n)}(z) = \frac{n!}{2\pi i } \int_{\partial D} \frac{f(\zeta)}{\zeta - z} \ d\zeta, \ \ z \in D.\]
+\end{corollary}
+
+\demo{ 
+    By induction, calculate \(f^{(n)}(z) = \underset{h\to 0}{\lim} (\cdots) \) using \(\blacksquare\) \hyperlink{thm241}{4.1.} to express \(f^{n-1}(z)\) and the property \(A^n -B^n = (A-B) [A^{n-1} + A^{n-2}B + \cdots + B^{n-1}]\) to simplify.
+    % \[\lim_{h\to 0}\frac{f^{(n-1)} (z+h) - f^{(n-1)}(z)}{h} = \]
+}
+
+\hypertarget{coro243}{}
+\begin{corollary}
+    \textbf{4.3. (\emph{Cauchy inequalities})}  If \( f\) is holomorphic in \(\Omega\ab \subset \C\) and \(B[z_0;R] \subset \Omega \), then 
+    \[|f^{(n)}(z_0)|\leq \frac{n! \|f\|_{\partial D}}{R^n}, \text{ where } \|f\|_{\partial D}:= \sup_{\partial D} |f(z)|\]
+\end{corollary}
+
+\demo{  
+    \[|f^{(n)}(z_0) | = \frac{n!}{2\pi} \left| \int_{\partial D} \frac{f(\zeta )}{\zeta - z} \ d \zeta \right| = \frac{n!}{2\pi} \left|\int_0^{2\pi} (\cdots) \ d\theta \right|\leq \frac{n!}{2\pi}\frac{\|f\|_{\partial D}}{R^n} 2\pi. \]
+    \vspace{-0.2cm}
+}
+
+\begin{theorem}
+    \textbf{4.4.}  If \( f\) is holomorphic in \(\Omega\ab \subset \C\) and \(D = B[z_0;R] \subset \Omega \), then \(f\) has a convergent Taylor power series expansion at \(z_0\): 
+    \[f(z) = \sum^\infty_{n=0} a_n (z-z_0)^n, \text{ where } a_n= \frac{f^{(n)}(z_0)}{n!}, \ z\in D.\]
+\end{theorem}
+
+\demo{
+%    \vspace{-0.2cm}
+    \[\frac{1}{\zeta -z} = \frac{1}{\zeta -z_0}\frac{1}{1 -\left(\frac{z-z_0}{\zeta - z_0}\right)} = \frac{1}{\zeta - z_0}\sum_{n=0}^\infty \left(\frac{z-z_0}{\zeta -z_0}\right)^n. \]
+    The geometic series converges because \(\nicefrac{\left|z-z_0\right|}{\left|\zeta- z_0\right|} < r <1\) (uniformity). Finally, use \(\blacksquare\) \hyperlink{thm242}{4.2. (\emph{Cauchy integral formula})}  to conclude.
+}
+
+\begin{corollary}
+    \textbf{4.5. (\emph{Liouville})} If \(f\) is entire and bounded, then \(f\) is constant. \comentario{By {\scriptsize \(\boxtimes\)} \hyperlink{coro243}{4.3. (\emph{Cauchy inequalities})} \(|f'(z_0)| \leq \nicefrac{M}{R} \to 0 \) as \(R\to \infty\), so \(f'(z) \equiv 0\), result follows by {\scriptsize\(\boxtimes\)} \hyperlink{coro134}{3.4.}} 
+\end{corollary}
+
+\begin{corollary}
+    \textbf{4.7.} Every \(P(z) \in \C[z]\setminus \C\) has precisely \(n\) roots in \(\C\) (algebraically closed). 
+\end{corollary}
+
+\demo{
+    First prove that \(P(z)\) has one root, if not \(\nicefrac{1}{P(z)}\) is entire and bounded, then constant, {\scriptsize\(\boxtimes\)} \hyperlink{coro245}{4.5. (\emph{Liouville})}.\Lightning \  Result follows by induction and division algorithm.  
+}
