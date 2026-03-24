@@ -145,15 +145,9 @@ INPUT /usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 INPUT /usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 INPUT /usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT /usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /usr/share/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT /usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -531,6 +525,7 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

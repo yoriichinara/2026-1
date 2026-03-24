@@ -41,6 +41,7 @@
     \[\hspace{4cm}\text{\scriptsize $\bullet $ \ \ }\{h \in H : h = f(a), \ a \in G\} =:\operatorname{Im}f\leq H.\]  
 }
 
+\hypertarget{thm25}{}
 \begin{theorem}
     \textbf{2.5.} Let \((S_i)_{i\in I} : S_i \leq G\), then \(\bigcap S_i \leq G\). \comentario{Mogollas }
 \end{theorem}
@@ -214,3 +215,54 @@
 \demo{If \(f : G \to G \) is homomorphism, then \(f([a,b]) = [f(a), f(b)]\) so \(G' \lhd G\) (\textcolor{rojoscuro}{Ex. 34}); Moreover, \(Hab = Hba \ \leftrightharpoons \ (ab)(ba)^{-1} = a b a^{-1}b^{-1} = [a,b] \in H\).}
 
 \subsection*{The Isomorphism Theorems}
+
+%\parbox[a]{0.8\linewidth}{
+\hypertarget{thm224}{}
+\begin{theorem}
+    \textbf{2.24. (\emph{First Isomorphism Theorem})} Let \(f : G \to H\) homomorphism with \(\ker f = K \). Then \(K \lhd G\) and \(\exists \varphi : \nicefrac{G}{K} \cong \operatorname{Im}f\). \comentario{Let \(\varphi : Ka \mapsto f(a)\) and prove }
+\end{theorem}
+%}
+
+\begin{lemma}
+    \textbf{2.25.} If \(S, T \leq G\) and \(S \lhd G\) (or \(T\lhd G\)), then \(ST = S \lor T = TS\). 
+\end{lemma}
+
+\demo{
+    (\(\subseteq \)) It's clear; (\(\supseteq\)) Follows if \(ST, TS  \leq G\), because of note after \(\blacksquare\) \hyperlink{thm25}{2.5.}; If \(T \lhd G, \ s_j\in S, \ t_j \in T\), show that \(s_1t_1(s_2t_2)^{-1} \in ST\).  
+}
+
+\begin{theorem}
+    \textbf{2.26. (\emph{Second Isomorphism Theorem})} Let \(T, N \leq G\) with \(N\) normal. Then \(N \cap T\lhd T\) and \(\nicefrac{T}{N\cap T}\cong \nicefrac{NT}{N}\). 
+\end{theorem}
+
+\demo{By \(\blacksquare\) \hyperlink{thm224}{2.24. (\emph{FIT})} with \(\ker \pi|_T = N \cap T \lhd T\) and \(\nicefrac{T}{N\cap T} \cong \operatorname{Im}\pi|_T = \nicefrac{NT}{N}\).}
+
+\begin{theorem}
+    \textbf{2.27. (\emph{Third Isomorphism Theorem})} Let \(K \leq H\) where both \(K, H \lhd G\). Then \(\nicefrac{H}{K}\lhd \nicefrac{G}{K}\) and \((\nicefrac{G}{K}) \ \slash \ (\nicefrac{H}{K}) \cong \nicefrac{G}{H}\). 
+\end{theorem}
+
+\demo{Follows by \(\blacksquare\) \hyperlink{thm224}{2.24. (\emph{FIT})}. with \(f: \nicefrac{G}{K} \twoheadrightarrow \nicefrac{G}{H}\  \mid \  Ka \mapsto Ha\) and \(\ker f = \nicefrac{H}{K}\). }
+
+\begin{theorem}
+    \textbf{2.28. (\emph{Correspondence Theorem})} Let \(K \lhd G\) and \(\pi : G \to \nicefrac{G}{K}\). Then \(S \mapsto \pi(S) = \nicefrac{S}{K}\) is a bijection between \(\{S: K \leq S \leq G\}\) and \(\{H : H \leq \nicefrac{G}{K}\}\). Moreover, if we denonte \(S^* = \nicefrac{S}{K}\), then: 
+    \begin{enumerate}[label = \roman*., left = 0.35cm]
+        \item \vspace{-0.2cm}\(T \leq S \ \leftrightharpoons \ T^* \leq S^*\), and then \([S:T] = [S^*: T^*]\). 
+        \item \(T \lhd S \ \leftrightharpoons \ T^* \lhd S^*\), and then \(\nicefrac{S}{T}= \nicefrac{S^*}{T^*}\). 
+    \end{enumerate}
+\end{theorem}
+
+\comentario{Doesn't support summaries, see \cite[pag. 38]{stein}}
+
+\begin{definition}
+    A group \(\{\id\} < G\) is \emph{simple} if \(\nexists K \lhd G : \{\id\} < K < G\).  
+\end{definition}
+
+\subsection*{Direct Products}
+
+\begin{definition}
+    Given \(H\) and \( K \) groups, their \emph{direct product}, denoted by \(H \times K\) is a group with the operation (by coordinates), \   \(*: (h,k) \times (h',k') \mapsto (h h', k k')\). 
+\end{definition}
+
+\begin{note}
+    
+\end{note}
