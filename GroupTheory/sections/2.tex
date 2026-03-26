@@ -254,7 +254,7 @@
 \comentario{Doesn't support summaries, see \cite[pag. 38]{stein}}
 
 \begin{definition}
-    A group \(\{\id\} < G\) is \emph{simple} if \(\nexists K \lhd G : \{\id\} < K < G\).  
+    A group \(\id < G\) is \emph{simple} if \(\nexists K \lhd G : \id < K < G\).  
 \end{definition}
 
 \subsection*{Direct Products}
@@ -264,5 +264,29 @@
 \end{definition}
 
 \begin{note}
-    
+    \(H \cong H \times \id_K\) and \(K \cong \id_H \times K\). 
 \end{note}
+
+\begin{theorem}
+    \textbf{2.29.} Let \(H, K \lhd G\). If \(HK = G \) and \(H \cap K = \id\), then \(G \cong H \times K\).  
+\end{theorem}
+
+\demo{Let \(f: G \to H \times K  \) such that \( a = hk \mapsto (h,k)\), use commutators to see that \(h'kh'^{-1}k^{-1} \in H \cap K\) and prove the remaining properties. }
+
+\alerta{ \centering All hypothesis in \(\blacksquare\) \hyperlink{thm229}{2.29.} are necessary
+\tcblower
+\begin{example}
+    \(G = S_3\) (non abelian), \(H = \langle (1 \ \ 2 \ \ 3)\rangle \) and \(K = \langle (1 \ \ 2) \rangle\). Check everything except by \(K\ntrianglelefteq G\). We have \(H \times K \cong \Z_3 \times \Z_2\) (abelian). 
+\end{example}
+}
+
+\begin{theorem}
+    \textbf{2.30.} If \(A \lhd H\) and \(B \lhd K\), then \(A \times B \lhd H \times K\) and \(\nicefrac{H\times K}{A \times B} \cong \nicefrac{H}{A}\times \nicefrac{K}{B}\). 
+\end{theorem}
+
+\demo{Follows by \(\blacksquare\) \hyperlink{thm224}{2.24. (\emph{FIT})} with \(\varphi : H\times K \twoheadrightarrow \nicefrac{H}{A} \times \nicefrac{K}{B}\) such that \((h,k) \mapsto (Ah, Bk)\) and \(\ker \varphi = A \times B\). 
+} 
+
+\begin{corollary}
+    \textbf{2.31.} If \(G = H \times K \), then \(\nicefrac{G}{H\times \id}\cong \nicefrac{H}{H} \times \nicefrac{K}{\id} \cong K\).  
+\end{corollary}
