@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  25 MAR 2026 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  27 MAR 2026 19:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -964,7 +964,7 @@ Package hyperref Info: Link coloring ON on input line 116.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 116.
 
 \c@lstlisting=\count425
-<Imagens/Header.png, id=51, 4986.63pt x 611.886pt>
+<Imagens/Header.png, id=55, 4986.63pt x 611.886pt>
 File: Imagens/Header.png Graphic file (type png)
 <use Imagens/Header.png>
 Package pdftex.def Info: Imagens/Header.png  used on input line 192.
@@ -1019,7 +1019,16 @@ LaTeX Font Info:    Trying to load font information for U+dsrom on input line 16
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Imagens/Header.png>] [2]) (./sections/2.tex [3] [4] [5] [6] [7]) [8] (./main.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Imagens/Header.png>] [2]) (./sections/2.tex [3] [4] [5] [6] [7]) (./sections/3.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+) [8] [9] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1030,14 +1039,14 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.98pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 87A484FE985F8A71636F4DC8DFBC3BE5;315.
+(rerunfilecheck)             Checksum: 1DEF2C80CBF774AADEADCE1379F47DB1;502.
  ) 
 Here is how much of TeX's memory you used:
- 33692 strings out of 469515
- 684523 string characters out of 5470807
+ 33719 strings out of 469515
+ 684956 string characters out of 5470807
  1208216 words of memory out of 5000000
- 61698 multiletter control sequences out of 15000+600000
- 687189 words of font info for 145 fonts, out of 8000000 for 9000
+ 61718 multiletter control sequences out of 15000+600000
+ 689724 words of font info for 157 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,11n,108p,1263b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1050,10 +1059,10 @@ pdfTeX warning (dest): name{thm217} has been referenced but does not exist, repl
 pdfTeX warning (dest): name{thm11} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (8 pages, 527302 bytes).
+Output written on main.pdf (9 pages, 530698 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

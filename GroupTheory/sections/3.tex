@@ -1,0 +1,37 @@
+\section{Symmetric Groups and $G$-Sets}
+
+\subsection*{Conjugates}
+
+\hypertarget{lemma31}{}
+\begin{lemma}
+    \textbf{3.1.} The relation (in \(G\)) \(x \sim y \ \leftrightharpoons \ \exists g \in G :  y = gxg^{-1}\) is an equivalence relation. %, the classes are called by \emph{conjugacy classes}.
+\end{lemma}
+
+\begin{definition}
+    \(\star \ \ \ a^G := [a] \in \nicefrac{G}{\sim} \ \  \leftarrow\)  \emph{Conjugacy classes} 
+    \vspace{-0.2cm}
+    \begin{itemize}[label = \(\star\)]
+        \item \(\{a \in G : a^G = a\} =: Z(G)\lhd G\ \ \leftarrow\)  \emph{Center} (is abelian)
+        \item \(\{g \in G : ag = ga\} = : C_G(a) \leq G\ \ \leftarrow\) \emph{Centralizer} of \(a \in G\)
+    \end{itemize}
+\end{definition}
+
+\begin{theorem}
+    \textbf{3.2.} \  \(|a^G| = [G : C_G(a)]\), divisor in case that \(|G| < \infty\).  
+\end{theorem}
+
+\demo{Let \(C := C_G(a)\) and consider \(f : a^G \to \nicefrac{G}{C} \) such that \(gag^{-1} \mapsto gC\). Prove that \(f\) is a well defined bijection. Second affirmation follows by \(\blacksquare\) \hyperlink{thm211}{2.11. (\emph{Lagrange})}.}
+
+\begin{definition}
+    Given \(H \leq G\) and \(g \in G\) we have similar definitions: 
+    \vspace{-0.2cm}
+    \begin{itemize}[label = \(\star\)]
+        \item \(gHg^{-1} = \{ghg^{-1} : h \in H\} =:H^g \ \  \leftarrow\)  \emph{Conjugate} 
+        \item \(\{a \in G : aHa^{-1} = H\} = : N_G(H) \leq G\ \ \leftarrow\) \emph{Normalizer} of \(H\) in \( G\)
+    \end{itemize}
+\end{definition}
+
+\begin{note}
+    Notice that \(H \lhd N_G(H) \leq G\) is the largest which verifies this propertie. 
+\end{note}
+    
