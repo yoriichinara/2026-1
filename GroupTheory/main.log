@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  27 MAR 2026 19:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  28 MAR 2026 17:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -82,6 +82,8 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box53
 \enit@count@id=\count286
 \enitdp@description=\count287
+) (/usr/share/texmf-dist/tex/latex/marvosym/marvosym.sty
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
 ) (/usr/share/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseDisplaystyle=\skip52
@@ -872,30 +874,30 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthlast=\dimen344
 \titlewidthfirst=\dimen345
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 116.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 117.
  (/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -954,59 +956,30 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 116.
+Package hyperref Info: Link coloring ON on input line 117.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 116.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 117.
 
 \c@lstlisting=\count425
 <Imagens/Header.png, id=55, 4986.63pt x 611.886pt>
 File: Imagens/Header.png Graphic file (type png)
 <use Imagens/Header.png>
-Package pdftex.def Info: Imagens/Header.png  used on input line 192.
+Package pdftex.def Info: Imagens/Header.png  used on input line 193.
 (pdftex.def)             Requested size: 496.33032pt x 60.8934pt.
-LaTeX Font Info:    Calculating math sizes for size <29.86> on input line 198.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <14.93> not available
-(Font)              size <14.4> substituted on input line 198.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <29.86> not available
-(Font)              size <24.88> substituted on input line 198.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <14.93> not available
-(Font)              size <14.4> substituted on input line 198.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <29.86> not available
-(Font)              size <24.88> substituted on input line 198.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <14.93> not available
-(Font)              size <14.4> substituted on input line 198.
-
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 198.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 202.
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <29.86> not available
-(Font)              size <24.88> substituted on input line 198.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <14.93> not available
-(Font)              size <14.4> substituted on input line 198.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 198.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 202.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 198.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 202.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1028,27 +1001,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-) [8] [9] (./main.aux)
+[8]
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 79.
+ (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd) [9] [10]) [11] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 4.98pt have occurred.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1DEF2C80CBF774AADEADCE1379F47DB1;502.
  ) 
 Here is how much of TeX's memory you used:
- 33719 strings out of 469515
- 684956 string characters out of 5470807
- 1208216 words of memory out of 5000000
- 61718 multiletter control sequences out of 15000+600000
- 689724 words of font info for 157 fonts, out of 8000000 for 9000
+ 34011 strings out of 469515
+ 687805 string characters out of 5470807
+ 1211040 words of memory out of 5000000
+ 61999 multiletter control sequences out of 15000+600000
+ 687950 words of font info for 148 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,11n,108p,1263b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,108p,1263b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{thm229} has been referenced but does not exist, replaced by a fixed one
 
@@ -1058,11 +1028,11 @@ pdfTeX warning (dest): name{thm217} has been referenced but does not exist, repl
 
 pdfTeX warning (dest): name{thm11} has been referenced but does not exist, replaced by a fixed one
 
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (9 pages, 530698 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (11 pages, 542648 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

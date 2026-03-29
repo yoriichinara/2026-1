@@ -32,6 +32,143 @@
 \end{definition}
 
 \begin{note}
-    Notice that \(H \lhd N_G(H) \leq G\) is the largest which verifies this propertie. 
+    Notice that \(H \lhd N_G(H) \leq G\) is the largest which verifies this property. 
 \end{note}
+
+\begin{theorem}
+    \textbf{3.3.} \(\#\{H^g : g \in G\} = [G : N_G(H)]\), divisor in case \(|G| < \infty\). Moreover, \(H^a = H^b \ \leftrightharpoons \ b^{-1} a \in N_G(H)\).   
+\end{theorem}
+
+\demo{
+    Let \([H] := \{H^g : g \in G\}\) and \(N:= N_G(H)\). Prove that \(f : [H] \to \nicefrac{G}{N}\) such that \(H^a \mapsto aN\) is a well defined bijection. 
+}
+
+\subsection*{Symmetric Groups}
+
+\begin{definition}
+    Two permutations \(\alpha, \beta \in S_n\) have the same \emph{cycle structure} if their complete factorizations have the same number of $r$-cycles for each $r$. 
+\end{definition}
+
+\hypertarget{lemma34}{}
+\begin{lemma}
+    \textbf{3.4.} If \(\alpha\) and \(\beta \) have the same cycle structure, then \(\pi := \alpha \beta \alpha^{-1}\) is obtain by applying \(\alpha\) to the symbols in \(\beta\).
+\end{lemma}
     
+\demo{If \(\beta\) fixes \(i\), then \(\pi(\alpha (i)) = \alpha(i)\). Let \(\beta = \gamma_1 \gamma_2 \cdots (\ldots i \ \ j \ldots )\cdots \gamma_t\), \(k = \alpha(i)\), \(l= \alpha(j)\) and concludes that \(\pi: k \mapsto l\). }
+
+\begin{theorem}
+    \textbf{3.5.} \(\alpha \sim \beta \ \leftrightharpoons \ \) they have the same cycle structure.
+\end{theorem}
+
+\demo{(\(\Rightarrow\)) If \(\alpha = \gamma_1 \gamma_2 \cdots (\ldots i \ \ j \ldots)\cdots \gamma_t\) and \(\beta = \delta_1 \delta_2 \cdots (\ldots k \ \ l \ldots)\cdots \delta_t\), define \(\eta\) such that \(i \mapsto k\) and \(j \mapsto l\). Result follows by {\scriptsize $\square$} \hyperlink{lemma34}{3.4.}. }
+
+\begin{corollary}
+    \textbf{3.6.} \(H \lhd S_n \ \leftrightharpoons \ \alpha \in H\) implies \(\beta \in H, \ \forall \beta : \alpha \sim \beta \). \comentario{(\(\textcolor{rojoscuro}{\text{Ex. 2.34}}\))}
+\end{corollary}
+
+\begin{definition}
+    \centering \(\{\alpha\in S_n: \alpha \text{ is even}\} =: A_n \leq S_n \).   
+\end{definition}
+    
+\begin{theorem}
+    \textbf{3.7.} \(A_4 \leq S_4\) is a group of order \(12\) having no subgroup of order \(6\).  
+\end{theorem}
+
+\demo{
+    If \(\exists S \leq A_4 : |S| = 6\), then \([G:S] = 2\) and \(\alpha^2 \in S, \ \forall \alpha \in A_4\) (\(\textcolor{rojoscuro}{\text{Ex. 2.16.}}\)). We have \(\alpha = \alpha^4 = (\alpha^2)^2\), so every \(3\)-cycle (eight in total) lies to \(S\).\Lightning
+}
+
+%\subsection*{The simplicity of \(A_n\)}
+\begin{theorem}
+    \textbf{3.11.} \(A_n \) is simple for \(n\geq 5\). \comentario{Doesn't support sumaries, see \cite[pag. 50]{stein}}
+\end{theorem}
+
+\subsection*{Some Representation Theorems}
+
+\begin{theorem}
+    \textbf{3.12. (\emph{Cayley, 1878})} Every group \(G\) can be imbedded as a subgroup of \(S_G\). In particular, if \(|G|= n < \infty \), then \(\exists L: G \cong \operatorname{Im}L \leq S_n\) (\emph{regular representation}).   
+\end{theorem}
+
+\demo{Left translations \(L_a : G \to G\) such that \(x \mapsto ax\) are bijections (\(\textcolor{rojoscuro}{\text{Ex. 1.33}}\)), so \(L_a \in S_G\). Prove that \(L : a \mapsto L_a \) is an injective homomorphism. }
+
+\begin{corollary}
+    \textbf{3.13.} If \(G : |G | = n < \infty\) and \(\F\) is a field, then \(\exists \iota : G \cong H \leq \operatorname{GL}_n(\F)\). \comentario{Use \(\operatorname{PL}_n(\F) := \{A \in \operatorname{GL}_n(\F) : a_{ij} \in \{0, 1\}\}\cong S_n\)}
+\end{corollary}
+
+\begin{theorem}
+    \textbf{3.14.} If \(H \leq G\) and \([G:H] = n \), then  \(\exists \rho: G \to S_n\) homomorphism such that \(\ker \rho \leq H\) (\emph{representation in cosets}).
+\end{theorem}
+
+\demo{Let \(X:= \nicefrac{G}{H}\) and \(\rho_a : X \to X\) such that \(\rho_a : gH\mapsto agH\). Verify that \(\rho_a \in S_X\) and \(\rho : a \mapsto \rho_a\) is an homomorphism that satisfies this kernel property.}
+
+\begin{corollary}
+    \textbf{3.15.} If \(G\) is simple and \(\exists H\leq G : [G:H] = n>1\), then \(\exists \rho: G \cong \operatorname{Im} \rho \leq S_n\).  \comentario{\(\exists \rho : G \to S_n \) with \(\ker \rho \lhd H \leq G \ \leftrightharpoons \ \ker \rho = \id\) (\(\rho \) is injective)} 
+\end{corollary}
+
+\begin{corollary}
+    \textbf{3.16.} An infinite simple group \(G\) has no proper subgroups of finite index. 
+\end{corollary}
+
+\begin{theorem}
+    \textbf{3.17.} Let \(H \leq G\) and \(X := \{H^g : g \in G\}\). There is a homomorphism \(\psi:G \to S_X \) with \(\ker\psi \leq N_G(H)\) (\emph{representation in conjugates}).  
+\end{theorem}
+
+\demo{
+    Let \(\psi_a: X \to X\) such that \(\psi_a: H^g \mapsto {(H^{g})}^{a}\). Verify that \(\phi_a \in S_X\) and so \(\psi : a \mapsto \psi_a \) is homomorphism with this kernel property. 
+}
+
+\subsection*{\(G\)-Sets}
+
+\begin{definition}
+    If \(X\) is a set and \(G\) is a group, then \(X\) is a \(G\)\emph{-set} if \(\exists \alpha: X \times G \to X\) (called an \emph{action}), denoted by \(\alpha: (g,x) \mapsto gx\) such that: 
+    \vspace{-0.2cm}
+    \begin{enumerate}[label = (A\arabic*), left = 1.2cm]
+        \item \(\id x = x, \ \forall x \in X\). \hfill (A2) \ \(g(hx) = (gh)x, \ \forall g,h \in G, \ \forall x \in X\).  \hspace{0.5cm} \-
+    \end{enumerate}
+\end{definition}
+
+\begin{example}
+    \(G \leq S_X\) and \(\alpha = \operatorname{ev} : G \times X \to X\) such that \(\operatorname{ev}: (\sigma, x) \mapsto \sigma(x) = \sigma x\).
+\end{example}
+
+\begin{theorem}
+    \textbf{3.18.} If \(X\) is a \(G\)-set with action \(\alpha\), then \(\exists \widetilde{\alpha} : G \to S_X\) given by \(\widetilde{\alpha}(g):x \mapsto gx = \alpha(g,x) \). Conversely, every homomorphism \(\varphi: G \to S_X\) defines an action, namely, \(gx = \varphi(g) x\) which makes \(X\) into \(G\)-set. 
+\end{theorem}
+
+\begin{definition}
+    Given \(X\) a \(G\)-set and \(x \in X\), we define: 
+    \vspace{-0.2cm}
+    \begin{itemize}[label = \(\star\), left = 1cm]
+        \item \(\mathcal{O}(x) := \{gx : g\in G \} \subset X\)  \ \ \(\leftarrow\) \emph{\(G\)-orbit} of \(x\)
+        \item \(G_x := \{g \in G: gx = x\} \leq G \)  \ \ \(\leftarrow\) \emph{Stabilizer} of \(x\)
+    \end{itemize}
+\end{definition}
+
+\ejemplo{\centering \(G\) acts on himself by conjugation
+\tcblower
+\[\text{\scriptsize $\bullet$ } \  \ \mathcal{O}(x) = [x] \in \nicefrac{G}{\sim } \text{ and } G_x = C_G(x). \hspace{4cm}\]
+\[\- \hspace{4cm}\text{\scriptsize $\bullet$ } \ \ \mathcal{O}(H) = \{H^g : g \in G\} \text{ and } G_H = N_G(H). \]
+}
+
+\begin{theorem}
+    \textbf{3.19.} If \(X\) is a \(G\)-set, then \(|\mathcal{O}(x)| = [G: G_x]\)
+\end{theorem}
+
+\demo{Let \(f : \mathcal{O}(x) \to \nicefrac{G}{G_x} \ \mid \  ax \mapsto aG_x\) and prove that is a well defined bijection. }
+
+%\begin{corollary}
+%    \textbf{3.20.} If \(G : |G|  < \infty \) acts on \(X\), then \(|\mathcal{O}(x)| \) divides \(|G|, \ \forall x \in X\). 
+%\end{corollary}
+
+\newcommand{\C}{\mathbb{C}}
+\ejemplo{\centering Dihedral (or Symmetric) Group
+    \tcblower
+    \begin{example}
+        Let \(\id = X:=\{z \in \C : z^{2n} = 1\}, \ n\geq 2\) and consider: \(s\) (\emph{counterclockwise rotation} of \(X\)) and \(t\) (\emph{reflection} respect real axis). Notice that \(D_{2n}:= \langle s, t\rangle\) is a group such that: 
+        \[\text{(i)} \  \ s^n = \id; \hspace{1cm}  \text{(ii)} \ \ t^2 = \id;  \hspace{1cm} \text{(iii)}  \ \ tst = s^{-1}.\]  
+    \end{example}
+}
+
+\begin{theorem}
+    \textbf{3.32.} If \(|G| < \infty\) and \(a,b \in G\) are such that \(|a| = |b| = 2\), then \(\langle a,b\rangle \cong D_{2n}\) for some \(n\in \N\). \comentario{See \cite[pag. 68]{stein}}
+\end{theorem}
