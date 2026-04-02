@@ -26,7 +26,7 @@
     Given \(H \leq G\) and \(g \in G\) we have similar definitions: 
     \vspace{-0.2cm}
     \begin{itemize}[label = \(\star\)]
-        \item \(gHg^{-1} = \{ghg^{-1} : h \in H\} =:H^g \ \  \leftarrow\)  \emph{Conjugate} 
+        \item \(gHg^{-1} = \{ghg^{-1} : h \in H\} =:H^g \leq G \ \  \leftarrow\)  \emph{Conjugate} 
         \item \(\{a \in G : aHa^{-1} = H\} = : N_G(H) \leq G\ \ \leftarrow\) \emph{Normalizer} of \(H\) in \( G\)
     \end{itemize}
 \end{definition}
@@ -75,7 +75,7 @@
 \end{theorem}
 
 \demo{
-    If \(\exists S \leq A_4 : |S| = 6\), then \([G:S] = 2\) and \(\alpha^2 \in S, \ \forall \alpha \in A_4\) (\(\textcolor{rojoscuro}{\text{Ex. 2.16.}}\)). We have \(\alpha = \alpha^4 = (\alpha^2)^2\), so every \(3\)-cycle (eight in total) lies to \(S\).\Lightning
+    If \(\exists S \leq A_4 : |S| = 6\), then \([G:S] = 2\) and \(\alpha^2 \in S, \ \forall \alpha \in A_4\) (\(\textcolor{rojoscuro}{\text{Ex. 2.16}}\)). We have \(\alpha = \alpha^4 = (\alpha^2)^2\), so every \(3\)-cycle (eight in total) lies to \(S\).\Lightning
 }
 
 %\subsection*{The simplicity of \(A_n\)}
@@ -132,7 +132,7 @@
 \end{example}
 
 \begin{theorem}
-    \textbf{3.18.} If \(X\) is a \(G\)-set with action \(\alpha\), then \(\exists \widetilde{\alpha} : G \to S_X\) given by \(\widetilde{\alpha}(g):x \mapsto gx = \alpha(g,x) \). Conversely, every homomorphism \(\varphi: G \to S_X\) defines an action, namely, \(gx = \varphi(g) x\) which makes \(X\) into \(G\)-set. 
+    \textbf{3.18.} If \(X\) is a \(G\)-set with action \(\alpha\), then \(\exists \widetilde{\alpha} : G \to S_X\) homomorphism given by \(\widetilde{\alpha}(g):x \mapsto gx = \alpha(g,x) \). Conversely, every homomorphism \(\varphi: G \to S_X\) defines an action, namely, \(gx = \varphi(g) x\) which makes \(X\) into \(G\)-set. 
 \end{theorem}
 
 \begin{definition}
@@ -151,10 +151,10 @@
 }
 
 \begin{theorem}
-    \textbf{3.19.} If \(X\) is a \(G\)-set, then \(|\mathcal{O}(x)| = [G: G_x]\)
+    \textbf{3.19.} If \(X\) is a \(G\)-set, then \(|\mathcal{O}(x)| = [G: G_x]\). \comentario{Let \(f : \mathcal{O}(x) \to \nicefrac{G}{G_x} \ \mid \  ax \mapsto aG_x\) and prove that is a well defined bijection }
 \end{theorem}
 
-\demo{Let \(f : \mathcal{O}(x) \to \nicefrac{G}{G_x} \ \mid \  ax \mapsto aG_x\) and prove that is a well defined bijection. }
+
 
 %\begin{corollary}
 %    \textbf{3.20.} If \(G : |G|  < \infty \) acts on \(X\), then \(|\mathcal{O}(x)| \) divides \(|G|, \ \forall x \in X\). 

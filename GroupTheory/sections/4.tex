@@ -1,0 +1,67 @@
+\section{The Sylow Theorems \textnormal{($G$ finito)}}
+
+\subsection*{$p$-Groups}
+\begin{definition}
+    If \(p\) is prime, then \(G\) is a $p$\emph{-group} if \(\exists a \in G : |a| = p \). 
+\end{definition}
+
+\hypertarget{lemma41}{}
+\begin{lemma}
+    \textbf{4.1.} If \(G\) is abelian such that \(|G|= pm\), then \(G\) is a $p$-group.  
+\end{lemma}
+
+\demo{By induction on \(m\), let \(x \in G : |x| = t >1\). If \(p \mid t\), \(|x^{\nicefrac{t}{p}}| = p\) (\textcolor{rojoscuro}{Ex. 2.11}), other case \(\langle x\rangle \lhd G\) and \(G^*:= \nicefrac{G}{\langle x\rangle}\) is abelian \( : |G^*| = pm', \ m' < m\) so \(\exists a^* = \pi(a) \in G^* : |a^*| = p\), we have \(|a| = pk\) (\textcolor{rojoscuro}{Ex. 2.14}) and \(|a^{k}|= p\).    }
+
+\begin{theorem}
+    \textbf{4.2.} If \(|G| = pm\), then \(\exists a : |a| = p\).  
+\end{theorem}
+
+\demo{If \(\exists x \in G \setminus Z(G): p \) divides \(|C_G(x)|\), result follows by induction. Other case \(p\) divides \([G : C_G(x)]\) and choosing suitable representatives we have: 
+\[ \circledast \hspace{1cm}  |G| = |Z(G)| + \sum [G: C_G(x_j)] \ \ \leftarrow \text{\emph{Class equation} of \(G\)}\]
+So \( p \) divides \(|Z(G)|\) \text{ (abelian)} and result follows by {\scriptsize \(\square\)} \hyperlink{lemma41}{4.1.}.
+}
+
+\hypertarget{coro43}{}
+\begin{corollary}
+    \textbf{4.3.} \(G\) is $p$-group \ \(\leftrightharpoons\) \ \(|G| = p^k\). \comentario{Mogollas}
+\end{corollary}
+
+\begin{theorem}
+    \textbf{4.4.} If \(\id < G\) is a $p$-group, then \(\id < Z(G)\). \comentario{By {\scriptsize\(\boxtimes\)} \hyperlink{coro43}{4.3.} every \(C_G(x_i) \) is a $p$-group, so from \(\circledast\) \(|Z(G)| = p^k, \ k>1\)}
+\end{theorem}
+
+\begin{corollary}
+    \textbf{4.5.} If \(|G|= p^2\), then \(G\) is abelian. \comentario{If \(|Z(G)| = p \) then \(\nicefrac{G}{Z(G)} \cong \Z_p\) cyclic.\Lightning \ (\textcolor{rojoscuro}{Ex. 3.3}), so \(|Z(G)| = p^2\) and \(G = Z(G)\) abelian} 
+\end{corollary}
+
+\begin{theorem}
+    \textbf{4.6.} If \(|G|= p^k\), then (i) If \(H < G\), then \(H < N_G(H)\) and (ii) Every \(H \leq G\) maximal is normal and \([G : H ] = p\). \comentario{See \cite[pag. 75]{stein} and (\textcolor{rojoscuro}{Ex. 2.58})}
+\end{theorem}
+
+%\demo{(i) If \(H\) is not normal and \(X:= \{H^g : g \in G\}\), then \(|X| = [G: N_G(H)] > 1 \)}
+
+\begin{theorem}
+    \textbf{4.8.} If \(|G|= p^k\) and \(r_s := \#\{H \leq G : |H| = p^s\}\), then \(r_s \equiv 1 \ (\operatorname{mod }p)\). \comentario{Doesn't support summaries, see \cite[pag. 76]{stein}}
+\end{theorem}
+
+\subsection*{The Sylow Theorems}
+
+\begin{definition}
+    \(P\leq G\) is a \emph{$p$-Sylow subgroup} if is a maximal $p$-subgroup of \(G\).  
+\end{definition}
+
+\begin{lemma}
+    \textbf{4.11.} If \(P \leq G\) is $p$-Sylow, then (i) \((|\nicefrac{N_G(P)}{P}|, p) = 1 \) and (ii) If \(|a| = p^k\) and \(P^a = P\), then \(a \in P\). \comentario{See \cite[pag. 78]{stein}}  
+\end{lemma}
+
+\begin{theorem}
+    \textbf{4.12. (\emph{Sylow})} If \(P\leq G\) is $p$-Sylow, then (i) Every \(H\leq G\) $p$-Sylow is conjugate of \(P\) and (ii) If \(r:= \#\{H \leq G : H \text{ is }p\text{-Sylow}\}\), then \(r \equiv 1 \ (\operatorname{mod }p)\). \comentario{See \cite[pag. 79]{stein}}
+\end{theorem} 
+
+\begin{corollary}
+    \textbf{4.13.} \(\exists ! P\leq G\) \(p\)-Sylow \(\ \leftrightharpoons \ \) \(P \lhd G\).  \comentario{Mogollas}
+\end{corollary}
+
+\begin{theorem}
+    \textbf{4.14.} If \(|G| = p^km\), where \((p, m) = 1\), then \(\forall P \leq G\) \(p\)-Sylow, \(|P|= p^k\).  
+\end{theorem}

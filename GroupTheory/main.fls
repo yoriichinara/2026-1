@@ -524,6 +524,13 @@ INPUT /usr/share/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT /usr/share/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT /usr/share/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/marvosym/umvs.tfm
+INPUT ./sections/4.tex
+INPUT ./sections/4.tex
+INPUT sections/4.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
