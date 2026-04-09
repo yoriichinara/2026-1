@@ -97,12 +97,10 @@
 \end{theorem}
 
 \begin{theorem}
-    \textbf{2.10.} The number of right cosets is equal to the number of left cosets of \(S\) in \(G\). 
+    \textbf{2.10.} The number of right cosets is equal to the number of left cosets of \(S\) in \(G\). \comentario{Prove that \(f: \mathscr{L} \to \mathscr{R}\) such that \(Sa \mapsto a^{-1} S\) is a well defined bijection }
 \end{theorem}
 
-\demo{
-    Proof that \(f: \mathscr{L} \to \mathscr{R}\) such that \(Sa \mapsto a^{-1} S\) is a well defined bijection. 
-}
+
 
 \begin{definition}
     The \emph{index} of \(S\) in \(G\), denoted by \([G:S]\), is the number of right cosets. 
@@ -114,7 +112,7 @@
 \end{theorem}
 
 \demo{
-    By \(\blacksquare\) \hyperlink{thm29}{2.9.} \(G = St_1 \sqcup St_2 \sqcup \ldots \sqcup St_n\), and so \(|G| = \sum |St_j| \), how \(f_j : S \mapsto St_j\) is bijection, \(|St_j| = |S|\) and \(|G| = n |S|\), where \(n = [G:S]\).   
+    By \(\blacksquare\) \hyperlink{thm29}{2.9.} \(G = St_1 \sqcup St_2 \sqcup \ldots \sqcup St_n\), and so \(|G| = \sum |St_j| \), but \(f_j : s\mapsto st_j\) is a well defined bijection, so \(|St_j| = |S|\) and \(|G| = n |S|\), where \(n = [G:S]\).   
 }
 
 \begin{corollary}
@@ -135,7 +133,7 @@
     \textbf{2.15.} If \(G = \langle a\rangle : |G|= n < \infty\), then \(\exists ! S\leq G : |S| = d \) divides \(n\). 
 \end{lemma}
 
-\demo{Let \(H = \langle b\rangle : |H|=d\) \ (\textcolor{rojoscuro}{Ex. 18}), then \(b^d = \id = {(a^{m})}^d\), so \(\exists k \in \N : md = nk\) \ (\textcolor{rojoscuro}{Ex. 13}). Finally, \(b = a^m = (a^{\nicefrac{n}{d}})^k\)  and \(H \leq \langle a^{\nicefrac{n}{d}}\rangle =: S \leq G\) (\textcolor{rojoscuro}{Ex. 11}). Since \( |S| = d \), we have \(H= S\). }
+\demo{Let \(H = \langle b\rangle : |H|=d\) \ (\textcolor{rojoscuro}{Ex. 2.18}), then \(b^d = \id = {(a^{m})}^d\), so \(\exists k \in \N : md = nk\) \ (\textcolor{rojoscuro}{Ex. 2.13}). Finally, \(b = a^m = (a^{\nicefrac{n}{d}})^k\)  and \(H \leq \langle a^{\nicefrac{n}{d}}\rangle =: S \leq G\) (\textcolor{rojoscuro}{Ex. 2.11}). Since \( |S| = d \), we have \(H= S\). }
 
 \begin{definition}
     \centering \(\displaystyle \varphi(n) := \# \{k\in \N : k < n \text{ and } (k,n) = 1\}\).
@@ -145,7 +143,7 @@
     \textbf{2.16.} If \(n\) is a positive integer, then \(\displaystyle n = \sum_{d \hspace{0.1cm} \mid \hspace{0.1cm}  n} \varphi(d)\).   
 \end{theorem}
 
-\demo{Let \(G = \langle a\rangle : |G|=n\), then \(G = \bigsqcup \operatorname{gen}C : C \leq G\). By {\scriptsize\(\square\)} \hyperlink{lemma215}{2.15.} \(\forall d \in \operatorname{Div}(n), \ \exists ! C_d \leq G\), so \(|G| = \underset{d \ \mid \ n}{\sum} |\operatorname{gen}C_d| =\underset{d \ \mid \ n}{\sum}\varphi(d)\) (\textcolor{rojoscuro}{Ex. 20}). \vspace{-0.1cm} }
+\demo{Let \(G = \langle a\rangle : |G|=n\), then \(G = \bigsqcup \operatorname{gen}C : C \leq G\). By {\scriptsize\(\square\)} \hyperlink{lemma215}{2.15.} \(\forall d \in \operatorname{Div}(n), \ \exists ! C_d \leq G\), so \(|G| = \underset{d \ \mid \ n}{\sum} |\operatorname{gen}C_d| =\underset{d \ \mid \ n}{\sum}\varphi(d)\) (\textcolor{rojoscuro}{Ex. 2.20}). \vspace{-0.1cm} }
 
 \begin{theorem}
     \textbf{2.17.} \(G : |G| = n\) is cyclic \(\leftrightharpoons \ \forall d : d  \mid  n, \ \exists ! C_d \leq G : |C_d| = d\).  
@@ -158,7 +156,7 @@
 \end{theorem}
 
 \begin{theorem}
-    \textbf{2.19.} Let \(p\) prime. A group \(G : |G| = p^n\) is cyclic \ \(\leftrightharpoons\) \ it's an abelian group and \(\exists ! S\leq G : |S| = p\).  \comentario{Look \cite[pag. 29]{stein}, needs (\textcolor{rojoscuro}{Ex. 13}) }
+    \textbf{2.19.} Let \(p\) prime. A group \(G : |G| = p^n\) is cyclic \ \(\leftrightharpoons\) \ it's an abelian group and \(\exists ! S\leq G : |S| = p\).  \comentario{Look \cite[pag. 29]{stein}, needs (\textcolor{rojoscuro}{Ex. 2.13}) }
 \end{theorem}
 %\demo{Let \(a \in G: |\langle a \rangle| = p^k\) is  largest as possible and \(S \leq \langle a \rangle \leq G\) the unique \(: |S| = p\). }
 
@@ -205,7 +203,7 @@
 \end{definition}
 
 \alerta{\begin{example}
-    \(X := \{[a,b] : a,b \in G\}\) need not to be a subgroup as \([a,b] * [c,d]\) need not to be a commutator (\textcolor{rojoscuro}{Ex. 43}).
+    \(X := \{[a,b] : a,b \in G\}\) need not to be a subgroup as \([a,b] * [c,d]\) need not to be a commutator (\textcolor{rojoscuro}{Ex. 2.43}).
 \end{example} 
     }
 
@@ -213,7 +211,7 @@
     \textbf{2.23.} \(G' \lhd G\). Moreover, if \(H\lhd G\), then \(\nicefrac{G}{H}\) is abelian \ \(\leftrightharpoons\) \ \(G' \leq H\). 
 \end{theorem}
 
-\demo{If \(f : G \to G \) is homomorphism, then \(f([a,b]) = [f(a), f(b)]\) so \(G' \lhd G\) (\textcolor{rojoscuro}{Ex. 34}); Moreover, \(Hab = Hba \ \leftrightharpoons \ (ab)(ba)^{-1} = a b a^{-1}b^{-1} = [a,b] \in H\).}
+\demo{If \(f : G \to G \) is homomorphism, then \(f([a,b]) = [f(a), f(b)]\) so \(G' \lhd G\) (\textcolor{rojoscuro}{Ex. 2.34}); Moreover, \(Hab = Hba \ \leftrightharpoons \ (ab)(ba)^{-1} = a b a^{-1}b^{-1} = [a,b] \in H\).}
 
 \subsection*{The Isomorphism Theorems}
 
