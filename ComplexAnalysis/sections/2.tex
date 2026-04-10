@@ -38,23 +38,24 @@
         \includegraphics[width = \linewidth]{Imagens/T.pdf}
 \end{textblock*}
 
-\begin{textblock*}{5cm}(13.5cm, 18cm)
+\begin{textblock*}{5cm}(2.2cm, 18.2cm)
         \includegraphics[width = \linewidth]{Imagens/ExInt.pdf}
 \end{textblock*}
 
-\begin{textblock*}{5cm}(14cm, 23cm)
-        \includegraphics[width = \linewidth]{Imagens/Cauchy.pdf}
+\begin{textblock*}{5cm}(15cm, 23.5cm)
+        \includegraphics[width = 0.7\linewidth]{Imagens/Cauchy.pdf}
 \end{textblock*}
 
 \ejemplo{
     \centering Motivation behind theorem
     \tcblower
-%    \parbox[a]{0.8\linewidth}{
+    \parbox[a]{0.3\linewidth}{\- }
+    \parbox[b]{0.7\linewidth}{
     \begin{example}
         Evaluate integral using \(\blacksquare\) \hyperlink{thm222}{2.2.}, making \(\epsilon \to 0\), 
-        \[\displaystyle \textcolor{gray}{\frac{\pi}{2}=}  \int_0^\infty \frac{1- \cos x}{x^2} \ dx \ \ \textcolor{gray}{\sim f(z) = \frac{1 - e^{iz}}{z^2}}.\hspace{5cm}\]  
+        \[\displaystyle \textcolor{gray}{\frac{\pi}{2}=}  \int_0^\infty \frac{1- \cos x}{x^2} \ dx \ \ \textcolor{gray}{\sim f(z) = \frac{1 - e^{iz}}{z^2}}.\]  
     \end{example}
-%    }
+    }
 }
 
 \subsection*{Cauchy's integral formula}
@@ -119,3 +120,18 @@
 \demo{
     First prove that \(P(z)\) has one root, if not \(\nicefrac{1}{P(z)}\) is entire and bounded, then constant, {\scriptsize\(\boxtimes\)} \hyperlink{coro245}{4.5. (\emph{Liouville})}.\Lightning \  Result follows by induction and division algorithm.  
 }
+
+\begin{theorem}
+    \textbf{4.8.} Suppose that \(f\) is holomorphic in \(\Omega \ab \subset \C \) connected \(: f \) vanishes on a sequence of a distinct points with a limit point in \(z_0 \in \Omega\). Then, \(f\equiv 0 \) in \(\Omega\).
+\end{theorem}
+
+\demo{Prove first by contradiction that \(f(z) = \sum a_n (z - z_0)^n \equiv 0\) on \(B(z_0;\epsilon)\). Therefore, \(\{z \in \Omega : f(z) = 0 \} =: U = \overline{U} = U^\circ \ \leftrightharpoons \ U = \Omega\). }
+
+\hypertarget{coro49}{}
+\begin{corollary}
+    \textbf{4.9.} If \(f\) and \(g\) are holomorphic in \(\Omega\ab\subset \C\) and \(\varnothing \neq \{z \in \Omega : f(z) = g(z)\}\ab \subset \Omega\), then \(f \equiv g \) throughout \(\Omega\). 
+\end{corollary}
+
+\begin{note}
+    If \(f\) and \( F \) are holomorphic in \(\Omega \) and \(\Omega'\) respectively, with \(\Omega \subset \Omega'\) and \(f \equiv F\) in \(\Omega \), then \(F\) is a (unique) \emph{analytic extension} of \(f\) from \(\Omega \) to \(\Omega'\). %{\scriptsize \(\boxtimes\)} \hyperlink{coro49}{4.9.} guarantes that 
+\end{note}
