@@ -1,174 +1,176 @@
-\section{Symmetric Groups and $G$-Sets}
+\section{Grupo Simétrico y $G$-Conjuntos}
 
-\subsection*{Conjugates}
+\subsection*{Conjugados}
 
 \hypertarget{lemma31}{}
 \begin{lemma}
-    \textbf{3.1.} The relation (in \(G\)) \(x \sim y \ \leftrightharpoons \ \exists g \in G :  y = gxg^{-1}\) is an equivalence relation. %, the classes are called by \emph{conjugacy classes}.
+    \textbf{3.1.} La relación (en \(G\)) \(x \sim y \ \leftrightharpoons \ \exists g \in G :  y = gxg^{-1}\) es de equivalencia. %, the classes are called by \emph{conjugacy classes}.
 \end{lemma}
 
 \begin{definition}
-    \(\star \ \ \ a^G := [a] \in \nicefrac{G}{\sim} \ \  \leftarrow\)  \emph{Conjugacy classes} 
+    \(\star \ \ \ a^G := [a] \in \nicefrac{G}{\sim} \ \  \leftarrow\)  \emph{Clase de conjugados} de \(a \in G\) 
     \vspace{-0.2cm}
     \begin{itemize}[label = \(\star\)]
-        \item \(\{a \in G : a^G = a\} =: Z(G)\lhd G\ \ \leftarrow\)  \emph{Center} (is abelian)
-        \item \(\{g \in G : ag = ga\} = : C_G(a) \leq G\ \ \leftarrow\) \emph{Centralizer} of \(a \in G\)
+        \item \(\{a \in G : a^G = a\} =: Z(G)\lhd G\ \ \leftarrow\)  \emph{Centro} (es abeliano)
+        \item \(\{g \in G : ag = ga\} = : C_G(a) \leq G\ \ \leftarrow\) \emph{Centralizador} de \(a \in G\)
     \end{itemize}
 \end{definition}
 
 \begin{theorem}
-    \textbf{3.2.} \  \(|a^G| = [G : C_G(a)]\), divisor in case that \(|G| < \infty\).  
+    \textbf{3.2.} \  \(|a^G| = [G : C_G(a)]\), divisor si es que \(|G| < \infty\).  
 \end{theorem}
 
-\demo{Let \(C := C_G(a)\) and consider \(f : a^G \to \nicefrac{G}{C} \) such that \(gag^{-1} \mapsto gC\). Prove that \(f\) is a well defined bijection. Second affirmation follows by \(\blacksquare\) \hyperlink{thm211}{2.11. (\emph{Lagrange})}.}
+\demo{Sean \(C := C_G(a)\) e \(f : a^G \to \nicefrac{G}{C} \) tal que \(gag^{-1} \mapsto gC\), muestre que es biyección bien definida. La segunda afirmación sigue del \(\blacksquare\) \hyperlink{thm211}{2.11. (\emph{Lagrange})}.}
 
 \begin{definition}
-    Given \(H \leq G\) and \(g \in G\) we have similar definitions: 
+    Dados \(H \leq G\) e \(g \in G\) tenemos definiciones similares: 
     \vspace{-0.2cm}
     \begin{itemize}[label = \(\star\)]
-        \item \(gHg^{-1} = \{ghg^{-1} : h \in H\} =:H^g \leq G \ \  \leftarrow\)  \emph{Conjugate} 
-        \item \(\{a \in G : aHa^{-1} = H\} = : N_G(H) \leq G\ \ \leftarrow\) \emph{Normalizer} of \(H\) in \( G\)
+        \item \(gHg^{-1} = \{ghg^{-1} : h \in H\} =:H^g \leq G \ \  \leftarrow\)  \emph{Conjugado de \(H\)} 
+        \item \(\{a \in G : aHa^{-1} = H\} = : N_G(H) \leq G\ \ \leftarrow\) \emph{Normalizador} de \(H\) en \( G\)
     \end{itemize}
 \end{definition}
 
+\vspace{-0.2cm}
 \begin{note}
-    Notice that \(H \lhd N_G(H) \leq G\) is the largest which verifies this property. 
+    Perciba que \(H \lhd N_G(H) \leq G\) es el mayor subgrupo verificando tal propiedad. 
 \end{note}
 
 \begin{theorem}
-    \textbf{3.3.} \(\#\{H^g : g \in G\} = [G : N_G(H)]\), divisor in case \(|G| < \infty\). Moreover, \(H^a = H^b \ \leftrightharpoons \ b^{-1} a \in N_G(H)\).   
+    \textbf{3.3.} \(\#\{H^g : g \in G\} = [G : N_G(H)]\), divisor si es que \(|G| < \infty\). Más aún, \(H^a = H^b \ \leftrightharpoons \ b^{-1} a \in N_G(H)\).   
 \end{theorem}
 
 \demo{
-    Let \([H] := \{H^g : g \in G\}\) and \(N:= N_G(H)\). Prove that \(f : [H] \to \nicefrac{G}{N}\) such that \(H^a \mapsto aN\) is a well defined bijection. 
+    Sean \([H] := \{H^g : g \in G\}\) e \(N:= N_G(H)\). Muestre que \(f : [H] \to \nicefrac{G}{N}\) tal que \(H^a \mapsto aN\) es una biyección bien definida. 
 }
 
-\subsection*{Symmetric Groups}
+\subsection*{Grupo Simétrico}
 
 \begin{definition}
-    Two permutations \(\alpha, \beta \in S_n\) have the same \emph{cycle structure} if their complete factorizations have the same number of $r$-cycles for each $r$. 
+    Dos permutaciones \(\alpha, \beta \in S_n\) tiene misma \emph{estructura cíclica} si sus factorizaciones completas tienen el mismo numero de $r$-ciclos para cada $r$. 
 \end{definition}
 
 \hypertarget{lemma34}{}
 \begin{lemma}
-    \textbf{3.4.} If \(\alpha\) and \(\beta \) have the same cycle structure, then \(\pi := \alpha \beta \alpha^{-1}\) is obtain by applying \(\alpha\) to the symbols in \(\beta\).
+    \textbf{3.4.} Si \(\alpha\) e \(\beta \) tienen misma estructura cíclica, entonces \(\pi := \alpha \beta \alpha^{-1}\) es resultado de aplicar \(\alpha\) a las entradas en \(\beta\).
 \end{lemma}
     
-\demo{If \(\beta\) fixes \(i\), then \(\pi(\alpha (i)) = \alpha(i)\). Let \(\beta = \gamma_1 \gamma_2 \cdots (\ldots i \ \ j \ldots )\cdots \gamma_t\), \(k = \alpha(i)\), \(l= \alpha(j)\) and concludes that \(\pi: k \mapsto l\). }
+\demo{Si \(\beta\) fija \(i\), entonces \(\pi(\alpha (i)) = \alpha(i)\). Sean \(\beta = \gamma_1 \gamma_2 \cdots (\ldots i \ \ j \ldots )\cdots \gamma_t\), \(k = \alpha(i)\) e \(l= \alpha(j)\), concluya que \(\pi: k \mapsto l\). }
 
 \begin{theorem}
-    \textbf{3.5.} \(\alpha \sim \beta \ \leftrightharpoons \ \) they have the same cycle structure.
+    \textbf{3.5.} \(\alpha \sim \beta \ \leftrightharpoons \ \) tienen misma estructura cíclica.
 \end{theorem}
 
-\demo{(\(\Rightarrow\)) If \(\alpha = \gamma_1 \gamma_2 \cdots (\ldots i \ \ j \ldots)\cdots \gamma_t\) and \(\beta = \delta_1 \delta_2 \cdots (\ldots k \ \ l \ldots)\cdots \delta_t\), define \(\eta\) such that \(i \mapsto k\) and \(j \mapsto l\). Result follows by {\scriptsize $\square$} \hyperlink{lemma34}{3.4.}. }
+\demo{(\(\Rightarrow\)) Si \(\alpha = \gamma_1 \gamma_2 \cdots (\ldots i \ \ j \ldots)\cdots \gamma_t\) e \(\beta = \delta_1 \delta_2 \cdots (\ldots k \ \ l \ldots)\cdots \delta_t\), defina \(\eta\) tal que \(i \mapsto k\) e \(j \mapsto l\). El resultado sigue del {\scriptsize $\square$} \hyperlink{lemma34}{3.4.}. }
 
 \begin{corollary}
-    \textbf{3.6.} \(H \lhd S_n \ \leftrightharpoons \ \alpha \in H\) implies \(\beta \in H, \ \forall \beta : \alpha \sim \beta \). \comentario{(\(\textcolor{rojoscuro}{\text{Ex. 2.34}}\))}
+    \textbf{3.6.} \(H \lhd S_n \ \leftrightharpoons \ \forall \alpha \in H, \ \nicefrac{S_n}{\sim} \ni [\alpha] \subset H\). \comentario{(\(\textcolor{rojoscuro}{\text{Ex. 2.34}}\))}
 \end{corollary}
 
 \begin{definition}
-    \centering \(\{\alpha\in S_n: \alpha \text{ is even}\} =: A_n \leq S_n \).   
+    \centering \(\{\alpha\in S_n: \alpha \text{ es par}\} =: A_n \leq S_n \).   
 \end{definition}
     
 \begin{theorem}
-    \textbf{3.7.} \(A_4 \leq S_4\) is a group of order \(12\) having no subgroup of order \(6\).  
+    \textbf{3.7.} \(A_4 \leq S_4\) es grupo de orden \(12\) que no contiene subgrupo de orden \(6\).  
 \end{theorem}
 
 \demo{
-    If \(\exists S \leq A_4 : |S| = 6\), then \([G:S] = 2\) and \(\alpha^2 \in S, \ \forall \alpha \in A_4\) (\(\textcolor{rojoscuro}{\text{Ex. 2.16}}\)). We have \(\alpha = \alpha^4 = (\alpha^2)^2\), so every \(3\)-cycle (eight in total) lies to \(S\).\Lightning
+    Si \(\exists S \leq A_4 : |S| = 6\), entonces \([G:S] = 2\) e \(\alpha^2 \in S, \ \forall \alpha \in A_4\) (\(\textcolor{rojoscuro}{\text{Ex. 2.16}}\)). Para cada \(\alpha\) \(3\)-ciclo, \(\alpha = \alpha^4 = (\alpha^2)^2 \in S\) (ocho en total), luego \(|S| > 9\).\Lightning
 }
 
 %\subsection*{The simplicity of \(A_n\)}
 \begin{theorem}
-    \textbf{3.11.} \(A_n \) is simple for \(n\geq 5\). \comentario{Doesn't support sumaries, see \cite[pag. 50]{stein}}
+    \textbf{3.11.} \(A_n \) es simple para cada \(n\geq 5\). \comentario{No admite resumen, véase \cite[pag. 50]{stein}}
 \end{theorem}
 
-\subsection*{Some Representation Theorems}
+\subsection*{Algunos Teoremas de Representación}
 
 \begin{theorem}
-    \textbf{3.12. (\emph{Cayley, 1878})} Every group \(G\) can be imbedded as a subgroup of \(S_G\). In particular, if \(|G|= n < \infty \), then \(\exists L: G \cong \operatorname{Im}L \leq S_n\) (\emph{regular representation}).   
+    \textbf{3.12. (\emph{Cayley, 1878})} Todo grupo \(G\) puede ser embebido en \(S_G\). En particular, si \(|G|= n < \infty \), entonces \(\exists L: G \cong \operatorname{Im}L \leq S_n\) (\emph{representación regular}).   
 \end{theorem}
 
-\demo{Left translations \(L_a : G \to G\) such that \(x \mapsto ax\) are bijections (\(\textcolor{rojoscuro}{\text{Ex. 1.33}}\)), so \(L_a \in S_G\). Prove that \(L : a \mapsto L_a \) is an injective homomorphism. }
+\demo{Translaciones a izquierda \(L_a : x \mapsto ax\) son biyectivas (\(\textcolor{rojoscuro}{\text{Ex. 1.33}}\)), luego \(L_a \in S_G\), muestre que \(L : a \mapsto L_a \) es homomorfismo injetivo. }
 
 \begin{corollary}
-    \textbf{3.13.} If \(G : |G | = n < \infty\) and \(\F\) is a field, then \(\exists \iota : G \cong H \leq \operatorname{GL}_n(\F)\). \comentario{Use \(\operatorname{PL}_n(\F) := \{A \in \operatorname{GL}_n(\F) : a_{ij} \in \{0, 1\}\}\cong S_n\)}
+    \textbf{3.13.} Si \(G : |G | = n < \infty\) e \(\F\) es cuerpo, entonces \(\exists \iota : G \cong H \leq \operatorname{GL}_n(\F)\). \comentario{Use que \(\operatorname{PL}_n(\F) := \{A \in \operatorname{GL}_n(\F) : a_{ij} \in \{0, 1\}\}\cong S_n\)}
 \end{corollary}
 
 \begin{theorem}
-    \textbf{3.14.} If \(H \leq G\) and \([G:H] = n \), then  \(\exists \rho: G \to S_n\) homomorphism such that \(\ker \rho \leq H\) (\emph{representation in cosets}).
+    \textbf{3.14.} Si \(H \leq G\) e \([G:H] = n \), entonces \(\exists \rho: G \to S_n\) homomorfismo tal que \(\ker \rho \leq H\) (\emph{representación en clases}).
 \end{theorem}
 
-\demo{Let \(X:= \nicefrac{G}{H}\) and \(\rho_a : X \to X\) such that \(\rho_a : gH\mapsto agH\). Verify that \(\rho_a \in S_X\) and \(\rho : a \mapsto \rho_a\) is an homomorphism that satisfies this kernel property.}
+\demo{Sean \(X:= \nicefrac{G}{H}\) e \(\rho_a : X \to X\) tal que \(\rho_a : gH\mapsto agH\). Verifique que \(\rho_a \in S_X\) e \(\rho : a \mapsto \rho_a\) es homomorfismo cuyo núcleo verifica el enunciado.}
 
 \begin{corollary}
-    \textbf{3.15.} If \(G\) is simple and \(\exists H\leq G : [G:H] = n>1\), then \(\exists \rho: G \cong \operatorname{Im} \rho \leq S_n\).  \comentario{\(\exists \rho : G \to S_n \) with \(\ker \rho \lhd H \leq G \ \leftrightharpoons \ \ker \rho = \id\) (\(\rho \) is injective)} 
+    \textbf{3.15.} Si \(G\) es simple e \(\exists H\leq G : [G:H] = n>1\), entonces \(\exists \rho: G \cong \operatorname{Im} \rho \leq S_n\).  \comentario{\(\exists \rho : G \to S_n \) con \(\ker \rho \lhd H \leq G \ \leftrightharpoons \ \ker \rho = \id\) (\(\rho \) es inyectivo)} 
 \end{corollary}
 
 \begin{corollary}
-    \textbf{3.16.} An infinite simple group \(G\) has no proper subgroups of finite index. 
+    \textbf{3.16.} Un grupo infinito simple \(G\) no tiene subgrupos propios de índice finito. 
 \end{corollary}
 
 \begin{theorem}
-    \textbf{3.17.} Let \(H \leq G\) and \(X := \{H^g : g \in G\}\). There is a homomorphism \(\psi:G \to S_X \) with \(\ker\psi \leq N_G(H)\) (\emph{representation in conjugates}).  
+    \textbf{3.17.} Sean \(H \leq G\) e \(X := \{H^g : g \in G\}\). Existe un homomorfismo \(\psi:G \to S_X \) con \(\ker\psi \leq N_G(H)\) (\emph{representación en conjugados}).  
 \end{theorem}
 
 \demo{
-    Let \(\psi_a: X \to X\) such that \(\psi_a: H^g \mapsto {(H^{g})}^{a}\). Verify that \(\phi_a \in S_X\) and so \(\psi : a \mapsto \psi_a \) is homomorphism with this kernel property. 
+    Sea \(\psi_a: X \to X\) tal que \(\psi_a: H^g \mapsto {(H^{g})}^{a}\). Verifique que \(\psi_a \in S_X\), luego \(\psi : a \mapsto \psi_a \) es homomorfismo de núcleo como enunciado. 
 }
 
-\subsection*{\(G\)-Sets}
+\subsection*{\(G\)-Conjuntos}
 
 \begin{definition}
-    If \(X\) is a set and \(G\) is a group, then \(X\) is a \(G\)\emph{-set} if \(\exists \alpha: X \times G \to X\) (called an \emph{action}), denoted by \(\alpha: (g,x) \mapsto gx\) such that: 
+    Sean \(X\) conjunto e \(G\) un grupo. Se dice que \(X\) es \(G\)\emph{-conjunto} si \(\exists \alpha: X \times G \to X\) (\emph{acción}), denotada por \(\alpha: (g,x) \mapsto gx\) tal que: 
     \vspace{-0.2cm}
     \begin{enumerate}[label = (A\arabic*), left = 1.2cm]
         \item \(\id x = x, \ \forall x \in X\). \hfill (A2) \ \(g(hx) = (gh)x, \ \forall g,h \in G, \ \forall x \in X\).  \hspace{0.5cm} \-
     \end{enumerate}
 \end{definition}
 
+\ejemplo{
 \begin{example}
-    \(G \leq S_X\) and \(\alpha = \operatorname{ev} : G \times X \to X\) such that \(\operatorname{ev}: (\sigma, x) \mapsto \sigma(x) = \sigma x\).
+    \(G \leq S_X\) e \(\alpha = \operatorname{ev} : G \times X \to X\) tal que \(\operatorname{ev}: (\sigma, x) \mapsto \sigma(x) = \sigma x\).
 \end{example}
+}
 
+\hypertarget{thm318}{}
 \begin{theorem}
-    \textbf{3.18.} If \(X\) is a \(G\)-set with action \(\alpha\), then \(\exists \widetilde{\alpha} : G \to S_X\) homomorphism given by \(\widetilde{\alpha}(g):x \mapsto gx = \alpha(g,x) \). Conversely, every homomorphism \(\varphi: G \to S_X\) defines an action, namely, \(gx = \varphi(g) x\) which makes \(X\) into \(G\)-set. 
+    \textbf{3.18.} Si \(X\) es \(G\)-conjunto de acción \(\alpha\), entonces \(\exists \widetilde{\alpha} : G \to S_X\) homomorfismo dado por \(\widetilde{\alpha}(g):x \mapsto gx = \alpha(g,x) \). Recíprocamente, todo homomorfismo \(\varphi: G \to S_X\) define una acción, \(gx = \varphi(g) x\) que hace de \(X\) un \(G\)-conjunto. \comentario{Mogollas } 
 \end{theorem}
 
 \begin{definition}
-    Given \(X\) a \(G\)-set and \(x \in X\), we define: 
+    Dados \(X\) un \(G\)-conjunto e \(x \in X\), definimos: 
     \vspace{-0.2cm}
     \begin{itemize}[label = \(\star\), left = 1cm]
-        \item \(\mathcal{O}(x) := \{gx : g\in G \} \subset X\)  \ \ \(\leftarrow\) \emph{\(G\)-orbit} of \(x\)
-        \item \(G_x := \{g \in G: gx = x\} \leq G \)  \ \ \(\leftarrow\) \emph{Stabilizer} of \(x\)
+        \item \(\mathcal{O}(x) := \{gx : g\in G \} \subset X\)  \ \ \(\leftarrow\) \emph{\(G\)-órbita} de \(x\)
+        \item \(G_x := \{g \in G: gx = x\} \leq G \)  \ \ \(\leftarrow\) \emph{Estabilizador} de \(x\)
     \end{itemize}
 \end{definition}
 
-\ejemplo{\centering \(G\) acts on himself by conjugation
+\ejemplo{\centering \(X  = G\) actua sobre sí mismo por conjugación
 \tcblower
-\[\text{\scriptsize $\bullet$ } \  \ \mathcal{O}(x) = [x] \in \nicefrac{G}{\sim } \text{ and } G_x = C_G(x). \hspace{4cm}\]
-\[\- \hspace{4cm}\text{\scriptsize $\bullet$ } \ \ \mathcal{O}(H) = \{H^g : g \in G\} \text{ and } G_H = N_G(H). \]
+\[\text{\scriptsize $\bullet$ } \  \ \mathcal{O}(x) = [x] \in \nicefrac{G}{\sim } \text{ e } G_x = C_G(x). \hspace{4cm}\]
+\[\- \hspace{4cm}\text{\scriptsize $\bullet$ } \ \ \mathcal{O}(H) = \{H^g : g \in G\} \text{ e } G_H = N_G(H). \]
 }
 
 \begin{theorem}
-    \textbf{3.19.} If \(X\) is a \(G\)-set, then \(|\mathcal{O}(x)| = [G: G_x]\). \comentario{Let \(f : \mathcal{O}(x) \to \nicefrac{G}{G_x} \ \mid \  ax \mapsto aG_x\) and prove that is a well defined bijection }
+    \textbf{3.19.} Si \(X\) es \(G\)-conjunto, entonces \(|\mathcal{O}(x)| = [G: G_x]\). \comentario{Muestre que \(f : \mathcal{O}(x) \to \nicefrac{G}{G_x}\) tal que \(ax \mapsto aG_x\) es una biyección bien definida }
 \end{theorem}
-
-
 
 %\begin{corollary}
 %    \textbf{3.20.} If \(G : |G|  < \infty \) acts on \(X\), then \(|\mathcal{O}(x)| \) divides \(|G|, \ \forall x \in X\). 
 %\end{corollary}
 
 \newcommand{\C}{\mathbb{C}}
-\ejemplo{\centering Dihedral (or Symmetric) Group
+\ejemplo{\centering Grupo Dihedral (o de simetrías)
     \tcblower
     \begin{example}
-        Let \(\id = X:=\{z \in \C : z^{2n} = 1\}, \ n\geq 2\) and consider: \(s\) (\emph{counterclockwise rotation} of \(X\)) and \(t\) (\emph{reflection} respect real axis). Notice that \(D_{2n}:= \langle s, t\rangle\) is a group such that: 
-        \[\text{(i)} \  \ s^n = \id; \hspace{1cm}  \text{(ii)} \ \ t^2 = \id;  \hspace{1cm} \text{(iii)}  \ \ tst = s^{-1}.\]  
+        Sean \(\id = X:=\{z \in \C : z^{2n} = 1\}, \ n\geq 2\), \(s\) (\emph{rotación antihoraria} de \(X\)) e \(t\) (\emph{reflexión} respecto del eje real). Perciba que \(D_{2n}:= \langle s, t\rangle\) es grupo e, 
+        \[\text{i.} \  \ s^n = \id; \hspace{1.5cm}  \text{ii.} \ \ t^2 = \id;  \hspace{1.5cm} \text{iii.}  \ \ tst = s^{-1}.\]  
     \end{example}
 }
 
 \begin{theorem}
-    \textbf{3.32.} If \(|G| < \infty\) and \(a,b \in G\) are such that \(|a| = |b| = 2\), then \(\langle a,b\rangle \cong D_{2n}\) for some \(n\in \N\). \comentario{See \cite[pag. 68]{stein}}
+    \textbf{3.32.} Si \(|G| < \infty\) e \(a,b \in G\) son tales que \(|a| = |b| = 2\), entonces \(\langle a,b\rangle \cong D_{2n}\) para algún \(n\in \N\). \comentario{No admite resumen, véase \cite[pag. 68]{stein}}
 \end{theorem}

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1775779711.34462 "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/main.tex" "main.pdf" "main" 1775779713.30484 0
-  "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/main.tex" 1774027291.18183 8073 829bf84f07415917c32e11916f84b639 ""
+["pdflatex"] 1776559371.29693 "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/main.tex" "main.pdf" "main" 1776559373.22638 0
+  "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/main.tex" 1776541572.20216 8097 bc1c7e4eb6227ce341c122fd141d8ea8 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1772820570 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1772820570 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1772820570 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -36,7 +36,6 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1772820570 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1772820570 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1772820570 32722 d7379af29a190c3f453aba36302ff5a9 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1772820570 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1772820570 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1772820570 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1772820570 32716 08e384dc442464e7285e891af9f45947 ""
@@ -257,10 +256,10 @@
   "Imagens/ExInt.pdf" 1774029484.03488 30656 0b6321263cffcaad23d6061dec1e1ead ""
   "Imagens/Header.png" 1752097914 363895 6890a9cd210a4932f77549a60c1a103c ""
   "Imagens/T.pdf" 1774029106.45456 30739 dab8eb417462c91ca3d0c42a4963bfa1 ""
-  "main.aux" 1775779713.17161 510 334f861e87558740fa9f2ec2108b2800 "pdflatex"
-  "main.out" 1775779713.17161 348 3ca131443e845d5b3055c34482891941 "pdflatex"
-  "main.tex" 1774027291.18183 8073 829bf84f07415917c32e11916f84b639 ""
-  "sections/1prel.tex" 1775779711.05159 12809 05483d9de9aa1be0bcff5f5bd73fe754 ""
+  "main.aux" 1776559373.10041 509 7996e0ff3731d601275451a483b5adfa "pdflatex"
+  "main.out" 1776559373.10041 343 c81ff4c5620f47ddff714faff7b5c4a9 "pdflatex"
+  "main.tex" 1776541572.20216 8097 bc1c7e4eb6227ce341c122fd141d8ea8 ""
+  "sections/1prel.tex" 1776559370.97373 12890 da9faabfbde3c00e5e353a5f7b17aff0 ""
   "sections/2.tex" 1775779420.22198 7056 dc43c6625abb38f5b54f1bc2953641ac ""
   (generated)
   "main.aux"

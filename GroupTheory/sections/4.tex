@@ -1,81 +1,115 @@
-\section{The Sylow Theorems \textnormal{($G$ finito)}}
+\section{Los Teoremas de Sylow \textnormal{($G$ finito)}}
 
-\subsection*{$p$-Groups}
+\subsection*{$p$-Grupos}
 \begin{definition}
-    If \(p\) is prime, then \(G\) is a $p$\emph{-group} if \(\exists a \in G : |a| = p \). 
+    Siendo \(p\) primo, decimos que \(G\) es $p$\emph{-grupo} si \(\exists a \in G : |a| = p \). 
 \end{definition}
 
 \hypertarget{lemma41}{}
 \begin{lemma}
-    \textbf{4.1.} If \(G\) is abelian such that \(|G|= pm\), then \(G\) is a $p$-group.  
+    \textbf{4.1.} Si \(G\) es abeliano tal que \(|G|= pm\), entonces \(G\) es $p$-grupo.  
 \end{lemma}
 
-\demo{By induction on \(m\), let \(x \in G : |x| = t >1\). If \(p \mid t\), \(|x^{\nicefrac{t}{p}}| = p\) (\textcolor{rojoscuro}{Ex. 2.11}), other case \(\langle x\rangle \lhd G\) and \(G^*:= \nicefrac{G}{\langle x\rangle}\) is abelian \( : |G^*| = pm', \ m' < m\) so \(\exists a^* = \pi(a) \in G^* : |a^*| = p\), we have \(|a| = pk\) (\textcolor{rojoscuro}{Ex. 2.14}) and \(|a^{k}|= p\).    }
+\demo{Por inducción en \(m\), sea \(x \in G : |x| = t >1\). Si \(p \mid t\), \(|x^{\nicefrac{t}{p}}| = p\) (\textcolor{rojoscuro}{Ex. 2.11}), en otro caso \(\langle x\rangle \lhd G\) e \(G^*:= \nicefrac{G}{\langle x\rangle}\) es abeliano \( : |G^*| = pm', \ m' < m\), luego \(\exists a^* = \pi(a) \in G^* : |a^*| = p\), tenemos \(|a| = pk\) (\textcolor{rojoscuro}{Ex. 2.14}) e \(|a^{k}|= p\).    }
 
 \begin{theorem}
-    \textbf{4.2.} If \(|G| = pm\), then \(\exists a : |a| = p\).  
+    \textbf{4.2.} Si \(|G| = pm\), entonces \(\exists a : |a| = p\).  
 \end{theorem}
 
-\demo{If \(\exists x \in G \setminus Z(G): p \) divides \(|C_G(x)|\), result follows by induction. Other case \(p\) divides \([G : C_G(x)]\) and choosing suitable representatives we have: 
-\[ \circledast \hspace{1cm}  |G| = |Z(G)| + \sum [G: C_G(x_j)] \ \ \leftarrow \text{\emph{Class equation} of \(G\)}\]
-So \( p \) divides \(|Z(G)|\) \text{ (abelian)} and result follows by {\scriptsize \(\square\)} \hyperlink{lemma41}{4.1.}.
+\demo{Si \(\exists x \in G \setminus Z(G): p \) divide \(|C_G(x)|\), el resultado sigue por inducción. En otro caso \(p\) divide \([G : C_G(x)]\) e escogiendo representantes adecuados tenemos, 
+\[ \circledast \hspace{1cm}  |G| = |Z(G)| + \sum [G: C_G(x_j)] \ \ \leftarrow \text{\emph{Ecuación de clases} de \(G\)}\]
+Luego \( p \) divide \(|Z(G)|\) \text{ (abeliano)} y el resultado sigue del {\scriptsize \(\square\)} \hyperlink{lemma41}{4.1.}.
 }
 
 \hypertarget{coro43}{}
 \begin{corollary}
-    \textbf{4.3.} \(G\) is $p$-group \ \(\leftrightharpoons\) \ \(|G| = p^k\). \comentario{Mogollas}
+    \textbf{4.3.} \(G\) es $p$-grupo \ \(\leftrightharpoons\) \ \(|G| = p^k\). \comentario{Mogollas}
 \end{corollary}
 
 \begin{theorem}
-    \textbf{4.4.} If \(\id < G\) is a $p$-group, then \(\id < Z(G)\). \comentario{By {\scriptsize\(\boxtimes\)} \hyperlink{coro43}{4.3.} every \(C_G(x_i) \) is a $p$-group, so from \(\circledast\) \(|Z(G)| = p^k, \ k>1\)}
+    \textbf{4.4.} Si \(\id < G\) es $p$-grupo, entonces \(\id < Z(G)\). \comentario{Por el {\scriptsize\(\boxtimes\)} \hyperlink{coro43}{4.3.} todo \(C_G(x_i) \) es $p$-grupo, luego de \(\circledast\) \(|Z(G)| = p^k, \ k>1\)}
 \end{theorem}
 
 \begin{corollary}
-    \textbf{4.5.} If \(|G|= p^2\), then \(G\) is abelian. \comentario{If \(|Z(G)| = p \) then \(\nicefrac{G}{Z(G)} \cong \Z_p\) cyclic.\Lightning \ (\textcolor{rojoscuro}{Ex. 3.3}), so \(|Z(G)| = p^2\) and \(G = Z(G)\) abelian} 
+    \textbf{4.5.} Si \(|G|= p^2\), entonces \(G\) es abeliano. \comentario{Si \(|Z(G)| = p \), entonces \(\nicefrac{G}{Z(G)} \cong \Z_p\) cíclico.\Lightning \ (\textcolor{rojoscuro}{Ex. 3.3}) Por lo tanto, \(|Z(G)| = p^2\) and \(G = Z(G)\) abelian} 
 \end{corollary}
 
 \begin{theorem}
-    \textbf{4.6.} If \(|G|= p^k\), then (i) If \(H < G\), then \(H < N_G(H)\) and (ii) Every \(H \leq G\) maximal is normal and \([G : H ] = p\). \comentario{See \cite[pag. 75]{stein} and (\textcolor{rojoscuro}{Ex. 2.58})}
+    \textbf{4.6.} Si \(|G|= p^k\), entonces (i) Si \(H < G\), entonces \(H < N_G(H)\) e (ii) Todo \(H \leq G\) maximal es normal e \([G : H ] = p\). \comentario{Véase \cite[pag. 75]{stein} e (\textcolor{rojoscuro}{Ex. 2.58})}
 \end{theorem}
 
 %\demo{(i) If \(H\) is not normal and \(X:= \{H^g : g \in G\}\), then \(|X| = [G: N_G(H)] > 1 \)}
 
 \begin{theorem}
-    \textbf{4.8.} If \(|G|= p^k\) and \(r_s := \#\{H \leq G : |H| = p^s\}\), then \(r_s \equiv 1 \ (\operatorname{mod }p)\). \comentario{Doesn't support summaries, see \cite[pag. 76]{stein}}
+    \textbf{4.8.} Si \(|G|= p^k\) e \(r_s := \#\{H \leq G : |H| = p^s\}\), entonces \(r_s \equiv 1 \ (\operatorname{mod }p)\). \comentario{No admite resumen, véase \cite[pag. 76]{stein}}
 \end{theorem}
 
-\subsection*{The Sylow Theorems}
+\subsection*{Los Teoremas de Sylow}
 
 \begin{definition}
-    \(P\leq G\) is a \emph{$p$-Sylow subgroup} if is a maximal $p$-subgroup of \(G\).  
+    \(P\leq G\) es \emph{subgrupo $p$-Sylow} si es $p$-subgroup maximal de \(G\).  
 \end{definition}
 
 \hypertarget{lemma411}{}
 \begin{lemma}
-    \textbf{4.11.} If \(P \leq G\) is $p$-Sylow, then (i) \((|\nicefrac{N_G(P)}{P}|, p) = 1 \) and (ii) If \(|a| = p^k\) and \(P^a = P\), then \(a \in P\). \comentario{See \cite[pag. 78]{stein}}  
+    \textbf{4.11.} Si \(P \leq G\) es $p$-Sylow, entonces (i) \((|\nicefrac{N_G(P)}{P}|, p) = 1 \) e (ii) Si \(|a| = p^k\) e \(P^a = P\), entonces \(a \in P\). \comentario{Véase \cite[pag. 78]{stein}}  
 \end{lemma}
 
 \begin{theorem}
-    \textbf{4.12. (\emph{Sylow})} Let \(P\leq G\) $p$-Sylow and  \(n_p := \#\{H \leq G : H \text{ is }p\text{-Sylow}\}\), then
+    \textbf{4.12. (\emph{Sylow})} Sea \(P\leq G\) $p$-Sylow e \(n_p := \#\{H \leq G : H \text{ es }p\text{-Sylow}\}\), entonces
     \vspace{-0.2cm}
     \begin{enumerate}[label = \roman*., left = 0.2cm]
-        \item \(\forall H\leq G\) $p$-Sylow, \(\exists g \in G : H = P^g\). \hfill ii. \( n_p \equiv 1 \ (\operatorname{mod}\ p)\) and \(n_p \mid |G|\).
+        \item \(\forall H\leq G\) $p$-Sylow, \(\exists g \in G : H = P^g\). \hspace{1cm} ii. \( n_p \equiv 1 \ (\operatorname{mod}\ p)\) and \(n_p \mid |G|\).
     \end{enumerate}
 \end{theorem} 
 
 \vspace{-0.2cm}
-\comentario{Doesn't support summaries, see \cite[pag. 79]{stein}}
+\comentario{No admite resumen, véase \cite[pag. 79]{stein}}
 
 \begin{corollary}
     \textbf{4.13.} \(\exists ! P\leq G\) \(p\)-Sylow \(\ \leftrightharpoons \ \) \(P \lhd G\).  \comentario{Mogollas}
 \end{corollary}
 
+\hypertarget{thm414}{}
 \begin{theorem}
-    \textbf{4.14.} If \(|G| = p^em\), where \((p, m) = 1\), then \(\forall P \leq G\) \(p\)-Sylow, \(|P|= p^e\).  
+    \textbf{4.14.} Si \(|G| = p^em\), donde \((p, m) = 1\), entonces \(\forall P \leq G\) \(p\)-Sylow, \(|P|= p^e\).  
 \end{theorem}
 
-\demo{\([G:P] = [G:N_G(P)][N_G(P):P]\), where \([G:N_G(P)] = n_p \equiv 1 \ (\operatorname{mod} \ p)\) while \([N_G(P):P] = |\nicefrac{N_G(P)}{P}|\) prime to \(p\) by {\scriptsize \(\square\)} \hyperlink{lemma411}{4.11.}. By \(\blacksquare\) \hyperlink{thm211}{2.11. (\emph{Lagrange})} \(|P| = p^k, \ k \leq e\) and \([G:P] = \nicefrac{|G|}{|P|} = p^{e-k}m\), but is prime to \(p\) so \(k=e\).}
+\demo{\(N:= N_G(P)\), \([G:P] = [G:N][N:P]\), donde \([G:N] = n_p \equiv 1 \ (\operatorname{mod} \ p)\) mientras \([N:P] = |\nicefrac{N}{P}|\) es coprimo con \(p\), {\scriptsize \(\square\)} \hyperlink{lemma411}{4.11.}. By \(\blacksquare\) \hyperlink{thm211}{2.11. (\emph{Lagrange})} \(|P| = p^k, \ k \leq e\) y \([G:P] = \nicefrac{|G|}{|P|} = p^{e-k}m\) coprimo con \(p \ \leftrightharpoons \ k=e\).}
 
+\hypertarget{coro415}{}
 \begin{corollary}
-    \textbf{4.15.} If \(p^k \) divides \(|G|\), then \(\exists H\leq G : |H| = p^k\). \comentario{Let \(P \leq G\) \(p\)-Sylow, then \(p^k \) divides \(|P|\) and result follows (\textcolor{rojoscuro}{Ex. 4.2})}
+    \textbf{4.15.} Si \(p^k \) divide \(|G|\), entonces \(\exists H\leq G : |H| = p^k\). \comentario{Sea \(P \leq G\) \(p\)-Sylow, entonces \(p^k \) divide \(|P|\) y el resultado sigue (\textcolor{rojoscuro}{Ex. 4.2})}
 \end{corollary}
+
+\subsection*{Grupos de Pequeño Orden}
+
+\begin{theorem}
+    \textbf{4.19.} Todo grupo de orden \(2p\) es cíclico o dihedral. 
+\end{theorem}
+
+\demo{Caso \(p = 2\) (\textcolor{rojoscuro}{Ex. 2.12}). Si \(p>2\), por el {\scriptsize\(\boxtimes\)} \hyperlink{coro415}{4.15.} e \(\blacksquare\) \hyperlink{thm211}{2.11. (\emph{Lagrange})} \(\exists s,t \in G : |s|=p \) e \(|t|= 2\), sigue que \(\langle s \rangle \lhd G\) e \(tst = s^i\). Más aún, \(s = t(t s t)t = s^{i^2} \ \leftrightharpoons \ i^2 \equiv 1 \ (\operatorname{mod }p) \ \leftrightharpoons \ i = \pm 1\). Luego, \(G\cong \Z_2 \times \Z_p \cong \Z_{2p}\) o \(G \cong D_{2p}\).   }
+
+\begin{theorem}
+    \textbf{4.20.} Si \(|G|= pq\), con \(p>q\) primos, entonces \(\exists N \lhd G : |N| = p\). Más aún, si \(q \nmid p-1\), entonces \(G\) es cíclico. 
+\end{theorem}
+
+\demo{\(n_p \equiv 1 \ (\operatorname{mod} p)\) e \(n_p \mid q \ \leftrightharpoons \ n_p =1\). Más aún, si \(q \nmid p-1\), entonces \(n_q \equiv 1 \ (\operatorname{mod } q)\) e \(n_q \neq p \ \leftrightharpoons \ n_q =1\). Sigue del \(\blacksquare\) \hyperlink{thm229}{2.29.} que \(G = \Z_p \times \Z_q \cong \Z_{pq}\).  }
+
+\ejemplo{
+    \centering
+    Grupo Quaternion
+    \tcblower
+    \begin{example}
+        Sea \(\textbf{Q}:= \langle a,b\rangle\), grupo de orden \(8\) donde \(a\) e \(b\) verifican: 
+        \[\text{i.} \  \ a^4 = \id; \hspace{1.5cm}  \text{ii.} \ \ a^2 = b^2;  \hspace{1.5cm} \text{iii.}  \ \ bab^{-1} = a^{-1}.\]
+    \end{example}
+}
+
+\begin{theorem}
+    \textbf{4.22.} \(\textbf{Q}\) e \(D_8\) son los únicos grupos no abelianos de orden \(8\). \comentario{Véase \cite[pag. 83]{stein}}
+\end{theorem} 
+
+\begin{example}
+    Si \(|G|\leq 59\) entonces \(G\) no es simple. \comentario{Descarta ordenes \(p, \ p^2, \ pq, \ p^2 q\), los demás dan par usar \(\blacksquare\) \hyperlink{thm412}{4.12. (\emph{Sylow})} directo o junto con \(\blacksquare\) \hyperlink{thm318}{3.18.}}
+\end{example}

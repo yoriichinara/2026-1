@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  8 APR 2026 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  18 APR 2026 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -987,12 +987,14 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 203
  (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) (./sections/1.tex
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 16.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 15.
  (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Imagens/Header.png>] [2]) (./sections/2.tex [3] [4] [5] [6] [7]) (./sections/3.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Imagens/Header.png>] [2]) (./sections/2.tex [3] [4] [5] [6]
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 277.
+ (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd) [7]) (./sections/3.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1001,9 +1003,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[8]
-LaTeX Font Info:    Trying to load font information for U+mvs on input line 79.
- (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd) [9] [10]) (./sections/4.tex
+[8] [9] [10]) (./sections/4.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1012,24 +1012,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[11]) [12] (./main.aux)
+[11]) [12] [13] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3E957E415E635E51774087DFC57988FD;708.
+(rerunfilecheck)             Checksum: 28370038CADA8703EF15916BEE15ADB5;747.
  ) 
 Here is how much of TeX's memory you used:
- 34026 strings out of 469515
- 687977 string characters out of 5470807
- 1211040 words of memory out of 5000000
- 62004 multiletter control sequences out of 15000+600000
- 692452 words of font info for 151 fonts, out of 8000000 for 9000
+ 34039 strings out of 469515
+ 688121 string characters out of 5470807
+ 1209040 words of memory out of 5000000
+ 62011 multiletter control sequences out of 15000+600000
+ 698588 words of font info for 155 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,11n,108p,1263b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,108p,1263b,754s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{thm229} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{thm412} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{thm217} has been referenced but does not exist, replaced by a fixed one
@@ -1038,10 +1038,10 @@ pdfTeX warning (dest): name{thm217} has been referenced but does not exist, repl
 pdfTeX warning (dest): name{thm11} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (12 pages, 550147 bytes).
+Output written on main.pdf (13 pages, 555937 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 206 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
  194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
