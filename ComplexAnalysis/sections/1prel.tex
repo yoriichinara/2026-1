@@ -196,26 +196,25 @@ En general, una \emph{serie de potencias} es una suma de términos de la forma \
     \vspace{-0.3cm}
     \begin{enumerate}[label = \roman*., left = 0.35cm]
         \item \(\displaystyle \int_\gamma f(z) + \alpha g(z) \ dz = \int_\gamma f(z) \ dz + \alpha \int_\gamma g(z) \ dz \). 
-        \item \(\displaystyle \int_\gamma f(z) \ dz = - \int_{\gamma^-} f(z) \ dz\).\hfill iii. \ \(\displaystyle \left|\int_\gamma f(z) \ dz\right| \leq \sup_{z \in \gamma } |f(z)| \cdot \operatorname{length}(\gamma)\). 
+        \item \(\displaystyle \int_\gamma f(z) \ dz = - \int_{\gamma^-} f(z) \ dz\).\hfill iii. \ \(\displaystyle \left|\int_\gamma f(z) \ dz\right| \leq  \operatorname{length}(\gamma) \cdot \sup_{z \in \gamma } |f(z)|\). 
     \end{enumerate}
 \end{proposition}
 
 \hypertarget{thm33}{}
 
 \begin{theorem}
-    \textbf{3.2.} Let \(F: \Omega\ab \subset \C\to \C\) holomorphic, \( \Omega \supset \gamma : w_1 \leadsto w_2\) smooth curve and \(dF(z)= F'(z) = f(z) \ dz\). Then, 
-    \[\int_\gamma f(z) \ dz = \int_{\partial \gamma} F(z) = F(w_2) - F(w_1). \]
+    \textbf{3.2.} Sean \(F \in \ho(\Omega)\), \( \Omega \supset \gamma : w_1 \leadsto w_2\) suave e \(dF(z)=  f(z) \ dz\). Entonces, 
+    \[\int_\gamma f(z) \ dz = \int_{\partial \gamma} F(z) = F(w_2) - F(w_1). \textcolor{gray}{\ \ \rightarrow  \blacksquare \ \text{(\emph{Stokes})}}\]
 \end{theorem}
 
-\demo{It follows by \(\blacksquare\) (\emph{Stokes}) or \(\blacksquare\) (\emph{TFC}) if you prefer. }
-
+\vspace{-0.5cm}
 \hypertarget{coro133}{}
 \begin{corollary}
-    \textbf{3.3.} In the setting of \(\blacksquare\) \hyperlink{thm33}{3.3.} if \(\gamma\) is a closed curve, then, \(\displaystyle \int_\gamma f(z) \ dz = 0 \).
+    \textbf{3.3.} En las hipótesis del \(\blacksquare\) \hyperlink{thm33}{3.2.}, si \(\gamma\) fuera cerrada, entonces \(\displaystyle \int_\gamma f(z) \ dz = 0 \).
 \end{corollary}
 
 \hypertarget{coro134}{}
 \begin{corollary}
-    \textbf{3.4.} If \(f\) is holomorphic on \(\Omega\ab\subset \C\) connected and \(f'\equiv 0\), then \(f\) is constant. \comentario{It suffices to take a smooth curve \(\gamma: w_0 \leadsto w\) and apply \(\blacksquare\) \hyperlink{thm33}{3.3.}}
+    \textbf{3.4.} Si \(\Omega\ab\subset \C\) conexo, \(f\in \ho(\Omega)\)  e \(f'\equiv 0\), entonces \(f\) es constante. \comentario{Basta tomar \(\gamma: w_0 \leadsto w\) suave e aplicar \(\blacksquare\) \hyperlink{thm33}{3.2.}}
 \end{corollary}
 

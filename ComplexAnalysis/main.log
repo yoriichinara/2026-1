@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  18 APR 2026 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  19 APR 2026 11:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -986,42 +986,41 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Imagens/Header.png>] [2] [3] [4]) (./sections/2.tex
-<Imagens/T.pdf, id=103, 370.28015pt x 170.09749pt>
+<Imagens/T.pdf, id=104, 370.28015pt x 170.09749pt>
 File: Imagens/T.pdf Graphic file (type pdf)
 <use Imagens/T.pdf>
-Package pdftex.def Info: Imagens/T.pdf  used on input line 38.
+Package pdftex.def Info: Imagens/T.pdf  used on input line 36.
 (pdftex.def)             Requested size: 170.71652pt x 78.42487pt.
-<Imagens/ExInt.pdf, id=104, 294.2734pt x 147.75903pt>
+<Imagens/ExInt.pdf, id=105, 294.2734pt x 147.75903pt>
 File: Imagens/ExInt.pdf Graphic file (type pdf)
 <use Imagens/ExInt.pdf>
-Package pdftex.def Info: Imagens/ExInt.pdf  used on input line 42.
+Package pdftex.def Info: Imagens/ExInt.pdf  used on input line 40.
 (pdftex.def)             Requested size: 142.26378pt x 71.43306pt.
-<Imagens/Cauchy.pdf, id=105, 259.64502pt x 184.08273pt>
-File: Imagens/Cauchy.pdf Graphic file (type pdf)
-<use Imagens/Cauchy.pdf>
-Package pdftex.def Info: Imagens/Cauchy.pdf  used on input line 46.
-(pdftex.def)             Requested size: 99.5842pt x 70.60382pt.
 
-Overfull \hbox (2.73601pt too wide) in paragraph at lines 59--59
-[]$[]$ [] 
+Overfull \hbox (11.17694pt too wide) detected at line 74
+\OML/cmm/m/it/14.4 I[] \OT1/cmr/m/n/14.4 = [][] [] \OML/cmm/m/it/14.4 d^^P \OMS/cmsy/m/n/14.4 ! \OT1/cmr/m/n/14.4 0[] [][] [] \OML/cmm/m/it/14.4 d^^P \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 z\OT1/cmr/m/n/14.4 )2\OML/cmm/m/it/14.4 ^^Yi: 
  []
 
-[5 <./Imagens/T.pdf> <./Imagens/ExInt.pdf> <./Imagens/Cauchy.pdf>] [6]
-LaTeX Font Info:    Trying to load font information for U+mvs on input line 122.
- (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd)) [7] (./main.aux)
+[5 <./Imagens/T.pdf> <./Imagens/ExInt.pdf>]
+<Imagens/Cauchy.pdf, id=160, 211.46503pt x 232.34203pt>
+File: Imagens/Cauchy.pdf Graphic file (type pdf)
+<use Imagens/Cauchy.pdf>
+Package pdftex.def Info: Imagens/Cauchy.pdf  used on input line 89.
+(pdftex.def)             Requested size: 85.35913pt x 93.78601pt.
+ [6 <./Imagens/Cauchy.pdf>]) [7] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C81FF4C5620F47DDFF714FAFF7B5C4A9;343.
+(rerunfilecheck)             Checksum: A9D2BA653BCA19116F07FED9FDCB63BE;318.
  ) 
 Here is how much of TeX's memory you used:
- 33921 strings out of 469515
- 686562 string characters out of 5470807
- 1204883 words of memory out of 5000000
- 61942 multiletter control sequences out of 15000+600000
- 676664 words of font info for 103 fonts, out of 8000000 for 9000
+ 33908 strings out of 469515
+ 686333 string characters out of 5470807
+ 1205883 words of memory out of 5000000
+ 61932 multiletter control sequences out of 15000+600000
+ 676243 words of font info for 102 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,10n,108p,1267b,754s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1030,11 +1029,11 @@ pdfTeX warning (dest): name{coro245} has been referenced but does not exist, rep
 
 pdfTeX warning (dest): name{thm242} has been referenced but does not exist, replaced by a fixed one
 
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (7 pages, 581804 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (7 pages, 580279 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
+ 275 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
  26 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

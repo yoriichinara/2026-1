@@ -1,96 +1,98 @@
-\section{Cauchy's Theorem and Its Applications}
+\section{Teorema de Cauchy e Aplicaciones}
 
 \hypertarget{thm11}{}
 \parbox[a]{0.7\linewidth}{
 \begin{theorem}
-    \textbf{1.1. (\emph{Goursat})} Let \(f \) holomorphic in \(\Omega \ab \subset \C\) and \(T\subset \Omega \) a triangle whose interior is also contained in \(\Omega\), then 
+    \textbf{1.1. (\emph{Goursat})} Sean \(f\in \ho(\Omega) \) e \(T\subset \Omega \) un triángulo cuyo borde e interior están contenidos en \(\Omega\), entonces 
     \[\int_T f(z) \ dz = 0. \]
 \end{theorem}
 }
 
-
-
-\comentario{Doesn't support summaries, but rather on a bisection argument, see \cite[pag. 34]{stein}}
+\comentario{No admite resumen, pero se trata de un argumento de bisección, véase \cite[pag. 34]{stein}}
 
 \begin{corollary}
-    \textbf{1.2.} If \(R\) is a rectangle \( : R, \operatorname{int}R \subset \Omega\), then \(\displaystyle \int_R f(z) \ dz  = 0\).
+    \textbf{1.2.} Lo enunciado en \(\blacksquare\) \hyperlink{thm11}{1.1. (\emph{Goursat})} vale tambien para rectágulos.
 \end{corollary}
 
-\vspace{-0.3cm}
 \hypertarget{thm221}{}
 \begin{theorem}
-    \textbf{2.1.} If \(f\) is holomorphic in \(D := B(z_0;r)\), then \(f\) has a primitive in \(D\). \comentario{Doesn't support summaries, see \cite[pag. 37]{stein}} 
+    \textbf{2.1.} Sean \(D := B(z_0;r)\) e \(f\in \ho(D)\), entonces existe primitiva de \(f\) en \(D\). \comentario{No admite resumen, véase \cite[pag. 37]{stein}} 
 \end{theorem}
 
 \hypertarget{thm222}{}
 \begin{theorem}
-    \textbf{2.2. (\emph{Cauchy's theorem for a disc})} If \(f\) is holomorphic in \(D\), then 
-    \[\displaystyle \int_\gamma f(z) \ dz = 0 \ : \ \gamma  \subset D, \text{ closed curve}.\] 
+    \textbf{2.2. (\emph{Cauchy en el disco})} Si \(f\in \ho(D)\), entonces 
+    \[\displaystyle \int_\gamma f(z) \ dz = 0 \ : \ \gamma  \subset D \text{ es curva cerrada}. \ \textcolor{gray}{\rightarrow \blacksquare \ \hyperlink{thm221}{2.1.} \text{\ + \ \scriptsize $\boxtimes$}\  \hyperlink{coro133}{3.3.}}\] 
 \end{theorem}
 
-\demo{By \(\blacksquare\) \hyperlink{thm221}{2.1.} \(f\) has a primitive, so from {\scriptsize \(\boxtimes\)} \hyperlink{coro133}{3.3.} the result follows.}
+%\demo{Por el \(f\) tiene primitiva, luego el resultado sigue del .}
 
+\vspace{-0.5cm}
 \begin{corollary}
-    \textbf{2.3.} If  \ \(f\) is holomorphic in \(\Omega \) and \(\overline{D} \subset \Omega \), then \(\displaystyle\int_{\partial D} f(z) \ dz\). 
+    \textbf{2.3.} Si  \ \(f\in \ho(\Omega)\) e \(\overline{D} \subset \Omega \), entonces \(\displaystyle\int_{\partial D} f(z) \ dz\). 
 \end{corollary}
 
-\begin{textblock*}{6cm}(13cm, 3.6cm)
+\begin{textblock*}{6cm}(12.8cm, 9.7cm)
         \includegraphics[width = \linewidth]{Imagens/T.pdf}
 \end{textblock*}
 
-\begin{textblock*}{5cm}(2.2cm, 18.2cm)
+\begin{textblock*}{5cm}(13.5cm, 21.7cm)
         \includegraphics[width = \linewidth]{Imagens/ExInt.pdf}
 \end{textblock*}
 
-\begin{textblock*}{5cm}(15cm, 23.5cm)
-        \includegraphics[width = 0.7\linewidth]{Imagens/Cauchy.pdf}
-\end{textblock*}
 
 \ejemplo{
-    \centering Motivation behind theorem
+    \centering Motivación detrás del Teorema
     \tcblower
-    \parbox[a]{0.3\linewidth}{\- }
+    %\parbox[a]{0.3\linewidth}{\- }
     \parbox[b]{0.7\linewidth}{
     \begin{example}
-        Evaluate integral using \(\blacksquare\) \hyperlink{thm222}{2.2.}, making \(\epsilon \to 0\), 
-        \[\displaystyle \textcolor{gray}{\frac{\pi}{2}=}  \int_0^\infty \frac{1- \cos x}{x^2} \ dx \ \ \textcolor{gray}{\sim f(z) = \frac{1 - e^{iz}}{z^2}}.\]  
+        Calcule usando \(\blacksquare\) \hyperlink{thm222}{2.2.}, haciendo  \(\epsilon \to 0\), 
+        \[\displaystyle \textcolor{gray}{\frac{\pi}{2}=}  \int_\epsilon^{\nicefrac{1}{\epsilon}} \frac{1- \cos x}{x^2} \ dx \ \ \textcolor{gray}{\sim f(z) = \frac{1 - e^{iz}}{z^2}}.\]  
     \end{example}
     }
 }
 
-\subsection*{Cauchy's integral formula}
+\subsection*{Formúla integral de Cauchy}
 
+\vspace{-0.7cm}
 \hypertarget{thm241}{}
-\parbox[a]{0.7\linewidth}{
+%\parbox[a]{0.7\linewidth}{
 \begin{theorem}
-    \textbf{4.1.} If \(f\) is holomorphic in \(\Omega\ab\subset \C\) and \(D : \overline{D}\subset \Omega\), then 
-    \[f(z) = \frac{1}{2\pi i } \int_{\partial D} \underset{\textcolor{gray}{\overset{\uparrow }{F(\zeta)}}}{\frac{f(\zeta)}{\zeta - z}} \ d\zeta, \  \ z \in D. \]
+    \textbf{4.1.} Si \(f\in \ho(\Omega)\) e \(\overline{D}\subset \Omega\), entonces 
+    \(\displaystyle f(z) = \frac{1}{2\pi i } \int_{\partial D} \overset{\textcolor{gray}{\underset{\uparrow }{F(\zeta)}}}{\frac{f(\zeta)}{\zeta - z}} \ d\zeta, \  \ z \in D \).
 \end{theorem}
-}
+%}
 
-\demo{
-        \[0 =  \lim_{\epsilon \to 0} \int_{\Gamma_{\delta, \epsilon}} F(\zeta) \ d\zeta = \int_{\partial D} F(\zeta ) \ d\zeta + I_\epsilon  + \int_{\partial D_\epsilon} \frac{f(z)}{\zeta - z} \ d\zeta. \]
-        \hrule 
+%\parbox{0.75\linewidth}{
+\demo{ %\footnotesize 
+        \[0 =  \lim_{\epsilon \to 0} \int_{\Gamma_{\delta, \epsilon}} F(\zeta) \ d\zeta = \int_{\partial D} F(\zeta ) \ d\zeta + I_\epsilon  + \int_{\partial D_\epsilon} \frac{f(z)}{\zeta - z} \ d\zeta. \hspace{4cm}\]
+        \hrule width 13cm 
         \vspace{0.3cm}
-        \textcolor{gray}{\[I_\epsilon = \int_{\partial D_\epsilon} \frac{f(\zeta) - f(z)}{\zeta - z} \ d\zeta \to 0 \text{ \ and \ }\int_{\partial D_\epsilon} \frac{f(z)}{\zeta - z} \ d\zeta = - f(z) 2\pi i.\]} 
+        \textcolor{gray}{\[I_\epsilon = \int_{\partial D_\epsilon} \frac{f(\zeta) - f(z)}{\zeta - z} \ d\zeta \to 0 \text{ \ e \ }\int_{\partial D_\epsilon} \frac{f(z)}{\zeta - z} \ d\zeta = - f(z) 2\pi i.\hspace{4cm}\]} 
         \vspace{-0.2cm}
 }
+%}
 
 \hypertarget{coro242}{}
 \begin{corollary}
-    \textbf{4.2. (\emph{Cauchy integral formula})} If \( f\) is holomorphic in \(\Omega\ab \subset \C\), then \(f\) has infinitely many complex derivatives in \(\Omega\). Moreover, if \(\overline{D}\subset \Omega \), then 
+    \textbf{4.2. (\emph{Formúla integral de Cauchy})} Si \( f\in \ho(\Omega)\), entonces \(f\) tiene derivadas complejas de todos los ordenes en \(\Omega\). Más aún, si \(\overline{D}\subset \Omega \), entonces 
     \[f^{(n)}(z) = \frac{n!}{2\pi i } \int_{\partial D} \frac{f(\zeta)}{\zeta - z} \ d\zeta, \ \ z \in D.\]
 \end{corollary}
 
 \demo{ 
-    By induction, calculate \(f^{(n)}(z) = \underset{h\to 0}{\lim} (\cdots) \) using \(\blacksquare\) \hyperlink{thm241}{4.1.} to express \(f^{n-1}(z)\) and the property \(A^n -B^n = (A-B) [A^{n-1} + A^{n-2}B + \cdots + B^{n-1}]\) to simplify.
+    Por inducción, escriba \(f^{(n)}(z) = \underset{h\to 0}{\lim} (\cdots) \) usando \(\blacksquare\) \hyperlink{thm241}{4.1.} para expresar \(f^{(n-1)}(z)\), luego use \(A^n -B^n = (A-B) [A^{n-1} + A^{n-2}B + \cdots + B^{n-1}]\) para simplificar.
     % \[\lim_{h\to 0}\frac{f^{(n-1)} (z+h) - f^{(n-1)}(z)}{h} = \]
 }
 
+\begin{textblock*}{5cm}(15.7cm, 2.6cm)
+        \includegraphics[width = 0.6\linewidth]{Imagens/Cauchy.pdf}
+\end{textblock*}
+
 \hypertarget{coro243}{}
 \begin{corollary}
-    \textbf{4.3. (\emph{Cauchy inequalities})}  If \( f\) is holomorphic in \(\Omega\ab \subset \C\) and \(B[z_0;R] \subset \Omega \), then 
-    \[|f^{(n)}(z_0)|\leq \frac{n! \|f\|_{\partial D}}{R^n}, \text{ where } \|f\|_{\partial D}:= \sup_{\partial D} |f(z)|\]
+    \textbf{4.3. (\emph{Desigualdad de Cauchy})}  Si \( f\in \ho(\Omega)\) e \(B[z_0;R] \subset \Omega \), then 
+    \[|f^{(n)}(z_0)|\leq \frac{n! \|f\|_{\partial D}}{R^n}, \text{ donde } \|f\|_{\partial D}:= \sup_{\partial D} |f(z)|\]
 \end{corollary}
 
 \demo{  
@@ -99,39 +101,43 @@
 }
 
 \begin{theorem}
-    \textbf{4.4.}  If \( f\) is holomorphic in \(\Omega\ab \subset \C\) and \(D = B[z_0;R] \subset \Omega \), then \(f\) has a convergent Taylor power series expansion at \(z_0\): 
-    \[f(z) = \sum^\infty_{n=0} a_n (z-z_0)^n, \text{ where } a_n= \frac{f^{(n)}(z_0)}{n!}, \ z\in D.\]
+    \textbf{4.4.}  Si \( f\in \ho(\Omega)\) e \(\overline{D} := B[z_0;R] \subset \Omega \), entonces \(f\) tiene expansión de Taylor en series de potencias alrededor de \(z_0\) convergente: 
+    \[f(z) = \sum^\infty_{n=0} a_n (z-z_0)^n, \text{ donde } a_n= \frac{f^{(n)}(z_0)}{n!}, \ z\in D.\]
 \end{theorem}
 
+\vspace{-0.2cm}
 \demo{
 %    \vspace{-0.2cm}
     \[\frac{1}{\zeta -z} = \frac{1}{\zeta -z_0}\frac{1}{1 -\left(\frac{z-z_0}{\zeta - z_0}\right)} = \frac{1}{\zeta - z_0}\sum_{n=0}^\infty \left(\frac{z-z_0}{\zeta -z_0}\right)^n. \]
-    The geometic series converges because \(\nicefrac{\left|z-z_0\right|}{\left|\zeta- z_0\right|} < r <1\) (uniformity). Finally, use \(\blacksquare\) \hyperlink{thm242}{4.2. (\emph{Cauchy integral formula})}  to conclude.
+    La serie geométrica converge pues \(\nicefrac{\left|z-z_0\right|}{\left|\zeta- z_0\right|} < r <1\) (uniforme en \(\zeta\)). Finalmente, use \(\blacksquare\) \hyperlink{thm242}{4.2. (\emph{Formúla integral de Cauchy})} e concluya.
 }
 
 \begin{corollary}
-    \textbf{4.5. (\emph{Liouville})} If \(f\) is entire and bounded, then \(f\) is constant. \comentario{By {\scriptsize \(\boxtimes\)} \hyperlink{coro243}{4.3. (\emph{Cauchy inequalities})} \(|f'(z_0)| \leq \nicefrac{M}{R} \to 0 \) as \(R\to \infty\), so \(f'(z) \equiv 0\), result follows by {\scriptsize\(\boxtimes\)} \hyperlink{coro134}{3.4.}} 
+    \textbf{4.5. (\emph{Liouville})} Si \(f\) entera y acotada, entonces \(f\) es constante. \comentario{Por el {\scriptsize \(\boxtimes\)} \hyperlink{coro243}{4.3. (\emph{Desigualdad de Cauchy})} \(|f'(z_0)| \leq \nicefrac{M}{R} \to 0 \) cuando \(R\to \infty\), luego \(f'(z) \equiv 0\)}%, el resultado sigue del {\scriptsize\(\boxtimes\)} \hyperlink{coro134}{3.4.}} 
 \end{corollary}
 
 \begin{corollary}
-    \textbf{4.7.} Every \(P(z) \in \C[z]\setminus \C\) has precisely \(n\) roots in \(\C\) (algebraically closed). 
-\end{corollary}
-
-\demo{
-    First prove that \(P(z)\) has one root, if not \(\nicefrac{1}{P(z)}\) is entire and bounded, then constant, {\scriptsize\(\boxtimes\)} \hyperlink{coro245}{4.5. (\emph{Liouville})}.\Lightning \  Result follows by induction and division algorithm.  
+    \textbf{4.7.} \(\C\) es algebraicamente cerrado. \comentario{Si \(p(z)\) no tuviese raíz en \( \C\), \(\nicefrac{1}{P(z)}\) es entera y limitada, luego constante {\scriptsize\(\boxtimes\)} \hyperlink{coro245}{4.5. (\emph{Liouville})}, el resultado sigue por inducción  
 }
+\end{corollary}
 
 \begin{theorem}
-    \textbf{4.8.} Suppose that \(f\) is holomorphic in \(\Omega \ab \subset \C \) connected \(: f \) vanishes on a sequence of a distinct points with a limit point in \(z_0 \in \Omega\). Then, \(f\equiv 0 \) in \(\Omega\).
+    \textbf{4.8.} Sean \(\Omega \ab \subset \C\) conexo e \(f\in \ho(\Omega) : f \) se anula en \((z_n)_{n\in \N}\subset \Omega\), no eventualmente constante tal que \(z_n \to z_0 \in \Omega\). Entonces, \(f\equiv 0 \) en \(\Omega\).
 \end{theorem}
 
-\demo{Prove first by contradiction that \(f(z) = \sum a_n (z - z_0)^n \equiv 0\) on \(B(z_0;\epsilon)\). Therefore, \(\{z \in \Omega : f(z) = 0 \} =: U = \overline{U} = U^\circ \ \leftrightharpoons \ U = \Omega\). }
+\demo{Muestre por contradicción que \(f(z) = \sum a_n (z - z_0)^n \equiv 0\) en \(B(z_0;\epsilon)\). Luego, \(\{z \in \Omega : f(z) = 0 \} =: U = \overline{U} = U^\circ \ \leftrightharpoons \ U = \Omega\). }
 
 \hypertarget{coro49}{}
 \begin{corollary}
-    \textbf{4.9.} If \(f\) and \(g\) are holomorphic in \(\Omega\ab\subset \C\) and \(\varnothing \neq \{z \in \Omega : f(z) = g(z)\}\ab \subset \Omega\), then \(f \equiv g \) throughout \(\Omega\). 
+    \textbf{4.9.} Si \(f, g \in \ho(\Omega)\) e \(\varnothing \neq \{z \in \Omega : f(z) = g(z)\}\ab \subset \Omega\), entonces \(f \equiv g \) en \(\Omega\). 
 \end{corollary}
 
 \begin{note}
-    If \(f\) and \( F \) are holomorphic in \(\Omega \) and \(\Omega'\) respectively, with \(\Omega \subset \Omega'\) and \(f \equiv F\) in \(\Omega \), then \(F\) is a (unique) \emph{analytic extension} of \(f\) from \(\Omega \) to \(\Omega'\). %{\scriptsize \(\boxtimes\)} \hyperlink{coro49}{4.9.} guarantes that 
+    Si \(\Omega_0\ab \subset \Omega \ab \subset \C\), \(f \in \ho(\Omega_0)\), \( F\in \ho(\Omega) \) e \(f \equiv F\) en \(\Omega_0\), entonces \(F\) es \emph{extensión analítica} (única) de \(f\) a todo \(\Omega\). %{\scriptsize \(\boxtimes\)} \hyperlink{coro49}{4.9.} guarantes that 
 \end{note}
+
+\subsection*{Otras aplicaciones}
+
+\begin{theorem}
+    \textbf{5.1. (\emph{Morera})} Si \(f \) es continua en \(D\subset \C\) y la integral que en cada triángulo \(T\subset D\) es nula, entonces \(f \in \ho(D)\). 
+\end{theorem}

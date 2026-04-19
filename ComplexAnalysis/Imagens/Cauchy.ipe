@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.30">
-<info created="D:20260320104948" modified="D:20260320150359"/>
+<info created="D:20260320104948" modified="D:20260419100240"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -401,9 +401,9 @@ h
 384 736 m
 137.637 0 0 137.637 304 624 392.906 518.93 a
 </path>
-<text matrix="0.644444 0 0 0.659136 -76.4444 157.98" transformations="translations" pos="280 688" stroke="black" type="label" width="37.175" height="16.923" depth="9.84" valign="baseline" size="Huge" style="math" opacity="75%">\Gamma_{\delta,\epsilon}</text>
+<text matrix="0.644444 0 0 0.659136 -28.4444 333.98" transformations="translations" pos="280 688" stroke="black" type="label" width="37.175" height="16.923" depth="9.84" valign="baseline" size="Huge" style="math" opacity="75%">\Gamma_{\delta,\epsilon}</text>
 <text matrix="0.644444 0 0 0.659136 11.7333 349.257" transformations="translations" pos="376 528" stroke="black" type="label" width="10.319" height="8.896" depth="0" valign="baseline" size="huge" style="math" opacity="75%">z</text>
-<text matrix="0.644444 0 0 0.659136 73.0667 349.98" transformations="translations" pos="392 584" stroke="black" type="label" width="34.986" height="17.213" depth="0" valign="baseline" size="Huge" style="math" opacity="75%">\partial D</text>
+<text matrix="0.644444 0 0 0.659136 57.0667 173.98" transformations="translations" pos="392 584" stroke="black" type="label" width="34.986" height="17.213" depth="0" valign="baseline" size="Huge" style="math" opacity="75%">\partial D</text>
 <text matrix="0.644444 0 0 0.659136 -44.9778 269.799" transformations="translations" pos="392 584" stroke="black" type="label" width="42.979" height="17.211" depth="3.72" valign="baseline" size="Huge" style="math" opacity="75%">\partial D_\epsilon</text>
 <path matrix="0.644444 0 0 0.659136 42.6667 259.615" stroke="black" pen="1" cap="1" join="1" opacity="75%" stroke-opacity="opaque">
 336.037 656.087 m
