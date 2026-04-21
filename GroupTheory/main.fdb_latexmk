@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1776536891.59064 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1776536893.85174 0
-  "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" 1776429788.06159 8217 9896f07c9d57ed07d76b1f46c7694272 ""
+["pdflatex"] 1776731268.58041 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1776731270.8005 0
+  "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" 1776709595.86867 8241 99702ed74f10afc09924ba588c9f17d6 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1772820570 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1772820570 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1772820570 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -269,13 +269,14 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1774347788 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774347783 2328188 46bbb8477938fbdb4d556a2ee033fb58 ""
   "Imagens/Header.png" 1752097914 363895 6890a9cd210a4932f77549a60c1a103c ""
-  "main.aux" 1776536893.71142 901 5300fc093b087881d999934c3ade71d3 "pdflatex"
-  "main.out" 1776536893.71142 747 28370038cada8703ef15916bee15adb5 "pdflatex"
-  "main.tex" 1776429788.06159 8217 9896f07c9d57ed07d76b1f46c7694272 ""
+  "main.aux" 1776731270.65195 1058 85d7fd83ff1448ae10e9147952be8ed3 "pdflatex"
+  "main.out" 1776731270.65528 905 6bfe91915e96185174acd557fdf450fe "pdflatex"
+  "main.tex" 1776709595.86867 8241 99702ed74f10afc09924ba588c9f17d6 ""
   "sections/1.tex" 1776384665.28267 7544 48a87b03499d78b667ffc89f70a712ce ""
   "sections/2.tex" 1776535593.62322 15231 a74b561aba02595b4781c8f3e3121c5b ""
   "sections/3.tex" 1776536820.40409 9157 249a5dbf8ba1019a115317005e8a8c50 ""
-  "sections/4.tex" 1776536891.30807 6453 cbf7c6b3413318655227692a253b1908 ""
+  "sections/4.tex" 1776712854.39538 6445 b3f0091533424642c9dbb20caf6953b3 ""
+  "sections/5.tex" 1776731268.21859 3244 159bf1b1a513db9676480af2b0f99550 ""
   (generated)
   "main.aux"
   "main.log"

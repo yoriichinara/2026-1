@@ -1,0 +1,55 @@
+\section{Series Normales (\(|G|< \infty\))}
+
+\begin{definition}
+    Una \emph{serie normal} de \(G\) es una sucesión \(G = G_0 \geq G_1 \geq \cdots \geq G_n = \id\), donde \(G_{i+1}\lhd G_i, \ \forall i \leq n-1\). Los grupos \(\nicefrac{G_{i+1}}{G_i}\) son llamados \emph{factores} de la serie, y el \emph{comprimento} es la cantidad de inclusiones estrictas.
+\end{definition}
+
+\begin{note}
+    Ser normal no es una propiedad transitiva (\textcolor{rojoscuro}{Ex. 2.45}), por ello podemos asegurar factores apenas en elementos contiguos de la serie. 
+\end{note}
+
+\subsection*{Teorema de Jordan-Hölder}
+\begin{definition}
+    Un grupo \(G\) es \emph{soluble} se \(\exists (G_j)_{j\leq n}\) serie normal tal que todos sus factores son grupos cíclicos de orden primo. Tambien, 
+    \vspace{-0.3cm}
+    \begin{itemize}[label = \(\star\), left = 1cm]
+        \item \((H_k)_{k\leq m}\) (serie normal en \(G\)) un \emph{refinamiento} de \((G_j)\) si \(G_0, G_1, \ldots, G_n\) es subsucesión de \(H_0, H_1, \ldots, H_m\).
+        \item \((G_j)_{j\leq n}\) es \emph{serie de composición} si cada \(G_{i+1}\lhd G_i\) es maximal \(G_i\). En este caso tenemos \emph{factores de composición}.     
+    \end{itemize}
+\end{definition}
+
+\vspace{-0.3cm}
+\begin{definition}
+    Dos series normales \((G_j), (H_k)\) en \(G\) son \emph{equivalentes} si existe una correspondencia biyectiva entre factores isomorfos. 
+\end{definition}
+
+\begin{lemma}
+    \textbf{5.10. (\emph{Zassenhaus, 1934})} Sean \(A \lhd A^* \) e \(B \lhd B^*\) subgrupos de \(G\). Entonces, \(A (A^* \cap B) \lhd A(A^* \cap B^*); \ \  B (B^* \cap A) \lhd B(B^* \cap A^*)\) e
+    \[\exists \varphi : \displaystyle \frac{A(A^*\cap B^*)}{A(A^*\cap B)} \cong \frac{B(B^*\cap A^*)}{B(B^*\cap A)} .\]
+\end{lemma}
+
+\vspace{-0.3cm}
+\comentario{No admite resumen, véase \cite[pag. 100]{stein}}
+
+\hypertarget{thm511}{}
+\begin{theorem}
+    \textbf{5.11. (\emph{Refinamiento de Schreier, 1928})} Cualesquier dos series normales en \(G\) admiten refinamientos que son equivalentes. \comentario{Véase \cite[pag. 100]{stein}} 
+\end{theorem}
+
+\begin{theorem}
+    \textbf{5.12. (\emph{Jordan-Hölder})} Series de composición en \(G\) son equivalentes. \comentario{Sigue directo del \(\blacksquare\) \hyperlink{thm511}{5.11. (\emph{Schreier})} pues solo tienen refinamientos triviales} 
+\end{theorem}
+
+\begin{corollary}
+    \textbf{5.13. (\emph{Teorema Fundamental de la Aritmética})} Factores primos e multiplicidades en la descomposición de cualquier \(n\in \Z_{\geq 2}\), depende solo de \(n\).    
+\end{corollary}
+
+\demo{
+    Sean \(n = p_1 p_2 \cdots p_m\) (no necesariamente distintos) e \(\Z_n = \langle x \rangle \geq \langle x^{p_1}\rangle \geq \langle x^{p_1p_2}  \rangle \geq \cdots \geq\langle x^{p_1p_2 \cdots  p_{m-1}}\rangle \geq \id\), los factores tienen order \(p_1, p_2, \ldots, p_m\), luego es serie de composición y solo depende de \(n\), \(\blacksquare\) \hyperlink{thm512}{5.12. (\emph{Jordan-Hölder})}. 
+}
+
+\begin{theorem}
+    \textbf{5.14.} Si \(n\geq 5\), entonces \(S_n\) no es soluble. \comentario{\(A_n\) es simple, luego \(S_n \geq A_n \geq \id \) es serie de composición de factores \(\Z_2\) e \(A_n\) (no abeliano)}
+\end{theorem}
+
+\subsection*{Grupos Solubles}    
