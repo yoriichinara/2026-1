@@ -1,6 +1,6 @@
 \section{Teorema de Cauchy e Aplicaciones}
 
-\hypertarget{thm11}{}
+\hypertarget{thm211}{}
 \parbox[a]{0.7\linewidth}{
 \begin{theorem}
     \textbf{1.1. (\emph{Goursat})} Sean \(f\in \ho(\Omega) \) e \(T\subset \Omega \) un triángulo cuyo borde e interior están contenidos en \(\Omega\), entonces 
@@ -11,7 +11,7 @@
 \comentario{No admite resumen, pero se trata de un argumento de bisección, véase \cite[pag. 34]{stein}}
 
 \begin{corollary}
-    \textbf{1.2.} Lo enunciado en \(\blacksquare\) \hyperlink{thm11}{1.1. (\emph{Goursat})} vale tambien para rectágulos.
+    \textbf{1.2.} Lo enunciado en \(\blacksquare\) \hyperlink{thm211}{1.1. (\emph{Goursat})} vale tambien para rectágulos.
 \end{corollary}
 
 \hypertarget{thm221}{}
@@ -138,6 +138,39 @@
 
 \subsection*{Otras aplicaciones}
 
+\hypertarget{thm251}{}
 \begin{theorem}
     \textbf{5.1. (\emph{Morera})} Si \(f \) es continua en \(D\subset \C\) y la integral que en cada triángulo \(T\subset D\) es nula, entonces \(f \in \ho(D)\). 
+\end{theorem}
+
+\demo{La misma construcción del \(\blacksquare\) \hyperlink{thm221}{2.1.} muestra que \(f\) admite primitiva \(F\) en \(D: F' = f\), por el \(\blacksquare\) (\emph{Regularidad}) \(F\) es infinitamente diferenciable así como \(f\).  }
+
+%\subsection*{Sucesiones de funciones holomorfas}
+
+\hypertarget{thm252}{}
+\begin{theorem}
+    \textbf{5.2.} Si \((f_n)_{n\in \N} \subset \ho(\Omega)\) es tal que \( f_n \to f\) uniformemente en cada \(K\subset \Omega\) compacto, entonces \(f\in \ho(\Omega)\).   
+\end{theorem}
+
+\demo{Sean \(D: \overline{D} \subset \Omega\) e \(T\) cualquier triángulo contenido en \(D\). De la uniformidad en \(\overline{D}\) \(f\) es continua, luego sigue de \(\blacksquare\) \hyperlink{thm211}{1.1. (\emph{Goursat})},
+\[0 = \int_T f_n(z) \ dz \to \int_T f(z) \ dz = 0 \ \Rightarrow \ f \in \ho(\Omega), \text{ $\blacksquare$ \hyperlink{thm251}{5.1. (\emph{Morera})}}.\] 
+\vspace{-0.3cm}
+}
+
+\begin{theorem}
+    \textbf{5.3.} En las mismas hipótesis del \(\blacksquare\) \hyperlink{thm252}{5.2.}, la sucesión \(f_n'\to f'\) uniformemente en cada \(K\subset \Omega\) compacto. \comentario{No admite resumen, véase \cite[pag. 54]{stein}}
+\end{theorem}
+
+%\subsection*{Funciones holomorfas definidas por integrales}
+
+\begin{theorem}
+    \textbf{5.4.} Sean \(\Omega\ab \subset \C\) e \(F(z,s): \Omega \times [0,1] \to \C\) continua. Si \(F(z,s_0) \in \ho(\Omega), \ \forall s_0 \in [0,1]\) fijo, entonces la función: 
+    \[\int_0^1 F(z,s) \ ds =: f(z) \in \ho(\Omega). \]
+\end{theorem}
+
+\vspace{-0.3cm}
+\comentario{No admite resumen, véase \cite[pag. 56]{stein}}
+
+\begin{theorem}
+    \textbf{5.5. (\emph{Runge})} \(\forall f \in \ho(K), \ K\subset \C\) compacto, \(\exists (Q_n)_{n\in\N}\subset \ho(K)\) racionales \(: Q_n \overset{u}{\longrightarrow} f\), con sigularidades contenidas en \(\C\setminus K\). Más aún, si \(\C \setminus K\) fuera conexo, \(\exists (P_n)_{n\in \N} \subset \C[z] : P_n \overset{u}{\longrightarrow} f\) (en \(K\)). \comentario{Véase \cite[pag. 61]{stein}}
 \end{theorem}
