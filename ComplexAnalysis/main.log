@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  21 APR 2026 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  22 APR 2026 20:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -963,7 +963,7 @@ Package hyperref Info: Link coloring ON on input line 116.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 116.
 
 \c@lstlisting=\count425
-<Imagens/Header.png, id=51, 4986.63pt x 611.886pt>
+<Imagens/Header.png, id=55, 4986.63pt x 611.886pt>
 File: Imagens/Header.png Graphic file (type png)
 <use Imagens/Header.png>
 Package pdftex.def Info: Imagens/Header.png  used on input line 192.
@@ -986,12 +986,12 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Imagens/Header.png>] [2] [3] [4]) (./sections/2.tex
-<Imagens/T.pdf, id=104, 370.28015pt x 170.09749pt>
+<Imagens/T.pdf, id=108, 370.28015pt x 170.09749pt>
 File: Imagens/T.pdf Graphic file (type pdf)
 <use Imagens/T.pdf>
 Package pdftex.def Info: Imagens/T.pdf  used on input line 36.
 (pdftex.def)             Requested size: 170.71652pt x 78.42487pt.
-<Imagens/ExInt.pdf, id=105, 294.2734pt x 147.75903pt>
+<Imagens/ExInt.pdf, id=109, 294.2734pt x 147.75903pt>
 File: Imagens/ExInt.pdf Graphic file (type pdf)
 <use Imagens/ExInt.pdf>
 Package pdftex.def Info: Imagens/ExInt.pdf  used on input line 40.
@@ -1002,38 +1002,40 @@ Overfull \hbox (11.17694pt too wide) detected at line 74
  []
 
 [5 <./Imagens/T.pdf> <./Imagens/ExInt.pdf>]
-<Imagens/Cauchy.pdf, id=160, 211.46503pt x 232.34203pt>
+<Imagens/Cauchy.pdf, id=164, 211.46503pt x 232.34203pt>
 File: Imagens/Cauchy.pdf Graphic file (type pdf)
 <use Imagens/Cauchy.pdf>
 Package pdftex.def Info: Imagens/Cauchy.pdf  used on input line 89.
 (pdftex.def)             Requested size: 85.35913pt x 93.78601pt.
- [6 <./Imagens/Cauchy.pdf>] [7]) [8] (./main.aux)
+ [6 <./Imagens/Cauchy.pdf>] [7]) (./sections/3.tex
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 18.
+ (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd) [8]) [9] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A9D2BA653BCA19116F07FED9FDCB63BE;318.
+(rerunfilecheck)             Checksum: 35A4243B3769B7D435BD4E6025261617;548.
  ) 
 Here is how much of TeX's memory you used:
- 33913 strings out of 469515
- 686384 string characters out of 5470807
+ 33965 strings out of 469515
+ 687020 string characters out of 5470807
  1205883 words of memory out of 5000000
- 61934 multiletter control sequences out of 15000+600000
- 676243 words of font info for 102 fonts, out of 8000000 for 9000
+ 61963 multiletter control sequences out of 15000+600000
+ 686286 words of font info for 120 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,10n,108p,1267b,754s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,108p,1267b,754s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{coro245} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{thm242} has been referenced but does not exist, replaced by a fixed one
 
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (8 pages, 584392 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (9 pages, 603055 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

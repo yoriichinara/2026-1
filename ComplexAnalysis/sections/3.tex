@@ -1,0 +1,84 @@
+\section{Funciones Meromorfas y el Logaritmo}
+
+\subsection*{Ceros y polos }
+
+
+%\begin{definition}
+%    Dada \(f\in \ho(\Omega)\), \(z_0\in \Omega\) es un \emph{cero} de \(f\) si \(f(z_0) = 0\). %\comentario{Si \(f\not\equiv 0\) sus ceros son isolados, \(\blacksquare\) \hyperlink{thm248}{4.8.}}  
+%\end{definition}
+
+\hypertarget{thm311}{}
+\begin{theorem}
+    \textbf{1.1.} Sean \(\Omega\ab\subset \C\) conexo, \( f \in \ho(\Omega)^\times\) e \(z_0 \in \Omega : f(z_0) = 0\). Entonces, existen \(U\ab \in \U_{z_0}\),  \(!n \in \N \) e \(g \in \ho(U)^\times : f(z) = (z-z_0)^n g(z), \ \forall z \in U\).  
+\end{theorem}
+
+\demo{\(\exists U \in \U_{z_0} : 0 \not\equiv f(z)= \sum a_k (z-z_0)^k\). Luego \(\exists n: a_n \neq 0\), así   
+\[f(z) = (z-z_0)^n [a_n + a_{n+1}(z-z_0) + \cdots] = (z-z_0)^n g(z).\]
+Para la unicidad, si \(f(z) = (z-z_0)^m h(z), \ m>n\), tendríamos \(g(z) = (z-z_0)^{m-n}h(z) \to 0\neq a_n\) cuando \(z \to z_0\), parecido si \(m<n\).\Lightning
+}
+
+\begin{definition}
+    Sea \(\widehat{\Omega}:= \Omega \setminus \{z_0\} : \Omega\ab \in \U_{z_0} \), \emph{vecindad punteada} de \(z_0 \in \C\).\footnote{Más formalmente seria \(\widehat{B}(z_0;r):= \{z\in \C : 0 < |z-z_0|<r : r >0\}\).} Decimos que \(f\), tiene una \emph{singularidad} en \(z_0\) si fuera holomorfa apenas en  \(\widehat{\Omega}\), esta puede ser: 
+    \vspace{-0.2cm}
+    \begin{itemize}[left = 1cm, label = \(\star\)]
+        \item \emph{Removible} \(\ \leftrightharpoons \  \exists w\in \C : \ho(\Omega)\ni f(z):= \begin{cases}
+        w, \ \ \text{si } z=z_0 \\ 
+        f(z), \ \  \text{e.o.c.}  
+        \end{cases}.\)
+        \item \emph{Polo} \(\ \leftrightharpoons \  \ho(\Omega)\ni\frac{1}{f(z)}:= \begin{cases}
+        0, \ \ \text{si } z=z_0 \\ 
+        \nicefrac{1}{f(z)}, \ \  \text{e.o.c.}  
+        \end{cases}.\)
+        
+    \end{itemize}
+\end{definition}
+\begin{definition}
+    Una función \(f : \widehat{\Omega} \to \C\) tiene un \emph{polo} en \(z_0\) si la función 
+    
+\end{definition}
+
+\hypertarget{thm312}{}
+\begin{theorem}
+    \textbf{1.2.} Si \(f\) tiene un polo en \(z_0\in \Omega\ab \subset \C\), entonces existen \(h \in \ho(\Omega)^\times\) e \(!n \in \N :  f(z ) = (z-z_0)^{-n} h(z)\). \comentario{Sigue del \(\blacksquare\) \hyperlink{thm311}{1.1.} pues \(\nicefrac{1}{f(z)} = (z-z_0)^n g(z)\)}  
+\end{theorem}
+
+\begin{note}
+    Llamamos a los enteros \(n\) en los \(\blacksquare\) \hyperlink{thm311}{1.1.} e \(\blacksquare\) \hyperlink{thm312}{1.2.} de \emph{orden} del cero u polo, respectivamente, serán \emph{simples} si es que \(n =1 \).
+\end{note}
+
+\hypertarget{thm313}{}
+\begin{theorem}
+    \textbf{1.3.} Si \(f\) tiene un polo de orden \(n \) en \(z_0 \in \Omega\ab \subset \C\), entonces \(\exists U\ab \in \U_{z_0}\) donde
+    \[f(z) = \frac{a_{-n}}{(z-z_0)^n} + \frac{a_{-(n-1)}}{(z-z_0)^{n-1}} + \cdots + \frac{a_{-1}}{(z-z_0)}+ G(z): G \in \ho(U).\]
+\end{theorem}
+
+\demo{\[f(z) = (z-z_0)^{-n} h(z) = (z-z_0)^{-n} \sum_{k=0}^\infty a_k (z-z_0)^k, \ \ \blacksquare \ \text{\hyperlink{thm312}{1.2.}}.\]
+\vspace{-0.2cm}
+} 
+
+\begin{note}
+    La suma de índices negativos en \(\blacksquare\) \hyperlink{thm313}{1.3.}, \(P(z)\) es llamada \emph{parte principal} de \(f\) en \(z_0\), y \(\operatorname{res}_{z_0}f = a_{-1}\) es el \emph{residuo} de \(f\) en el polo \(z_0\). 
+\end{note}
+
+\begin{theorem}
+    \textbf{1.4.} Si \(f\) tiene un polo de orden \(n\) en \(z_0\), entonces 
+    \[\operatorname{res}_{z_0}f = \lim_{z\to z_0} \frac{1}{(n-1)!} \left(\frac{d}{dz}\right)^{n-1} (z-z_0)^nf(z). \textcolor{gray}{ \ \ \rightarrow \ \blacksquare \ \text{\hyperlink{thm313}{1.3.}}}\]   
+\end{theorem}
+
+\vspace{-0.2cm}
+\begin{note}
+    En la práctica son polos simples, luego \(\operatorname{res}_{z_0}f = \underset{z\to z_0}{\lim}(z-z_0) f(z)\). 
+\end{note}
+
+\subsection*{Fórmula del residuo}
+
+\begin{theorem}
+    \textbf{2.1.} Sean \(\Omega\ab \in \U_{z_0}\) meromorfa en \(\widehat{\Omega}\) e \(D : \overline{D}\subset \Omega\) e \(z_0 \in D\). Entonces, 
+    \[\int_{\partial D} f(z) \ dz = 2 \pi i \cdot \operatorname{res}_{z_0}f. \]
+\end{theorem}
+
+\demo{
+    Combinando la demostración del \(\blacksquare\) \hyperlink{thm241}{4.1.} e la fórmula en \(\blacksquare\) \hyperlink{thm313}{1.3.} tenemos,
+    \[\int_{\partial D} f(z) \ dz = \int_{\partial D_\epsilon} f(z) \ dz = \int_{\partial D_\epsilon} P(z) + G(z)\ dz .\]% = a_{-1}\cdot \frac{1}{2 \pi i }\int_{\partial D} \frac{1}{z-z_0} \ dz = a_{-1}, \ \blacksquare \ \text{\hyperlink{thm241}{4.1.}}.\]
+    En esa esa integral cuasi todo mundo tiene primitiva en \(D_\epsilon\), menos el término en \(P(z)\) asociado a \(k = -1\).
+}
