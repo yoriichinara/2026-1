@@ -78,3 +78,43 @@ Para la unicidad, si \(f(z) = (z-z_0)^m h(z), \ m>n\), tendríamos \(g(z) = (z-z
     \[\int_{\partial D} f(z) \ dz = 2\pi i \sum_{k=1}^N \operatorname{res}_{z_k} f. \] 
 \end{corollary}
 
+%\ejemplo{
+%    \begin{example}
+%        \[\int_{-\infty}^{\infty} \frac{1}{1+x^2} \ dx \ \sim \ \int_{\Gamma_R} \frac{1}{1+z^2} \ dz \]
+%    \end{example}
+%}
+
+\hypertarget{thm331}{}
+\begin{theorem}
+    \textbf{3.1. (\emph{Riemann})} Sean \(\Omega\ab \in \U_{z_0}\) e \(f\) holomorfa e limitada en \(\widehat{\Omega}\). Entonces, \(z_0\) es singularidad removible. 
+\end{theorem}
+
+\demo{
+    \parbox[a]{0.25\textwidth}{\- }
+    \parbox[b]{0.7\textwidth}{
+    \[f(z) = \frac{1}{2 \pi i }\int_{\partial D} \frac{f(\zeta)}{\zeta - z} \ d\zeta = \int_0^{2\pi} g(z, s) \ ds =: F(z).\] 
+    Del \(\blacksquare\) \hyperlink{thm354}{5.4.} \(F \in \ho(\Omega)\). Muestra que la fórmula vale para \(z \neq z_0\), replicando la demostración del \(\blacksquare\) \hyperlink{thm241}{4.1.}.
+    \vspace{0.5cm}
+    }
+}
+
+\begin{textblock*}{6cm}(2.4cm, 22.4cm)
+        \includegraphics[width = 0.57\linewidth]{Imagens/riemann.pdf}
+\end{textblock*}
+
+\begin{corollary}
+    \textbf{3.2.} Sean \(\Omega\ab \in \U_{z_0}\) e \(f\) homorfa en \(\widehat{\Omega}\). Entonces, \(f\) tiene un polo en \(z_0 \ \leftrightharpoons \ |f(z)| \to \infty\) cuando \(z\to z_0\). \comentario{Mogollas} 
+\end{corollary}
+
+\begin{theorem}
+    \textbf{3.3. (\emph{Casorati-Weierstrass})} Sean \(D:= B(z_0; r)\), \(f\) holomorfa en \(\widehat{D}\) e \(z_0\) singularidad esencial de \(f\). Entonces, \(f(\widehat{D})\) es densa en \(\C\). 
+\end{theorem}
+
+\demo{Por contradicción, si \(\exists w \in \C\) e \(\delta>0: |g(z)| = |f(z)-w|>\delta, \ \forall z \in \widehat{D}\), entonces \(\nicefrac{1}{g}\) tiene singularidad removible en \(z_0\), \(\blacksquare\) \hyperlink{thm331}{3.1. (\emph{Riemann})}. Si \((\nicefrac{1}{g}) (z_0)\neq 0\), \(f \in \ho(\Omega)\), caso contrário \(f\) tendría un polo en \(z_0\).\Lightning
+%\[|g(z)| = \left|\frac{1}{f(z) - w}\right| < \frac{1}{\delta} \ \leftrightharpoons \ g\text{ tiene singularidad removible en }z_0.\]
+%Si \(g(z_0) \neq 0\) \(f \in \ho(\Omega)\), caso contrário \(f\) tendría un polo en \(z_0\).\Lightning 
+}
+
+\begin{definition}
+    Sean \(\Omega\ab\subset \C\) e \(P:= \{z_1, z_2, \ldots , z_N\}\subset \Omega\). Decimos que \(f\) es \emph{meromorfa} en \(\Omega\) si (i) \(f\) es holomorfa en \(\Omega \setminus P \) e (ii) \(z_j \in P\) es polo de \(f, \ \forall j\leq N\).     
+\end{definition}

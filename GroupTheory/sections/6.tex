@@ -1,0 +1,37 @@
+\section{Grupos Abelianos Finitamente Generados}
+
+En esta sección seguimos \cite[cap. 8]{lang}. Denotaremos por \( (A,+) = A\) (grupo abeliano) e usamos notación aditiva, \(a^m = \underbrace{(a + a + \cdots + a)}_{m \text{ veces}} = m\cdot a\) e \(\id \sim 0\). 
+
+\vspace{-0.2cm}
+\begin{definition}
+    Un elemento \(a \in A\) es de \emph{torsión} si \(\exists m \in \N : ma = 0 \) (\emph{orden finito}). Tambien,
+    \vspace{-0.3cm}
+    \begin{itemize}[left = 1cm, label = \(\star\)]
+        \item \(A \geq \{a \in A : |a|< \infty\} =: A_\text{tor} \ \leftarrow \)  \emph{Subgrupo de torsión}
+        \item Si \(A_\text{tor} = A \ \leftarrow\) \emph{Grupo de torsión} \(\ \leftrightharpoons \ |A| < \infty\)
+        \item \(A \geq \{a \in A : |a| = p^k \} =: A(p)\ \leftarrow \) \emph{\(p\)-subgrupo de torsión}
+    \end{itemize} 
+\end{definition}
+
+\begin{theorem}
+    \textbf{8.1.} Sea \(A: A = A_\text{tor}\). Entonces, \(A = \displaystyle\bigoplus_p  A(p) : A(p) > 0\). 
+\end{theorem}
+
+\demo{Defina \(\Phi: (x_p) \mapsto \sum x_p \) homomorfismo. Inyectividad, \(\sum x_p = 0 \ \leftrightharpoons \ x_q = \sum_{p\neq q}(-x_p)  \ \leftrightharpoons\ dx_q = 0\), siendo \( d:= (\operatorname{mmc}\{|x_p| : p \neq q\}, q^r) = 1\), luego \(x_q = 0\). Sobreyectividad, si \(m = rs: (r,s) = 1\), entonces \(\{a \in A : |a| = m\} =: A_m  = A_r + A_s\), ahí el resultado sigue por inducción. }
+
+\begin{definition}
+    \(A : |A|= p^k< \infty\) es \emph{del tipo} \((r_1, r_2, \ldots r_s) : r_j\geq r_{j+1} \geq 1\) si \(A \cong \prod \Z_{p^{r_j}}\). 
+\end{definition}
+
+\begin{lemma}
+    Sean \(|A| = p^k < \infty \), \(b \in A^\times\), \(k\geq 0 : p^kb \neq 0\) e \(m:= |p^kb|\). Entonces, \(|b| = p^{k+m}\). \comentario{Es claro que \(p^mp^kb = 0\), además si \(p^nb = 0\), entonces \(n\geq k, k+m\) } 
+\end{lemma}
+
+\begin{theorem}
+    \textbf{8.2.} Todo \(A : |A| = p^k < \infty\) es producto de \(p\)-grupos cíclicos. Más aún, la secuencia de su tipo \((r_1, r_2, \ldots, r_s)\) es unideterminada. \comentario{Véase \cite[pag. 43]{lang}}
+\end{theorem}
+
+\begin{lemma}
+    \textbf{8.3.} Sea \([b] \in \nicefrac{A}{A_1} : |[b]| = p^r\). Entonces, \(\exists a \in [b] : |a|= p^r\). 
+\end{lemma}
+

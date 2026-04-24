@@ -537,6 +537,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT ./sections/5.tex
 INPUT ./sections/5.tex
 INPUT sections/5.tex
+INPUT ./sections/6.tex
+INPUT ./sections/6.tex
+INPUT sections/6.tex
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

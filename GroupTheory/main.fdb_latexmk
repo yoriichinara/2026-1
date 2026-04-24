@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1776801578.2824 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1776801580.57766 0
-  "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" 1776709595.86867 8241 99702ed74f10afc09924ba588c9f17d6 ""
+["pdflatex"] 1777059098.00382 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1777059100.29571 0
+  "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" 1777049934.80092 8350 5af9a3f921e40b2b88d295e9fb5ebe1b ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1772820570 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1772820570 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1772820570 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -270,14 +270,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1774347788 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774347783 2328188 46bbb8477938fbdb4d556a2ee033fb58 ""
   "Imagens/Header.png" 1752097914 363895 6890a9cd210a4932f77549a60c1a103c ""
-  "main.aux" 1776801580.4169 1075 991e1a9ab9673d8c84a60d9b7e6f37ef "pdflatex"
-  "main.out" 1776801580.42024 905 6bfe91915e96185174acd557fdf450fe "pdflatex"
-  "main.tex" 1776709595.86867 8241 99702ed74f10afc09924ba588c9f17d6 ""
+  "main.aux" 1777059100.14726 1261 686ccfe6592f15d94c3af0979c20c039 "pdflatex"
+  "main.out" 1777059100.14726 1147 df5c8587a162d93d9f7e2523206d6a0b "pdflatex"
+  "main.tex" 1777049934.80092 8350 5af9a3f921e40b2b88d295e9fb5ebe1b ""
   "sections/1.tex" 1776384665.28267 7544 48a87b03499d78b667ffc89f70a712ce ""
   "sections/2.tex" 1776798074.67078 15300 709ffb3053ba23eee21395ee84431b96 ""
   "sections/3.tex" 1776536820.40409 9157 249a5dbf8ba1019a115317005e8a8c50 ""
   "sections/4.tex" 1776776198.99172 6467 f6b03ad99800e16f26d75cfeed9e667a ""
-  "sections/5.tex" 1776801575.66019 8780 6742496dc88def03afd83b242fc4ea27 ""
+  "sections/5.tex" 1777048564.29928 8781 bf18edd1de7fdc2046e7eb1496fff6e6 ""
+  "sections/6.tex" 1777059097.73057 2204 db3979cb7662fa65bb20cf7047c6559c ""
   (generated)
   "main.aux"
   "main.log"
