@@ -18,23 +18,13 @@ Para la unicidad, si \(f(z) = (z-z_0)^m h(z), \ m>n\), tendríamos \(g(z) = (z-z
 }
 
 \begin{definition}
-    Sea \(\widehat{\Omega}:= \Omega \setminus \{z_0\} : \Omega\ab \in \U_{z_0} \), \emph{vecindad punteada} de \(z_0 \in \C\).\footnote{Más formalmente seria \(\widehat{B}(z_0;r):= \{z\in \C : 0 < |z-z_0|<r : r >0\}\).} Decimos que \(f\), tiene una \emph{singularidad} en \(z_0\) si fuera holomorfa apenas en  \(\widehat{\Omega}\), esta puede ser: 
-    \vspace{-0.2cm}
+    Sea \(\widehat{\Omega}:= \Omega \setminus \{z_0\} : \Omega\ab \in \U_{z_0} \), \emph{vecindad punteada} de \(z_0 \in \C\).\footnote{Más formalmente seria \(\widehat{B}(z_0;r):= \{z\in \C : 0 < |z-z_0|<r : r >0\}\).} Decimos que \(f\), tiene una \emph{singularidad} \ \(\rotatebox{90}{$|$} \star  \rotatebox{90}{$|$}\) \ en \(z_0\) si fuera holomorfa apenas en  \(\widehat{\Omega}\). 
+    \vspace{-0.2cm} 
     \begin{itemize}[left = 1cm, label = \(\star\)]
-        \item \emph{Removible} \(\ \leftrightharpoons \  \exists w\in \C : \ho(\Omega)\ni f(z):= \begin{cases}
-        w, \ \ \text{si } z=z_0 \\ 
-        f(z), \ \  \text{e.o.c.}  
-        \end{cases}.\)
-        \item \emph{Polo} \(\ \leftrightharpoons \  \ho(\Omega)\ni\frac{1}{f(z)}:= \begin{cases}
-        0, \ \ \text{si } z=z_0 \\ 
-        \nicefrac{1}{f(z)}, \ \  \text{e.o.c.}  
-        \end{cases}.\)
-        
+        \item \emph{Removible} \ \(\leftarrow \exists w \in \C \mid\) si \(f(z_0):= w\), entonces \(f\in \ho(\Omega)\).     
+        \item \emph{Polo} \ \(\leftarrow z_0\) es singularidad removible de \(\nicefrac{1}{f}: z_0\mapsto w =0\).% \(\star\) \  \emph{Esencial} e.o.c..
+        \item \emph{Esencial} \ \(\leftarrow \) No es removible ni polo. 
     \end{itemize}
-\end{definition}
-\begin{definition}
-    Una función \(f : \widehat{\Omega} \to \C\) tiene un \emph{polo} en \(z_0\) si la función 
-    
 \end{definition}
 
 \hypertarget{thm312}{}
@@ -73,12 +63,18 @@ Para la unicidad, si \(f(z) = (z-z_0)^m h(z), \ m>n\), tendríamos \(g(z) = (z-z
 \subsection*{Fórmula del residuo}
 
 \begin{theorem}
-    \textbf{2.1.} Sean \(\Omega\ab \in \U_{z_0}\) meromorfa en \(\widehat{\Omega}\) e \(D : \overline{D}\subset \Omega\) e \(z_0 \in D\). Entonces, 
+    \textbf{2.1.} Sean \(\Omega\ab \in \U_{z_0}\), \(f\) holomorfa en \(\widehat{\Omega}\) con polo en \(z_0 \in D : \overline{D}\subset \Omega\). Entonces, 
     \[\int_{\partial D} f(z) \ dz = 2 \pi i \cdot \operatorname{res}_{z_0}f. \]
 \end{theorem}
 
 \demo{
     Combinando la demostración del \(\blacksquare\) \hyperlink{thm241}{4.1.} e la fórmula en \(\blacksquare\) \hyperlink{thm313}{1.3.} tenemos,
-    \[\int_{\partial D} f(z) \ dz = \int_{\partial D_\epsilon} f(z) \ dz = \int_{\partial D_\epsilon} P(z) + G(z)\ dz .\]% = a_{-1}\cdot \frac{1}{2 \pi i }\int_{\partial D} \frac{1}{z-z_0} \ dz = a_{-1}, \ \blacksquare \ \text{\hyperlink{thm241}{4.1.}}.\]
-    En esa esa integral cuasi todo mundo tiene primitiva en \(D_\epsilon\), menos el término en \(P(z)\) asociado a \(k = -1\).
+    \[\int_{\partial D} f(z) \ dz = \int_{\partial D_\epsilon} f(z) \ dz= 2\pi i \cdot a_{-1}\cdot \frac{1}{2 \pi i }\int_{\partial D_\epsilon} \frac{1}{z-z_0} \ dz =2 \pi i \cdot a_{-1}.\]
+    Eso pues en \(f(z) = P(z) + G(z) \) cuasi todo mundo tiene primitiva en \(D_\epsilon\), menos el término en \(P(z)\) asociado a \(k = -1\).      
 }
+
+\begin{corollary}
+    \textbf{2.3. (\emph{Formula del residuo})} Sean \(\Omega\ab\subset \C\), \(P:= \{z_1, z_2, \ldots , z_N\}\subset \Omega\) polos de \(f\) holomorfa en \(\Omega \setminus P \) e \(P \subset D : \overline{D} \subset \Omega\). Entonces, 
+    \[\int_{\partial D} f(z) \ dz = 2\pi i \sum_{k=1}^N \operatorname{res}_{z_k} f. \] 
+\end{corollary}
+
