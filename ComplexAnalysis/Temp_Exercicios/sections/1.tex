@@ -1,0 +1,82 @@
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\an}{\mathscr{A}} 
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\D}{\mathbb{D}}
+\renewcommand{\hom}{\operatorname{Hom}}
+\newcommand{\ehom}{\operatorname{End}}
+\colorlet{gris}{black!60}
+
+\-\vspace{-0.3cm}
+  {\hrule \vspace{-0cm}
+  \centering \textbf{Pós-P1 \ \(\mid\) \ Variável Complexa \ \(\mid\) \ \today} \vspace{0.2cm}
+  \hrule
+  Est. Nestor Aponte \ \(\mid\) \ RA 267452 \vspace{0.2cm}
+  \hrule}
+
+\vspace{0.5cm}
+\textbf{Ex. 1.19.} Mostre que: \vspace{0.2cm}\\ 
+(a) \(\sum nz^n\) não converge em nenhum ponto de \(\partial\D\).
+
+\textcolor{gray}{
+\[ |n|^{\nicefrac{1}{n}} = \exp (\nicefrac{1}{n}\cdot \log n ) \to \exp (0)  = 1\]  
+Portanto, \(\sum nz^n < \infty\), se \(z \in \D\). Por outro lado, se \(|z| = 1\)
+\[|n z^n| = n \cdot 1 = n \to \infty. \]
+Em particular, \(nz^n \not\to 0\) e a série diverge.
+}
+
+(b) \(\sum \nicefrac{z^n}{n^2}\) converge em cada ponto de \(\partial \D\). 
+
+\textcolor{gray}{
+Pra cada \(z : |z|\leq 1\)  temos \(|f_n(z)| = |\nicefrac{1}{n^2} z^n| \leq \nicefrac{1}{n^2}\), como 
+\[\sum_{n =1}^\infty \frac{1}{n^2} \leq \int_1^\infty \frac{1}{x^2} \ dx = \left(\lim_{x\to \infty} -\frac{1}{x}\right) - (-1)  = 1 < \infty,\]
+pelo critério M-Weierstrass \(\sum f_n \overset{u}{\longrightarrow} f\) em todo \(\overline{\D}\). 
+}
+
+(c) \(\sum \nicefrac{z^n}{n}< \infty, \ \forall z \in \partial \D : z \neq 1\). Hint: somas parciais.
+%\cite[cap. 1]{shakarchi} 
+
+\textcolor{gray}{
+A dica tem relação com um resultado mais geral conhecido como o Teste de Abel. Seja 
+\[A_N := \sum^N_{n=1} z^n  + 1 - 1 = z \frac{1-z^N}{1-z}.\]
+Para \(z \in \overline{\D}\setminus \{1\}\) fixo, \(|A_N| \leq \nicefrac{2}{|1-z|} =: C<  \infty\). Agora, 
+\[S_N := \sum_{n=1}^N \frac{1}{n} \cdot z^n \overset{(?)}{=} \frac{1}{N}\cdot A_N + \sum^{N-1}_{n=1} A_n \left(\frac{1}{n}-\frac{1}{n+1}\right).\]
+Tomando \(N\to \infty\) do módulo temos,  
+\[|S_N| \leq C \frac{1}{N}  + C \left| 1 - \frac{1}{N} \right| \to  C< \infty,\]
+isso pois após de tirar \(|A_n|\) fica série telescópica. Se \(z=1\) temos a série armônica \(\sum \nicefrac{1}{n} = \infty\).  
+\vspace{0.3cm}
+\hrule
+\vspace{0.1cm}
+\((?)\) Sendo \(a_n := z^n\) e \(b_n := \nicefrac{1}{n}\) note que,  \(-A_{j}b_{j+1} + A_{j+1} b_{j+1} = -A_jb_{j+1} + (A_j + a_{j+1}) b_{j+1} = a_{j+1}b_{j+1}\), logo
+  %\sum^{N-1}_{n=1} A_n\left(b_n - b_{n+1}\right) = A_1b_1 -A_1b_2+ A_2b_2 -A_2b_3 + \cdots 
+  \begin{align*}
+    \sum^{N-1}_{n=1} A_n(b_n -b_{n+1}) &= A_1b_1 + \sum_{n=2}^{N-1}a_jb_j - A_{N-1}b_N \\ 
+    &= \sum^{N-1}_{n=1} a_jb_j - (a_1 + \cdots + a_{N-1}) b_N
+  \end{align*} 
+  Finalmente somando o termo \(\nicefrac{1}{N}\cdot A_N = (a_1 + \cdots + a_N) b_N\) obtemos a fórmula utilizada acima. 
+}
+
+\newcommand{\M}{\mathcal{M}}
+\textbf{Ex. 6.10.} Dada \(f: \R_+ \to \R\) contínua, a sua \emph{transformada de Mellin} é a função (complexa) dada por:
+\[\M(f)(z) :=  \int_0^\infty f(t)\cdot t^{z-1} \ dt. \] 
+
+(a) Mostre que para \(0 < \operatorname{Re}(z)< 1\), 
+\begin{align*}
+  \M(\cos)(z) &= \Gamma(z)\cdot \cos( \pi \cdot \nicefrac{ z}{2}) \text{ \ \  e} \\ 
+  &\M(\sin)(z) = \Gamma(z)\cdot \sin( \pi \cdot\nicefrac{z}{2})
+\end{align*}
+Hint: Considere a integral da função \(f(w):= e^w \cdot w^{z-1}\) no contorno descrito na seguinte figura,
+ 
+\begin{textblock*}{6cm}(13.5cm, 4.5cm)
+  \includegraphics[width = 0.7\linewidth]{610.pdf}
+\end{textblock*}
+
+\newcommand{\ho}{\mathcal{O}}
+\vspace{5cm}
+\textcolor{gray}{
+  Seguindo a dica, chamemos de \(\Gamma_R\) a curva toda, \(f(w) = e^w \exp ((z-1)\cdot \log w)\) é holomorfa em \(\C\setminus \{x \in \R : x \leq 0\}\), segue que do \(\blacksquare\) \hyperlink{thm222}{2.2. (\emph{Cauchy})} que 
+  \[\int_{\Gamma_R} f(w) \ dw = 0.\]   
+  Como \(\Gamma_R = \gamma_\epsilon \cup [\epsilon, R] \cup \gamma_R \cup [iR, i\epsilon]\), vamos analizar cada uma dessas integrais.  
+    \[\blacktriangleright \  \left|\int_{\gamma_\epsilon} f(w) \ dw\right| \leq \epsilon \cdot \frac{\pi}{2} \cdot \sup_{\gamma_\epsilon} |f(w)|\]%|e^{\epsilon \operatorname{cis} \theta}||\epsilon^{z -1}| |e^{i\theta(z-1)}|\)% \leq \epsilon \cdot M(\theta) \sup e^{-\epsilon\cos\theta} \epsilon^{\operatorname{Re(z)}-1}  
+}
+
