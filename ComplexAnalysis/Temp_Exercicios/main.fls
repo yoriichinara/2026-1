@@ -421,8 +421,6 @@ INPUT ./610.pdf
 INPUT ./610.pdf
 INPUT ./610.pdf
 INPUT ./610.pdf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
@@ -431,6 +429,15 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT main.aux
@@ -450,3 +457,4 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb
