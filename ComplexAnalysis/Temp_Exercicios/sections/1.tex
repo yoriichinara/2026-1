@@ -85,6 +85,7 @@ Hint: Considere a integral da função \(f(w):= e^{-w} w^{z-1}\) no contorno des
     \end{align*}
     Pra \(0< \epsilon \ll 1\) a integral vai pra \(0\), sempre que \(x>0\). 
     \[\blacktriangleright \  \left|\int_{\gamma_R} f(w) \ dw\right| \leq M \cdot \left[\frac{R^{x-1}}{ e^R }e^{\nicefrac{2R\theta }{\pi}}\right]_0^{\nicefrac{\pi}{2}} \to 0 \]
+    \vspace{-0.4cm}
     \begin{align*}
         \left|\int_{\gamma_R} (\cdots)\right| &\leq \int_0^{\nicefrac{\pi}{2}} |e^{-R\operatorname{cis(\theta)}} R^{z-1} e^{i\theta (z-1)} i R e^{i\theta} | \ d\theta  \\ 
       &\leq M \cdot R^{x}\int_0^{\nicefrac{\pi}{2}} e^{-R\cos \theta} \ d\theta  
@@ -102,7 +103,7 @@ Hint: Considere a integral da função \(f(w):= e^{-w} w^{z-1}\) no contorno des
       \int_0^\infty e^{-t}t^{z-1} \ dt &= -\int_\infty^0 e^{-it} (it)^{z-1} \ i dt  \\ 
       &= i^z \int_0^\infty e^{-it} t^{z-1} \ dt  
     \end{align*}
-    Como \(i^z = e^{z\cdot \log i} = e^{z \cdot (\log 1 + \operatorname{arg}i)} = e^{z\cdot \nicefrac{\pi}{2}} \) e lembrando que \(e^{i\theta} = \operatorname{cis}(\theta)\), obtemos que 
+    Como \(i^z = e^{z\cdot \log i} = e^{z \cdot (\log 1 + i\operatorname{arg}i)} = e^{iz\cdot \nicefrac{\pi}{2}} \) e lembrando que \(e^{i\theta} = \operatorname{cis}(\theta)\), obtemos que 
     \[\Gamma(z) \cdot \operatorname{cis}(-\pi \cdot \nicefrac{z}{2}) = \M(\cos)(z) - i \M(\sin)(z).\]
     Finalmente, igualando as partes real e imaginaria na igualdade acima obtemos as identidades do enunciado.
     }
@@ -113,14 +114,16 @@ Hint: Considere a integral da função \(f(w):= e^{-w} w^{z-1}\) no contorno des
 
     \textcolor{gray}{
       Olhemos primeiro pra a integral que define a transformada 
-      \[\M(\sin)(z) = \int_0^\epsilon\sin(t)t^{z-1} \ dt + \int_\epsilon^\infty \sin(t) t^{z-1} \ dt\]
+      \[\M(\sin)(z) = \int_0^1\sin(t)t^{z-1} \ dt + \int_1^\infty \sin(t) t^{z-1} \ dt\]
       %Perceba que para \(0 <t \ll 1, \ t^z \cdot \frac{\sin(t)}{t} \sim t^z\). Tambem, quanto a segunda integral conseguimos limitar com integrando monotono decrescente (convergente), logo  
       %\[\left|\int^\epsilon_0 t^z \ dt\right| \leq \int_0^\epsilon t^{x} \ dt  < \infty, \text{ \ se } x>-1\]
       %\[\left| \int_\epsilon^\infty \sin(t) t^{z-1} \ dt \right| \leq \left|\int_\epsilon^\infty t^{x-1} \ dt \right| < \infty,\ \text{ se } x < 1\]
       %Portanto a nossa integral toda converge se \(|\operatorname{Re}(z)|< 1\). 
-      Sejam \(\{z\in \C : |\operatorname{Re}(z)|< 1\} =: \Omega\ab \subset \C\) e \(K\subset \Omega\) compacto, então \(\exists \delta > 0 : -1 + \delta \leq \operatorname{Re}(z) \leq 1 - \delta, \ \forall z\in K \). Como  \(|\sin(t) t^{z-1}| \leq t^{-\delta}\) se \(t\gg 1\) e \(|\sin(t) t^{z-1}| \sim |t^{z}| \leq t^{-1 + \delta}\) se \(0 <  t\ll 1 \), temos que pra \(z \in K\), 
-      \[\int_0^1 (\cdots)  + \int_1^\infty (\cdots) \leq \int_0^1 t^{-1+\delta} \ dt + \int_1^\infty t^{-\delta} \ dt  < \infty\]
-      Segue que a integral converge uniformemente em compactos dessa faixa. Pra \(t \in \R_+\) fixo o integrando é uma função inteira, assim pelo \(\blacksquare\) \hyperlink{thm33}{5.4.} \cite[pag. 56]{shakarchi} a integral define uma função holomorfa em \(\Omega\). Agora, \( \ho(\Omega)\ni \M(\sin)(z) = \Gamma(z) \sin(\pi \cdot \nicefrac{z}{2})\) em \(\{z\in \C : 0 < \operatorname{Re}(z)< 1\}\) conjunto com pontos de acumulação, segue do {\scriptsize\(\boxtimes\)} \hyperlink{coro33}{4.9.} \cite[pag. 52]{shakarchi} que as funções são idénticas em \(\Omega\). 
+      Sejam \(\{z\in \C : |\operatorname{Re}(z)|< 1\} =: \Omega\ab \subset \C\) e \(K\subset \Omega\) compacto, então \(\exists \delta > 0 : -1 + \delta \leq \operatorname{Re}(z) \leq 1 - \delta, \ \forall z\in K \). Como \(|\sin(t) t^{z-1}| \leq |t\cdot t^{z-1}| \leq t^{-1 + \delta}, \ t \in (0,1)\), temos   
+      \[\int_0^1 |\sin(t)t^{z-1}| \ dt \leq \int_0^1 t^{-1+\delta} \ dt < \infty, \ \forall z\in K\]
+      Tambem, para \(1 \ll t \),  \(\left|\int_1^T\sin(t) \ dt\right| \leq 3\) e \(|t^{z-1}| \leq t^{-\delta} \to 0\), pelo critério de Dirichlet\footnote{Eu desconhecia esse resultado, portanto não tou muito ligado com essa parte do argumento, foi sugestão da IA  + \href{https://math.stackexchange.com/questions/141048/dirichlets-test-for-convergence-of-improper-integrals}{(MathExchange)}.},  
+      \[\int_1^\infty \sin(t)t^{z-1} \ dt  < \infty, \ \forall z\in K. \]
+      Segue que a integral converge uniformemente em compactos dessa faixa. Pra \(t \in \R_+\) fixo o integrando é holomorfa em \(\Omega\), assim pelo \(\blacksquare\) \hyperlink{thm33}{5.4.} \cite[pag. 56]{shakarchi} a integral define uma função holomorfa em \(\Omega\). Agora, \( \ho(\Omega)\ni \M(\sin)(z) = \Gamma(z) \sin(\pi \cdot \nicefrac{z}{2})\) em \(\{z\in \C : 0 < \operatorname{Re}(z)< 1\}\) conjunto com pontos de acumulação, segue do {\scriptsize\(\boxtimes\)} \hyperlink{coro33}{4.9.} \cite[pag. 52]{shakarchi} que as funções são idénticas em \(\Omega\). 
       \vspace{0.2cm}
       \hrule
       \vspace{-0.3cm}
