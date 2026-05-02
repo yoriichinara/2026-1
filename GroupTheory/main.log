@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  24 APR 2026 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.24)  1 MAY 2026 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1026,22 +1026,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{thm223}) has b
 <to be read again> 
                    \relax 
 l.121 \hypertarget{thm223}{}
-                            ) (./sections/6.tex [15]) [16] (./main.aux)
+                             [15] [16]) (./sections/6.tex [17]) [18] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DF5C8587A162D93D9F7E2523206D6A0B;1147.
+(rerunfilecheck)             Checksum: 9F59D78CB8FAA8E9319FA22745B35C5D;1084.
  ) 
 Here is how much of TeX's memory you used:
- 34080 strings out of 469515
- 688604 string characters out of 5470807
+ 34092 strings out of 469515
+ 688720 string characters out of 5470807
  1209066 words of memory out of 5000000
- 62028 multiletter control sequences out of 15000+600000
+ 62032 multiletter control sequences out of 15000+600000
  697510 words of font info for 154 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,11n,108p,1263b,765s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,108p,1263b,768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{thm523} has been referenced but does not exist, replaced by a fixed one
 
@@ -1058,10 +1058,10 @@ pdfTeX warning (dest): name{thm217} has been referenced but does not exist, repl
 pdfTeX warning (dest): name{thm11} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (16 pages, 583244 bytes).
+Output written on main.pdf (18 pages, 594805 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 281 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
  210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

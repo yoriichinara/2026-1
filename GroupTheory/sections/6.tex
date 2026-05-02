@@ -1,8 +1,20 @@
-\section{Grupos Abelianos Finitamente Generados}
+\section{Productos Directos Finitos}
 
-En esta sección seguimos \cite[cap. 8]{lang}. Denotaremos por \( (A,+) = A\) (grupo abeliano) e usamos notación aditiva, \(a^m = \underbrace{(a + a + \cdots + a)}_{m \text{ veces}} = m\cdot a\) e \(\id \sim 0\). 
+%En esta sección seguimos \cite[cap. 8]{lang}. Denotaremos por \( (A,+) = A\) (grupo abeliano) e usamos notación aditiva, \(a^m = \underbrace{(a + a + \cdots + a)}_{m \text{ veces}} = m\cdot a\) e \(\id \sim 0\). 
+En esta sección denotaremos por \( (A,+) = A\) (grupo abeliano) e usamos notación aditiva, \(a^m = \underbrace{(a + a + \cdots + a)}_{m \text{ veces}} = m\cdot a\) e \(\id \sim 0\). Si \(|A|=p^k\), será \emph{grupo $p$-primario}.
 
-\vspace{-0.2cm}
+\begin{theorem}
+    \textbf{6.1.} Si \(|A|< \infty\), entonces \(A = \bigoplus P_i : P_i\) es \(p\)-primario. \comentario{\(\blacksquare\) \hyperlink{thm539}{5.39.}, para una demostración más reveladora (abeliana), véase \cite[pag. 126]{stein}}
+\end{theorem}
+
+\begin{definition}
+    Una familia \(\{x_1, \ldots, x_r \}\subset A^\times\) es \emph{independiente} se \(\sum m_ix_i =0 : m_i \in \Z\) implica \(m_ix_i =0 , \ \forall i \leq r\). 
+\end{definition}
+
+\begin{lemma}
+    \textbf{6.2.} \(\{x_1, x_2, \ldots x_r\}\subset A^\times \) es independiente \(\ \leftrightharpoons \ \) \(\langle x_1, \ldots, x_r\rangle = \langle x_1\rangle \oplus \cdots \oplus \langle x_r\rangle\).  
+\end{lemma}
+
 \begin{definition}
     Un elemento \(a \in A\) es de \emph{torsión} si \(\exists m \in \N : ma = 0 \) (\emph{orden finito}). Tambien,
     \vspace{-0.3cm}

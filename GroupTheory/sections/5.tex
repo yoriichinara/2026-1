@@ -93,7 +93,7 @@
 \end{definition}
 
 \begin{definition}
-    Un \emph{automorfismo} es un \(\varphi: G \cong G\). Tambien, \(H \leq G\) es característico, \(H \operatorname{char} G\) si \(\varphi(H) = H\) para cada automorfismo \(\varphi \) de \(G\). 
+    Un \emph{automorfismo} es un \(\varphi: G \cong G\). Tambien, \(H \leq G\) es \emph{característico}, \(H \operatorname{char} G\) si \(\varphi(H) = H\) para cada automorfismo \(\varphi \) de \(G\). 
 \end{definition}
 
 \begin{note}
@@ -140,3 +140,120 @@
 %\begin{corollary}
 %    \textbf{5.25.} Si \(V\lhd G\) es minimal en \(G\) soluble, entonces \(G \) actua en \(V\) como un grupo de transformaciones lineales.
 %\end{corollary}
+
+\subsection*{Series Centrales y Grupos Nilpotentes}
+
+En esta parte introducimos y recuperamos algunas definiciones de secciones anteriores, valiendónos principalmente de la siguiente: 
+\begin{definition}
+    Dados \(H,K \leq G\) definimos \(\displaystyle [H,K]:= \langle[h,k] : h \in H, k \in K \rangle\). Tambien, 
+    \vspace{-0.3cm}
+\begin{itemize}[label = \(\star\), left = 1cm]
+    \item \(K < N_G(H) \leftarrow \ K\) \emph{normaliza} \(H\)\textcolor{gray}{\( \  \leftrightharpoons \ [H,K ] \leq H\)}
+    \item \(C_G(H)= \{x \in G : [x,h] = \id, \ \forall h \in H\leq G\}\) 
+    \item \(K < C_G(H) \leftarrow \ K \) \emph{centraliza} \(H\) \textcolor{gray}{\( \  \leftrightharpoons \ [H,K ] = \id\)}
+    \item \([x,y] \in K \lhd G \leftarrow \ x  \) e \(y\) \emph{conmutan} \(\operatorname{mod}  K \) (como clases en \(\nicefrac{G}{K}\))
+\end{itemize}
+\end{definition}
+
+\begin{note}
+    Es claro que \([H,K] = [K,H]\), pues \([h,k]^{-1} = (hkh^{-1}k^{-1})^{-1} = [k,h] \). Tambien, en está nueva notación, \(G^{(i+1)} = [G^{(i)},G^{(i)}]\). 
+\end{note}
+
+\hypertarget{lemma530}{}
+\begin{lemma}
+    \textbf{5.30.} (i) Si \(K \lhd G\) e \(K \leq H \leq G\), entonces \([H,G] \leq K \ \leftrightharpoons \ \nicefrac{H}{K} \leq Z(\nicefrac{G}{K})\) e (ii) Si  \(f : G \to L\) es homomorfismo, entonces \(f([H,K]) = [f(H), f(K)]\).   
+\end{lemma}
+
+\demo{(i) \(hKgK = gKhK \ \leftrightharpoons \ [h,g]K = K \ \leftrightharpoons \ [h,g] \in K \); (ii) Ambos lados son generados por los elementos \(f([h,k]) = [f(h), f(k)]\). }
+
+\begin{definition}
+    Considere los subgrupos característicos de \(G\), definidos inductivamente por:
+    %\(\star \ \  \leftarrow \) \ \emph{Subgrupos característicos} de \(G\)
+    \vspace{-0.33cm}
+    \begin{itemize}[label = \(\star\), left=1cm]
+        \item \(\gamma_1 := G; \ \  \gamma_{i+1} := [\gamma_i, G]\)
+        \item \(\zeta^0 := \id; \ \  \zeta^{i+1} := \nicefrac{\zeta^{i+1}}{\zeta^i} = Z(\nicefrac{G}{\zeta^i})\leftarrow \ \) \emph{Centros de orden superior}
+        \item\( G = \gamma_1 \geq \gamma_2 \geq \cdots  \leftarrow \ \) \emph{Serie central inferior} (\emph{descendente})
+        \item \(\id = \zeta^0 \leq \zeta^1 \leq \cdots  \leftarrow \ \) \emph{Serie central superior} (\emph{ascendente})
+    \end{itemize}
+\end{definition}
+
+\begin{note}
+    Es claro que \(\nicefrac{\gamma_i(G)}{\gamma_{i+1}(G)}\leq Z(\nicefrac{G}{\gamma_{i+1}(G)})\), {\scriptsize \(\square\)} \hyperlink{lemma530}{5.30. (i)} e tambien \(\zeta^1 = Z(G)\). Cabe notar que la serie inferior no tiene porque ser normal (puede no conveger). 
+\end{note}
+
+\hypertarget{thm531}{}
+\begin{theorem}
+    \textbf{5.31.} En un grupo \(G\), \(\exists c \in \Z_{\geq 0} : \zeta^c = G \ \leftrightharpoons \ \gamma_{c+1}= \id \). Más aún, en este caso \(\gamma_{i+1} \leq \zeta^{c-i}, \ \forall i \leq c\). \comentario{No admite resumen, véase \cite[pag. 113]{stein}}
+\end{theorem}
+
+\begin{theorem}
+    \textbf{5.32. (\emph{Schur})} Si \(|\nicefrac{G}{Z(G)}|< \infty\), entonces \(|G'| < \infty\). \comentario{Véase \cite[pag. 114]{stein}}  
+\end{theorem}
+
+\begin{definition}
+    Un grupo \(G\) es \emph{nilpotente} si \(\exists c \in \Z_{\geq 0} \) (\emph{clase de nilpotencia}) \(: \gamma_{c+1} = \id\).
+\end{definition}
+
+\begin{note}
+    Para grupos nilpotentes las series superior e inferior son normales de misma longitud, si \(c= 2\), \(\gamma_2 = G' \leq Z(G) = \zeta^1\). Tambien, \(c = 1 \ \leftrightharpoons \ G\) es abeliano.
+\end{note}
+
+\hypertarget{thm533}{}
+\begin{theorem}
+    \textbf{5.33.} Todo \(p\)-grupo finito es nilpotente. \comentario{Si \(\zeta^i < G\), entonces \(\id < Z(\nicefrac{G}{\zeta^i})\), \(\blacksquare\) \hyperlink{thm44}{4.4.}, luego \(\zeta^i < \zeta^{i+1}\), como \(|G| < \infty\), \(\exists c : \zeta^c = G\) }
+\end{theorem}
+
+\begin{note}
+    El caso infinito no es necesariamente cierto, sin embargo existen $p$-grupos infinitos nilpotentes, McLain (1954). %ió uno donde \(Z(G) = \id \) e  \(G' = G\) son sus únicos subgrupos característicos.
+\end{note}
+
+\begin{theorem}
+    \textbf{5.34.} (i) Todo nilpotente es soluble; (ii) Si \(\id < G\) es nilpotente, entonces \(\id < Z(G)\) e (iii) \(S_3\) es un grupo soluble que no es nilpotente. 
+\end{theorem}
+
+\demo{
+    (i) \(G^{(i)} \leq \gamma_i\) (inducción), luego \(G^{(c+1)} \leq \gamma_{c+1} = \id\); (ii) \(\id <  \gamma_c =  \gamma_{c-1+1}  \leq \zeta^{c-(c-1)} = \zeta^1 = Z(G)\), \(\blacksquare\) \hyperlink{thm531}{5.31.}; (iii) \(S_3\) es soluble, mas \(Z(S_3) = \id \). 
+}
+
+\begin{theorem}
+    \textbf{5.35.} Si \(H\leq G\) nilpotente es nilpotente e \(c_{_H} \leq c_{_G}\). \comentario{\(\gamma_i (H) \leq \gamma_i(G)\) (inducción), luego \(\gamma_{c+1}(H) \leq\gamma_{c+1}(G) = \id\)}
+\end{theorem}
+
+\begin{theorem}
+    \textbf{5.36.} Si \(N\lhd G\) nilpotente, entonces \(\nicefrac{G}{N}\) es nilpotente e \(c_{_N} \leq c_{_G}\). \comentario{\(f : G \twoheadrightarrow L\) homomorfismo implica \(\gamma_i(L) \leq f(\gamma_i(G))\), {\scriptsize \(\square\)} \hyperlink{lemma530}{5.30.}, luego \(\gamma_{c+1}(L) \leq \gamma_{c+1}(G) = \id\) }
+\end{theorem}
+
+\begin{note}
+    El análogo del \(\blacksquare\) \hyperlink{thm517}{5.17.} no es cierto en general, por ejemplo, en \(G = S_3\) tenemos \(A_3 \cong \Z_3\) e \(\nicefrac{S_3}{A_3} \cong \Z_2\) (abelianos, nilpotentes), precisa más hipótesis (\textcolor{rojoscuro}{Ex. 5.38}).    
+\end{note}
+
+\hypertarget{thm537}{}
+\begin{theorem}
+    \textbf{5.37.} Si \(H\) e \(K\) son nilpotentes, entonces \(H\times K\) es nilpotente. \comentario{\(\gamma_i(H\times K) \leq \gamma_i(H) \times \gamma_i(K)\) (inducción), luego \(\gamma_{M+1} (H\times K) \leq \id_{_H}\times \id_{_K}, \ M:= \max\{c_{_H}, c_{_K}\}\)}
+\end{theorem}
+
+\hypertarget{thm538}{}
+\begin{theorem}
+    \textbf{5.38.} Si \(G\) es nilpotente, entonces satisface la \emph{condición normalizadora}: si \(H< G\), entonces \(H < N_G(H)\). 
+\end{theorem}
+
+\demo{\(\exists i : \gamma_{i+1}\leq  H < \gamma_i\), luego \([\gamma_i, H] \leq [\gamma_i, G] = \gamma_{i+1} \leq H\) e \(H < \gamma_i \leq N_G(H)\). La vuelta tambien vale (\textcolor{rojoscuro}{Ex. 5.37}).} 
+
+\hypertarget{thm539}{}
+\begin{theorem}
+    \textbf{5.39.} \(G : |G| < \infty\) es nilpotente \( \ \leftrightharpoons \  G = \prod P_i: P_i \leq G\) es $p_i$-Sylow. 
+\end{theorem}
+
+\demo{(\(\Rightarrow\)) \(N_G(P) =: H = N_G(H)\) (\textcolor{rojoscuro}{Ex. 4.11}). Si \(N_G(P)<G\), entonces \(N_G(P) < N_G(H)\), \(\blacksquare\) \hyperlink{thm538}{5.38.}.\Lightning \ Luego, \(N_G(P) =  G\ \leftrightharpoons \ P \lhd G\) e el enunciado sigue (\textcolor{rojoscuro}{Ex. 4.12}); (\(\Leftarrow \)) Sigue de los \(\blacksquare\) \hyperlink{thm533}{5.33.} e \(\blacksquare\) \hyperlink{thm537}{5.37.}.}
+
+\begin{theorem}
+    \textbf{5.40.} En \(G\) nilpotente todo \(H\leq G\) maximal es normal de índice primo. \comentario{\(H< N_G(H) = G \ \leftrightharpoons \ H\lhd G\), \(\blacksquare\) \hyperlink{thm538}{5.38.}, \(|\nicefrac{G}{H}| = p\) sigue del (\textcolor{rojoscuro}{Ex. 2.58})}
+\end{theorem}
+
+\begin{theorem}
+    \textbf{5.41.} Sea \(G\) grupo nilpotente, entonces (i) Si \(\id < H \lhd G\), entonces \(\id < H \cap Z(G) \)  e (ii) Si \(A \lhd G\) es maximal abeliano, entonces \(A = C_G(A)\). \comentario{Véase \cite[pag. 117]{stein}}
+\end{theorem}
+
+
+
