@@ -118,3 +118,15 @@ Para la unicidad, si \(f(z) = (z-z_0)^m h(z), \ m>n\), tendríamos \(g(z) = (z-z
 \begin{definition}
     Sean \(\Omega\ab\subset \C\) e \(P:= \{z_1, z_2, \ldots , z_N\}\subset \Omega\). Decimos que \(f\) es \emph{meromorfa} en \(\Omega\) si (i) \(f\) es holomorfa en \(\Omega \setminus P \) e (ii) \(z_j \in P\) es polo de \(f, \ \forall j\leq N\).     
 \end{definition}
+
+\begin{definition}
+    Llamamos \emph{esfera de Riemann} a \(\C \cup \{\infty\} =: \C^*\simeq \E^2\).\footnote{Compactificación de Alexandroff de \(\C \simeq \R^2\).} La analíticidad de \(f(z)\) en \(\infty\) se va a corresponder con la analíticidad de \(F(z) := f(\nicefrac{1}{z})\) en \(z= 0\).     
+\end{definition}
+
+\begin{theorem}
+    \textbf{3.4.} Las funciones meromorfas en \(\C^*\) son funciones racionales. 
+\end{theorem}
+
+\demo{\(f\) tiene finitos polos \(\{z_1, \ldots, z_n\}\subset \C^*\) (compacto). Escriba \(f(z) = P_k(z) + G_k(z)\) (en \(U_k \in \U_{z_k}\)) e \(f(\nicefrac{1}{z}) = \widetilde{P}_\infty(z) + \widetilde{G}_\infty (z)\) (en \(U_0 \in \U_0\)). Muestre que \(H(z) := f(z)- \widetilde{P}_\infty(\nicefrac{1}{z}) - \sum P_k(z)\) es entera limitada, \(\blacksquare\) \hyperlink{coro45}{4.5. (\emph{Liouville})}. 
+}
+

@@ -1,20 +1,66 @@
 \section{Productos Directos Finitos}
 
 %En esta sección seguimos \cite[cap. 8]{lang}. Denotaremos por \( (A,+) = A\) (grupo abeliano) e usamos notación aditiva, \(a^m = \underbrace{(a + a + \cdots + a)}_{m \text{ veces}} = m\cdot a\) e \(\id \sim 0\). 
-En esta sección denotaremos por \( (A,+) = A\) (grupo abeliano) e usamos notación aditiva, \(a^m = \underbrace{(a + a + \cdots + a)}_{m \text{ veces}} = m\cdot a\) e \(\id \sim 0\). Si \(|A|=p^k\), será \emph{grupo $p$-primario}.
+En esta sección denotaremos por \( (A,+) = A\) (grupo abeliano) e usamos notación aditiva, \(a^m = \underbrace{(a + a + \cdots + a)}_{m \text{ veces}} = m\cdot a\) e \(\id \sim 0\). Si \(|A|=p^r\), será \emph{grupo $p$-primario}.
 
+\hypertarget{thm61}{}
 \begin{theorem}
-    \textbf{6.1.} Si \(|A|< \infty\), entonces \(A = \bigoplus P_i : P_i\) es \(p\)-primario. \comentario{\(\blacksquare\) \hyperlink{thm539}{5.39.}, para una demostración más reveladora (abeliana), véase \cite[pag. 126]{stein}}
+    \textbf{6.1.} Si \(|A|< \infty\), entonces \(A = \bigoplus A_p : A_p\) es \(p\)-primario. \comentario{\(\blacksquare\) \hyperlink{thm539}{5.39.}, para una demostración más reveladora (abeliana), véase \cite[pag. 126]{stein}}
 \end{theorem}
 
 \begin{definition}
     Una familia \(\{x_1, \ldots, x_r \}\subset A^\times\) es \emph{independiente} se \(\sum m_ix_i =0 : m_i \in \Z\) implica \(m_ix_i =0 , \ \forall i \leq r\). 
 \end{definition}
 
+\hypertarget{lemma62}{}
 \begin{lemma}
     \textbf{6.2.} \(\{x_1, x_2, \ldots x_r\}\subset A^\times \) es independiente \(\ \leftrightharpoons \ \) \(\langle x_1, \ldots, x_r\rangle = \langle x_1\rangle \oplus \cdots \oplus \langle x_r\rangle\).  
 \end{lemma}
 
+\demo{  
+    \(y \in \langle x_i\rangle \cap \langle \{x_j : j \neq i\}\rangle \ \leftrightharpoons \ \exists m_k \in \Z : -m_ix_i = \sum m_j x_j \ \leftrightharpoons \ \sum m_kx_k = 0  \ \leftrightharpoons \ m_kx_k = y = 0, \ \forall k\leq r\). 
+}
+
+\begin{corollary}
+    \textbf{6.3.} Si \(|A| = p^r < \infty\), entonces \(\forall a \in A^\times, \ |a| =p\). \comentario{Visto como \(\Z_p\)-espacio tiene base \(\{x_1, \ldots, x_r\}\), ahí ya sigue de {\scriptsize \(\square\)} \hyperlink{lemma62}{6.2.}} 
+\end{corollary}
+
+\begin{lemma}
+    \textbf{6.4.} Sea \(\{x_1, \ldots, x_r\}\) familia independiente en \(A\) $p$-primario. Entonces, 
+    \vspace{-0.3cm}
+    \begin{enumerate}[label = \roman*., left = 0.9cm]
+        \item Si \(\{z_1, \ldots, z_r\}\subset A\) es \(: pz_i = x_i, \ \forall i \leq r\), entonces es independiente.  
+        \item Si \(k_1, \ldots, k_r \in \Z\) son tales que \(k_ix_i \neq 0, \ \forall i \leq r\), entonces \(\{k_1x_1, \ldots, k_rx_r\}\) es independiente. 
+    \end{enumerate}
+\end{lemma}
+
+\begin{definition}
+    Sean \(\{mx : x \in A \}=: mA \leq A\),  \(\mu_m :  A \to A\) tal que \( x \mapsto mx\) homomorfismo (\emph{multiplicación por $m$}) e \(A[m]:= \ker \mu_m = \{x \in A : mx = 0\}\). 
+\end{definition}
+
+\hypertarget{thm65}{}
+\begin{theorem}
+    \textbf{6.5. (\emph{Basis Theorem})} Todo grupo abeliano finito es suma directa de grupos cíclicos primários. \comentario{No admite resumen, véase \cite[pag. 128]{stein}} 
+\end{theorem}
+
+\begin{corollary}
+    \textbf{6.6.} \(\forall A : |A| < \infty, \ A = \bigoplus \langle x_i \rangle : |x_i| = m_i\) e \(m_1 \mid m_2 \mid \cdots \mid m_r\).
+\end{corollary}
+
+\demo{De los \(\blacksquare\) \hyperlink{thm61}{6.1.} e \(\blacksquare\) \hyperlink{thm65}{6.5.} \(A = \bigoplus A_p = \bigoplus \left(\bigoplus \Z_{p^i} \right) \). Basta tomar \(K:= \bigoplus  \Z_{p^j} : \Z_{p^j}\) es maximal en \(A_p\) e iterar el argumento.  }
+
+\begin{note}
+    Los \(m_1 \mid m_2 \mid \cdots \mid m_r\) en {\scriptsize \(\boxtimes\)} \hyperlink{coro66}{6.6.} son los \emph{factores invariantes} de \(A\), son unideterminados y caracterizan por completo la isomorfia de grupos abelianos finitos, no voy a abordar eso aquí, véase \cite[pag. 132-133]{stein}. 
+\end{note}
+
+%\begin{corollary}
+%    \textbf{6.14. (\emph{Teorema Fundamental})} Si \(A\) e \(B\) son grupos abelianos finitos, entonces \(A \cong B\ \leftrightharpoons \ \forall p\) primo, \(A\) e \(B\) tienen mismos divisores elementales. 
+%\end{corollary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{0.5cm}
+\hrule 
 \begin{definition}
     Un elemento \(a \in A\) es de \emph{torsión} si \(\exists m \in \N : ma = 0 \) (\emph{orden finito}). Tambien,
     \vspace{-0.3cm}

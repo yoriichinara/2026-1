@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1777682173.35693 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1777682175.93313 0
+["pdflatex"] 1777828375.43508 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1777828377.87295 0
   "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" 1777049934.80092 8350 5af9a3f921e40b2b88d295e9fb5ebe1b ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1772820570 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1772820570 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -270,15 +270,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1774347788 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774347783 2328188 46bbb8477938fbdb4d556a2ee033fb58 ""
   "Imagens/Header.png" 1752097914 363895 6890a9cd210a4932f77549a60c1a103c ""
-  "main.aux" 1777682175.78895 1301 efc712a9c33bb68e81753a3c02dcf19d "pdflatex"
-  "main.out" 1777682175.78895 1084 9f59d78cb8faa8e9319fa22745b35c5d "pdflatex"
+  "main.aux" 1777828377.71476 1335 61e6db98b58b84a957f76331043b36b7 "pdflatex"
+  "main.out" 1777828377.71476 1084 9f59d78cb8faa8e9319fa22745b35c5d "pdflatex"
   "main.tex" 1777049934.80092 8350 5af9a3f921e40b2b88d295e9fb5ebe1b ""
   "sections/1.tex" 1776384665.28267 7544 48a87b03499d78b667ffc89f70a712ce ""
   "sections/2.tex" 1776798074.67078 15300 709ffb3053ba23eee21395ee84431b96 ""
   "sections/3.tex" 1777637983.93245 9186 68e0422aa263fe4bbcb392aca49b73f0 ""
   "sections/4.tex" 1776776198.99172 6467 f6b03ad99800e16f26d75cfeed9e667a ""
   "sections/5.tex" 1777681500.35622 16056 445fba35e70b49efc72bc1b82807ed61 ""
-  "sections/6.tex" 1777682173.10226 3108 c9f0d7aac5ba2971897397031c1b2efb ""
+  "sections/6.tex" 1777828375.10807 5703 08fc3e7cd2d63c8e36307a6ce7c9982e ""
   (generated)
   "main.aux"
   "main.log"
