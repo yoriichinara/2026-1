@@ -28,24 +28,24 @@
   Sea \(Q\leq G\) subgrupo $2$-Sylow, como \((4,17)=1\) sigue que \(P \cap Q = \id\) e \(|PQ| = |P||Q| = 68 \ \leftrightharpoons \ PQ = G\). Luego, 
   \[G = P \rtimes Q : Q \cong \mathbb{Z}_4 \text{\ o \ } Q \cong \textbf{V}.\] 
 }
-(b2) Muestre que \(G\) es soluble.  
+\hspace{-0.1cm}(b2) Muestre que \(G\) es soluble.  
 
 \newcommand{\Z}{\mathbb{Z}}
 \textcolor{gray}{
   \(P \cong \Z_{17}\) e \(\nicefrac{G}{P} : |\nicefrac{G}{P}| = 2^2 \), por tanto ambos son abelianos (solubles), sigue que \(G\) también es soluble, \(\blacksquare\) \hyperlink{thm517}{5.17.}. 
 }
 
-(b3) Describa todos los \(\theta \in \operatorname{Aut}(\Z_{17}) : |\theta|= 2\) o \(|\theta| = 4\).
+(b3) Describa todos los \(\varphi \in \operatorname{Aut}(\Z_{17}) : |\varphi|= 2\) o \(|\varphi| = 4\).
 
 \textcolor{gray}{
-  \(\operatorname{Aut}(\Z_{17}) \cong \Z_{17}^\times \), vía \([\theta_a : x \mapsto ax] \ \mapsto \ a\in \Z_{17}^\times\cong \Z_{16}\), como \((3,16) =1 \) para \(k= 0 ,\ldots, 15\) tenemos 
-  \[\operatorname{Aut}(\Z_{17}) = \{\theta_k: x \mapsto 3^k x  \ (\operatorname{mod} \ 17)\}.\]
-  Ahí \(|\theta_k| = |3^k| = \nicefrac{|3|}{(|3|,k)} = \nicefrac{16}{(16,k)}\). Finalmente, para \(|\theta_k| = 2  \ \leftrightharpoons \ (16,k) = 8 \ \leftrightharpoons \ k=8\) e \(|\theta_k| = 4 \ \leftrightharpoons \ (16, k) = 4 \ \leftrightharpoons \ k = 4\) o \( 12\).    \vspace{0.2cm}
+  \(\operatorname{Aut}(\Z_{17}) \cong \Z_{17}^\times \), vía \([\varphi_a : x \mapsto ax] \ \mapsto \ a\in \Z_{17}^\times\cong \Z_{16}\), como \((3,16) =1 \) para \(k= 0 ,\ldots, 15\) tenemos 
+  \[\operatorname{Aut}(\Z_{17}) = \{\varphi_k: x \mapsto 3^k x  \ (\operatorname{mod} \ 17)\}.\]
+  Ahí \(|\varphi_k| = |3^k| = \nicefrac{|3|}{(|3|,k)} = \nicefrac{16}{(16,k)}\). Finalmente, para \(|\varphi_k| = 2  \ \leftrightharpoons \ (16,k) = 8 \ \leftrightharpoons \ k=8\) e \(|\varphi_k| = 4 \ \leftrightharpoons \ (16, k) = 4 \ \leftrightharpoons \ k = 4\) o \( 12\).    \vspace{0.2cm}
   \hrule 
-  \( \theta_8 : x \mapsto 3^8 x = x\mapsto 16 x = x\mapsto -x \)  \hfill Orden $2$  \vspace{0.2cm}
+  \( \varphi_8 : x \mapsto 3^8 x = x\mapsto 16 x = x\mapsto -x \)  \hfill Orden $2$  \vspace{0.2cm}
   \hrule
-  \( \theta_4 : x \mapsto 3^4 x = x\mapsto 13 x  \) \hfill  Orden $4$  \vspace{0.2cm} \\ 
-  \( \theta_{12} : x \mapsto 3^{12} x = x\mapsto 4 x  \)  \vspace{0.2cm}
+  \( \varphi_4 : x \mapsto 3^4 x = x\mapsto 13 x  \) \hfill  Orden $4$  \vspace{0.2cm} \\ 
+  \( \varphi_{12} : x \mapsto 3^{12} x = x\mapsto 4 x  \)  \vspace{0.2cm}
   \hrule
 }
 \vspace{0.2cm}
@@ -53,7 +53,27 @@
 
 \newcommand{\aut}{\operatorname{Aut}}
 \textcolor{gray}{
-  Como vimos en (b2) podemos suponer \(P = \Z_{17}\), \vspace{0.2cm}\\  
-  \(\star \) \ Sean \(Q = \Z_4\) e \(\theta_8 : \Z_4 \to \aut(\Z_{17})\). \hfill \(G_1 := P \rtimes \Z_4\)
+  %Como vimos en (b2) podemos suponer \(P = \Z_{17}\), \vspace{0.2cm}\\  
+  \(\star \) \ Sean \(Q = \Z_4 = \langle q\rangle \) e \(\theta_1 : Q \to \aut(P)\) tal que \(\theta_1: q \mapsto \varphi_{8}\), bien definido e no trivial, luego 
+  \[G_1 := P \rtimes_{\theta_1} \Z_4 \text{ \ \ (no abeliano)}.\]
+  \(\theta_1(q)(a) = q a q^{-1} \neq a \ \leftrightharpoons \ xa \neq ax, \ a \in P\). \vspace{0.2cm}\\ 
+  \(\star \) \ Sean \(Q = \textbf{V} = \langle a,b\rangle \) e \(\theta_2 : Q \to \aut(P)\) tal que \(\theta_2 : a \mapsto \varphi_{8} \) e \(\theta_2 : b \mapsto \id_{\aut(P)}\), no trivial, luego   
+  \[G_2 := P \rtimes_{\theta_2} \textbf{V} \text{ \ \ (no abeliano)}.\]
+  Finalmente, \(G_1 \ncong G_2 \) pues \(\Z_4 \ncong \textbf{V}\), $2$-Sylow son conjugados (isomorfos) e isomorfismo lleva $2$-Sylow en $2$-Sylow. 
 }
  
+2. (a) Encuentre todos los $2$-Sylow de \(A_4\). 
+
+\textcolor{gray}{
+  \(|A_4| = 12 = 2^2 \cdot 3\), luego \(n_2 \equiv 1 \ (\operatorname{mod} \ 2)\) e \(n_2 \in \{1,3\}\)
+  \[A_4 = \{\id, \underbrace{[(1 \ \ 2 \ \ 3)]}_{8 \text{ elem.}}, \underbrace{[(1 \ \ 2) (3 \ \ 4)]}_{3\text{ elem.}}\}\]
+  Ninguno de estos elementos tiene orden $4$, por lo tanto los $2$-Sylow son isomorfos a \(\textbf{V}\) que consiste de identidad mas $3$ elementos de orden $2$, la única (\(n_2 = 1\)) posibilidad:  
+  \[P = \{\id, [(1 \ \ 2)(3 \ \ 4)]\}\] 
+}
+(b) Encuentre todos los $2$-Sylow de \(S_4\). 
+
+\textcolor{gray}{
+  ssfd
+}
+
+(c) Demuestre todo \(G: |G| = p^2\), con \(p\) primo, es abeliano.
