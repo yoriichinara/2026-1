@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1777902111.25275 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1777902113.72759 0
+["pdflatex"] 1777938678.51503 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1777938680.90832 0
   "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" 1777899161.033 8374 61d33132e88a934be428336fa66986be ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -56,6 +56,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1775415801 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb" 1775415801 17014 61891910dfe21ad76f9789fdafdd860e ""
   "/usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb" 1775415801 17091 559f388d601cc54898d17f9de70e2e87 ""
+  "/usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb" 1775415801 17066 253bfbb6e5fc3054bb423ea41ca809e2 ""
   "/usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb" 1775415801 91705 188e103f30c94f64bce1570c4b989d07 ""
   "/usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb" 1775415801 16077 4737ac34f0fb5608550f3780a0202c22 ""
   "/usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1775415801 45758 19968a0990191524e34e1994d4a31cb6 ""
@@ -270,8 +271,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1777893121 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1777893072 2328180 07044297c04add7a8ff16bc3c93ea75f ""
   "Imagens/Header.png" 1752097914 363895 6890a9cd210a4932f77549a60c1a103c ""
-  "main.aux" 1777902113.59015 1459 461951455d49f4cf7d2dd265cf96c13b "pdflatex"
-  "main.out" 1777902113.59348 1261 29ce94dcf939a46ce13c5ea8b37d1801 "pdflatex"
+  "main.aux" 1777938680.75508 1493 b0bfc5072d5bb8cc77dba22ad75d3758 "pdflatex"
+  "main.out" 1777938680.75508 1261 29ce94dcf939a46ce13c5ea8b37d1801 "pdflatex"
   "main.tex" 1777899161.033 8374 61d33132e88a934be428336fa66986be ""
   "sections/1.tex" 1776384665.28267 7544 48a87b03499d78b667ffc89f70a712ce ""
   "sections/2.tex" 1776798074.67078 15300 709ffb3053ba23eee21395ee84431b96 ""
@@ -279,7 +280,7 @@
   "sections/4.tex" 1776776198.99172 6467 f6b03ad99800e16f26d75cfeed9e667a ""
   "sections/5.tex" 1777681500.35622 16056 445fba35e70b49efc72bc1b82807ed61 ""
   "sections/6.tex" 1777828375.10807 5703 08fc3e7cd2d63c8e36307a6ce7c9982e ""
-  "sections/7.tex" 1777902110.98013 1078 ff2de9002c5274f64f530da40ac142f3 ""
+  "sections/7.tex" 1777938678.20173 3545 2839164711bed75becc4e9797ed2775b ""
   (generated)
   "main.aux"
   "main.log"

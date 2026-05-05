@@ -17,3 +17,41 @@
 \begin{definition}
     \(G = K \rtimes Q\) (\emph{producto semi-directo}) si \(K \lhd G\) e \(\exists Q_1\cong Q\) \emph{complementar} de \(K\) en \(G\), esto es: \(K \cap Q_1 = \id\) e \(KQ_1 = G\). 
 \end{definition}
+
+\hypertarget{lemma720}{}
+\begin{lemma}
+    \textbf{7.20.} Si \(K \lhd G\), entonces son equivalentes: 
+    \vspace{-0.2cm}
+    \begin{enumerate}[left = 0.2cm, label = \roman*.]
+        \item \(G = K \rtimes \nicefrac{G}{K}\); \hfill ii. \  \(\exists Q \leq G: \forall g \in G, \ \exists ! a \in K, \ !x\in Q : g=ax\);
+        \item[iii.] \(\exists s : \nicefrac{G}{K} \to G\) homomorfismo \(: \pi \circ s= \id_{\nicefrac{G}{K}}\);
+        \item[iv.] \(\exists \varphi : G\to G\) homomorfismo \(: \ker \varphi = K\) e \(\varphi(x)= x, \ \forall x \in \operatorname{Im}\varphi\).% (\emph{retraído})
+    \end{enumerate}
+    \vspace{-0.2cm}
+    \comentario{No admite resumen, véase \cite[pag. 168]{stein}}
+\end{lemma}
+
+\hypertarget{lemma721}{}
+\begin{lemma}
+    \textbf{7.21.} Si \(G= K\rtimes Q\), entonces \(\exists \theta : Q \to \operatorname{Aut}(K)\) homomorfismo tal que, 
+    \[ \theta : x \mapsto [\theta_x : a \mapsto xax^{-1}], \ \forall x \in Q, \ a \in K.\] 
+    Más aún, \(\forall x, y, \id \in Q\) e \(a \in K\), \(\theta_{_\id} (a) = a\) e \(\theta_x(\theta_y(a)) = \theta_{xy}(a)\). \comentario{Mogollas}
+\end{lemma}
+
+\begin{definition}
+    Sean \(G = K \rtimes Q\) e \(\theta : Q \to \operatorname{Aut}(K)\). Decimos que el semi-producto directo \emph{realiza} \(\theta \) si \(\forall x \in Q,\ a \in K, \ \theta_x(a) = xax^{-1}\). 
+\end{definition}
+
+\begin{definition}
+    Dados \(K, Q\) grupos arbitrarios e \(\theta: Q \to \operatorname{Aut}(K)\) homomorfismo, definimos \(G := K \rtimes_\theta Q \), grupo de todos los pares ordenados \((a,x) : a \in K, \ x\in Q\) dotado con la operación \((a,x)(b,y) := (a\theta_x(b), xy)\).  
+\end{definition}
+
+\begin{theorem}
+    \textbf{7.22.} Dados \(K,\ Q \) arbitrarios e \(\theta : Q \to \operatorname{Aut}(K)\), el grupo \(K\rtimes_\theta Q\) es un semi-producto directo que realiza \(\theta\). \comentario{No admite resumen, véase \cite[pag. 170]{stein}}
+\end{theorem}
+
+\begin{theorem}
+    \textbf{7.23.} Si \(G = K \rtimes Q\), entonces \(\exists \theta : Q \to \operatorname{Aut}(K) \) tal que \( G \cong K \rtimes_\theta Q\). 
+\end{theorem}
+
+\demo{Defina \(\theta_x(a) = xax^{-1}\) como en {\scriptsize \(\square\)} \hyperlink{lemma721}{7.21.}, del {\scriptsize \(\square\)} \hyperlink{lemma720}{7.20. (ii)} \(\forall g \in G\), \(g= ax\) de manera única. La multiplicación satisface \((ax)(by) = a(xbx^{-1})xy\), muestra que \(f: K \rtimes_\theta Q \cong G\), donde \(f:(a,x) \mapsto ax\).}
