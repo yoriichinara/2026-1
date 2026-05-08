@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.4)  4 MAY 2026 20:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.4)  8 MAY 2026 19:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -966,7 +966,7 @@ Package hyperref Info: Link coloring ON on input line 117.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 117.
 
 \c@lstlisting=\count425
-<Imagens/Header.png, id=71, 4986.63pt x 611.886pt>
+<Imagens/Header.png, id=75, 4986.63pt x 611.886pt>
 File: Imagens/Header.png Graphic file (type png)
 <use Imagens/Header.png>
 Package pdftex.def Info: Imagens/Header.png  used on input line 193.
@@ -1026,22 +1026,38 @@ pdfTeX warning (ext4): destination with the same identifier (name{thm223}) has b
 <to be read again> 
                    \relax 
 l.121 \hypertarget{thm223}{}
-                             [15] [16]) (./sections/6.tex [17]) (./sections/7.tex [18]) [19] [20] (./main.aux)
+                             [15] [16]) (./sections/6.tex [17]) (./sections/7.tex [18]) (./sections/1rep.tex [19]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\infty' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[20]) [21] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 29CE94DCF939A46CE13C5EA8B37D1801;1261.
+(rerunfilecheck)             Checksum: 503908237B5B13A3DF4A32C434FFC739;1405.
  ) 
 Here is how much of TeX's memory you used:
- 34115 strings out of 469515
- 688968 string characters out of 5470808
- 1209066 words of memory out of 5000000
- 62039 multiletter control sequences out of 15000+600000
+ 34129 strings out of 469515
+ 689160 string characters out of 5470808
+ 1209091 words of memory out of 5000000
+ 62046 multiletter control sequences out of 15000+600000
  697510 words of font info for 154 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,11n,108p,1263b,834s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{thm1} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{coro66} has been referenced but does not exist, replaced by a fixed one
 
@@ -1061,10 +1077,10 @@ pdfTeX warning (dest): name{thm217} has been referenced but does not exist, repl
 pdfTeX warning (dest): name{thm11} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (20 pages, 607434 bytes).
+Output written on main.pdf (21 pages, 613542 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 456 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

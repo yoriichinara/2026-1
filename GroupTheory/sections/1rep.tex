@@ -1,0 +1,58 @@
+\section{Representaciones Lineales ($|G|< \infty$)}
+
+\subsection*{Generalidades}
+
+\renewcommand{\hom}{\mathcal{L}}
+Esta parte del curso es fiel a \cite{rep}, para evitar nimiedades \(V\) va a ser \(\C\)-espaço vectorial de dimesión finita e base canônica \(\alpha = (e_j)\). El grupo, 
+\[(\GL(V),\circ) := \{T \in \hom (V) \ \mid  \ T: V \cong V\}\cong \operatorname{GL}_n(\C),\] 
+endomorfismos invertibles, va a ser nuestra herramienta principal.
+
+%\newcommand{\GL}{\operatorname{GL}}
+\begin{definition}
+    Una \emph{representación lineal} de \(G\) en \(V\) es un homomorfismo \(\rho: G \to \GL(V)\) tal que \( s \mapsto \rho(s) = \rho_s\sim R_s= (r_{ij}(s))  = [\rho_s]_\alpha^\alpha \in M_n(\C)\) (\emph{representación matricial}), \(\deg \rho := \dim V \) es el \emph{grado} de la representación.
+\end{definition}
+
+\begin{note}
+    En este lenguaje, \(\rho_{st} = \rho_s \rho_t = R_sR_t = R_{st}\), \(\rho(s^{-1}) = [\rho(s)]^{-1}\) e \(\rho(\id_{_G}) = \id_{_V}\).  En la práctica decimos que \(V\) es una \emph{representación} de \(G\).
+\end{note}
+
+\begin{definition}
+    Dos representaciones \(\rho : G \to \GL(V)\) e \(\rho': G \to V'\) son \emph{equivalentes}, \(\rho \sim \rho'\), se \(\exists T:V \cong V'\) tal que \(T \cdot R_s = R'_s \cdot T, \ \forall s \in G \ \leftrightharpoons \ R'_s = T R_s T^{-1},\ \forall s \in G\). 
+\end{definition}
+
+\newcommand{\D}{\mathbb{D}}
+\ejemplo{
+    %\centering Representación Regular
+    %\tcblower
+    \begin{example}
+    Sean \(G, V : |G| = g = \dim V\) e \((e_t)_{t\in G}\) una base de \(V\), entonces
+    \[\rho : s \mapsto [\rho_s : e_t \mapsto e_{st}]\ \  \leftarrow \ \textit{Representación Regular}\]   
+    Note que \(\deg \rho = |G|\) e \((\rho_s(e_\id))_{s \in G}\) es base de \(V\). Se \(W\) es una otra representación de \(G \mid  \exists w \in W : (\rho'_s(w))_{s\in G}\) es base de \(W\), entonces \(\rho \sim \rho'\) vía  \(T : e_s \mapsto \rho'_s (w)\). 
+    \end{example}
+    %Una representación de grado \(1\), es una \(\rho : G \to \C^\times\). Note que, como \(|s| < \infty, \ \forall s \in G\), entonces \(\rho: s \mapsto z : z^k = 1\), raíces de la unidad.  
+}
+
+\subsection*{Sub-representaciones}
+
+\begin{definition}
+    Sean \((V, \rho)\) una representación de \(G\) e \(W \leq V\). Se \(W\) es \emph{\(\rho\)-inv} (esto es \(\rho_s(W) \subset W, \ \forall s \in G\)), entonces \(W\) es una \emph{sub-representación} de \(G\) vía: 
+    \[\rho|_{_W}: G\ni s \mapsto \rho_s|_{_W} \in \GL(W).\]     
+\end{definition}
+
+\begin{theorem}
+    \textbf{1.} Sean \((V,\rho)\) representación de \(G\) e \(W\leq V\) \(\rho\)-inv. Entonces, \(\exists W^0 \leq V\) complemetar \(\rho\)-inv de \(W\) en \(V\). 
+\end{theorem}
+
+\demo{Sean \(|G| =g,\ V = W \oplus W'\), \(\pi : V \twoheadrightarrow W\), la proyección correspondiente e, 
+\[\pi^0:= \nicefrac{1}{g}\sum_{t \in G} \rho_t \cdot \pi \cdot \rho_t^{-1} : V \twoheadrightarrow W \ \ \text{(es proyección)}.\] 
+\(\forall x \in W, \ \pi (\rho_t^{-1}(x))  = \rho_t^{-1}(x)\). Por tanto admite complementar \(W^0\), luego observa: \(\forall x \in W^0, \ \pi^0 (\rho_s( x))  = \rho_s (\pi^0 (x))  = \rho_s (0) = 0  \ \leftrightharpoons \ \rho_s (x) \in W^0\). 
+}
+
+\begin{note}
+    En el contexto del \(\blacksquare\) \hyperlink{thm1}{1.}, \(V\) (como representación) es \emph{suma directa} de las representaciones \(W\) e \(W^0\), escribimos \(V= W \oplus W^0 \sim \operatorname{diag}(R_s , R_s^0)\).
+\end{note}
+
+\subsection*{Representaciones Irreducibles}
+\begin{theorem}
+    dasf
+\end{theorem}
