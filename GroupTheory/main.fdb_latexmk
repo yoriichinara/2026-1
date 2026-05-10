@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1778280022.68185 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1778280025.12359 0
-  "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" 1778253681.07982 8505 6bab5462050541870c027c89611d51b5 ""
+["pdflatex"] 1778372064.08268 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1778372067.04377 0
+  "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" 1778350254.26272 8532 590f68dbaa6ad47a1032cc9e6b68c2de ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1775415801 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -271,12 +271,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1777893121 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1777893072 2328180 07044297c04add7a8ff16bc3c93ea75f ""
   "Imagens/Header.png" 1752097914 363895 6890a9cd210a4932f77549a60c1a103c ""
-  "main.aux" 1778280024.97145 1650 47327a97a35f57c9bf074b27f7e9066f "pdflatex"
-  "main.out" 1778280024.97145 1405 503908237b5b13a3df4a32c434ffc739 "pdflatex"
-  "main.tex" 1778253681.07982 8505 6bab5462050541870c027c89611d51b5 ""
+  "main.aux" 1778372066.88211 1769 32b15bc2eb4092a67c39263682b6381f "pdflatex"
+  "main.out" 1778372066.88211 1557 48754ad68c8abaf03906bc232a4f525f "pdflatex"
+  "main.tex" 1778350254.26272 8532 590f68dbaa6ad47a1032cc9e6b68c2de ""
   "sections/1.tex" 1776384665.28267 7544 48a87b03499d78b667ffc89f70a712ce ""
-  "sections/1rep.tex" 1778280019.84807 3527 da3fcd9f07ad39bf9cf289709d0b8a02 ""
+  "sections/1rep.tex" 1778350182.64866 5656 c1f1ad404f0c0685219617a8f20f2074 ""
   "sections/2.tex" 1776798074.67078 15300 709ffb3053ba23eee21395ee84431b96 ""
+  "sections/2rep.tex" 1778372063.71875 2713 69c0f78e3e6fa61f54adfec3321b99b7 ""
   "sections/3.tex" 1777637983.93245 9186 68e0422aa263fe4bbcb392aca49b73f0 ""
   "sections/4.tex" 1776776198.99172 6467 f6b03ad99800e16f26d75cfeed9e667a ""
   "sections/5.tex" 1778156845.2029 16042 51d393b366456cec00a0babd77ddafd3 ""

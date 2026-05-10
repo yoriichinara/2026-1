@@ -1,0 +1,39 @@
+\section{Teoría de Caracteres}
+
+\begin{definition}
+    El \emph{caracter} de \((V,\rho)\) es la función \(\chi_\rho:G \ni s \mapsto \operatorname{Tr}(\rho_s) \in \C\). 
+\end{definition}
+
+\begin{proposition}
+    \textbf{1.} Si \(\chi\) es el caracter de \((V, \rho) \ \mid \ \dim V = n\), entonces: (i) \(\chi(\id_{_G}) = n\); (ii) \(\chi(s^{-1}) = \overline{\chi(s)}, \ \forall s \in G\) e (iii) \(\chi(tst^{-1}) = \chi(s), \ \forall s,t \in G\). 
+\end{proposition}
+
+\demo{(i) \(\chi(\id_{_G}) = \operatorname{Tr}(\id_n) =n\);  (ii) \(|s|< \infty,\ \forall s \in G\), luego \(\exists k \in \N : ([\rho_s]_\alpha^\alpha)^k = (\operatorname{diag}(\lambda_i))^k = \id \ \leftrightharpoons \ |\lambda_i| = 1, \ \forall j\leq n\). Sigue que, \(\overline{\chi(s)} = \sum \overline{\lambda_j} = \sum \lambda_j^{-1} = \chi(s^{-1})\); (iii)  \(\operatorname{Tr}(AB) = \operatorname{Tr}(BA) \ \mid \ A = \rho(ts)\) e \(B= \rho (t^{-1})\).  
+}
+
+\begin{proposition}
+    \textbf{2.} Sean \((V_1, \rho^1)\), \((V_2, \rho^2)\) representaciones de \(G\) e \(\chi_1\), \(\chi_2\) sus caracteres. Entonces,
+    \vspace{-0.3cm}
+    \begin{enumerate}[label = \roman*., left = 0.6cm]
+        \item El caracter \(\chi\) de \(V_1 \oplus V_2\) es igual a \(\chi_1 + \chi_2\). \comentario{Recuerde que si \(\rho^1_s \sim R^1_s\) e \(\rho^2_s \sim R^2_s\), entonces \(\rho^1 + \rho^2 = \rho \sim \operatorname{diag} (R^1_s, R^2_s)\) }
+        \item El caracter \(\psi\) de \(V_1 \otimes V_2\) es igual a \(\chi_1 \cdot \chi_2\). \comentario{Producto de Kronecker}
+    \end{enumerate}
+\end{proposition}
+
+\begin{proposition}
+    \textbf{3.} Sean \((V,\rho)\) representación con caracter \(\chi\). Si denotamos por \(\chi_{\odot}^2\) e \(\chi_{\wedge}^2\) los caracteres de los respectivos cuadrados, entonces \(\forall s \in G\): 
+    \[\chi^2_\odot (s) = \nicefrac{1}{2} (\chi(s)^2 + \chi(s^2));  \  \ \ \ \chi^2_\wedge(s) = \nicefrac{1}{2}(\chi(s)^2 - \chi(s^2)) \ \ \ \text{e} \ \ \ \chi = \chi_\odot^2 + \chi_\wedge^2.\]
+\end{proposition}
+
+\demo{Escoja base \(\alpha = (e_j)_{j\leq n}\) formada por autovectores de \(\rho_s\). En tal base \(\chi(s) = \sum \lambda_j\) e \(\chi(s^2) = \sum \lambda_j^2\). Manipula las sumas teniendo en cuenta que,   
+\vspace{-0.2cm}
+\[
+    (\rho_s \otimes \rho_s) (e_i\otimes e_j \pm e_j \otimes e_i)  = \lambda_i\lambda_j (e_i \otimes e_j \pm e_j \otimes e_i).
+\]
+\vspace{-0.8cm}
+}
+
+\begin{proposition}
+    \textbf{4. (\emph{Lema de Schur})} Sean \((V_1, \rho^1)\) e \((V_2, \rho^2)\) irruducibles e \(f \in \hom(V_1, V_2) : f \circ \rho_s^1 = \rho^2_s \circ f, \ \forall s \in G\). Entonces, si \(\rho^1 \nsim \rho^2 \), \(f = 0\), caso contrario \(f = a\cdot \id : a \in \C\).  
+\end{proposition}
+

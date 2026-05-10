@@ -546,6 +546,9 @@ INPUT sections/7.tex
 INPUT ./sections/1rep.tex
 INPUT ./sections/1rep.tex
 INPUT sections/1rep.tex
+INPUT ./sections/2rep.tex
+INPUT ./sections/2rep.tex
+INPUT sections/2rep.tex
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

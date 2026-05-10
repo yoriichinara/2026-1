@@ -35,12 +35,12 @@ endomorfismos invertibles, va a ser nuestra herramienta principal.
 \subsection*{Sub-representaciones}
 
 \begin{definition}
-    Sean \((V, \rho)\) una representación de \(G\) e \(W \leq V\). Se \(W\) es \emph{\(\rho\)-inv} (esto es \(\rho_s(W) \subset W, \ \forall s \in G\)), entonces \(W\) es una \emph{sub-representación} de \(G\) vía: 
+    Sean \((V, \rho)\) una representación de \(G\) e \(W \leq V\). Se \(W\) es \emph{\(G\)-inv} (esto es \(\rho_s(W) \subset W, \ \forall s \in G\)), entonces \(W\) es una \emph{sub-representación} de \(G\) vía: 
     \[\rho|_{_W}: G\ni s \mapsto \rho_s|_{_W} \in \GL(W).\]     
 \end{definition}
 
 \begin{theorem}
-    \textbf{1.} Sean \((V,\rho)\) representación de \(G\) e \(W\leq V\) \(\rho\)-inv. Entonces, \(\exists W^0 \leq V\) complemetar \(\rho\)-inv de \(W\) en \(V\). 
+    \textbf{1.} Sean \((V,\rho)\) e \(W\leq V\) \(G\)-inv. Entonces, \(\exists W^0 \leq V\) \(G\)-inv \(: V = W \oplus W^0\). 
 \end{theorem}
 
 \demo{Sean \(|G| =g,\ V = W \oplus W'\), \(\pi : V \twoheadrightarrow W\), la proyección correspondiente e, 
@@ -52,7 +52,38 @@ endomorfismos invertibles, va a ser nuestra herramienta principal.
     En el contexto del \(\blacksquare\) \hyperlink{thm1}{1.}, \(V\) (como representación) es \emph{suma directa} de las representaciones \(W\) e \(W^0\), escribimos \(V= W \oplus W^0 \sim \operatorname{diag}(R_s , R_s^0)\).
 \end{note}
 
-\subsection*{Representaciones Irreducibles}
+%\subsection*{Representaciones Irreducibles}
+
+\begin{definition}
+    \((V, \rho )\) es \emph{irreducible} (\emph{simple}) si no existe sub-representación propia de \(V\). %\(W < V \ \rho\)-inv \(: 0 < W < V \).    
+\end{definition}
+
 \begin{theorem}
-    dasf
+    \textbf{2.} Toda representación es suma directa de representaciones irreducibles. \comentario{Mogollas, sigue por inducción en \(\dim V\) usando el \(\blacksquare\) \hyperlink{thm1}{1. }}
 \end{theorem}
+
+\subsection*{Producto Tensorial de Representaciones}
+
+Recomiendo rever las "Notas de Algebra Lineal II". Sabemos que existe el \emph{producto tensorial} de \(V_1\) e \(V_2\), \((W, \otimes)\) (único a menos de isomorfismo), verificando:     
+\vspace{-0.3cm}
+\begin{enumerate}[label = \roman*.]
+    \item  \(\otimes \in \hom^2(V_1\times V_2,W) \).
+    \item Si \(\alpha \) e \(\beta\) son bases de \(V_1\) e \(V_2\), entonces \(\alpha \otimes \beta \) es base de \(W =: V_1 \otimes V_2\). 
+\end{enumerate}
+
+\vspace{-0.2cm}
+\begin{definition}
+    Dadas \((V_1, \rho^1)\) e \((V_2, \rho^2)\) representaciones de \(G\) definimos, 
+    \[\rho^1 \otimes \rho^2 : G \in s \mapsto [x_1 \otimes x_2 \mapsto \rho_s^1(x_1) \otimes \rho_s^2(x_2)] \in \GL(V_1 \otimes V_2). \] 
+\end{definition}
+
+\vspace{-0.2cm}
+\begin{note}
+    Es previsible que está bien definido por la propiedad universal. Además, si \([\rho_s^1]_\alpha^\alpha =  \operatorname{diag}(\lambda_i)\) e \([\rho_s^2]_\beta^\beta =\operatorname{diag} (\mu_j) \), entonces \([\rho_s^1 \otimes \rho_s^2]^{\alpha \otimes \beta}_{\alpha \otimes \beta} = \operatorname{diag}(\lambda_i \mu_j)\).\footnote{La matriz es dada por el producto Kronecker de matrices.}
+\end{note}
+
+\subsection*{Cuadrados Simétrico e Alternado}
+
+Si \((V_1,\rho^1) \) e \( (V_2, \rho^2)\) son equivalentes a \((V,\rho)\), entonces \(V_1 \otimes V_2 = V \otimes V =:V^{\otimes 2} = V^{\odot 2} \oplus V^{\wedge 2}\) vía la proyección \(\pi: e_i \otimes e_j \mapsto e_j \otimes e_i\). Recordando, 
+\[\dim V^{\odot 2} = \frac{n(n+1)}{2}  \ \ \  \text{e} \ \ \dim V^{\wedge 2} = \frac{n(n-1)}{2},\]
+ambos subespacios son \(G\)-inv, llamados \emph{cuadrados simétrico} e \emph{alternado} de \((V, \rho)\).% de bases \(\alpha^2_{\leq}\) e \(\alpha^2_<\), respectivamente.
