@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.4)  9 MAY 2026 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.4)  10 MAY 2026 09:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1077,7 +1077,7 @@ pdfTeX warning (dest): name{thm217} has been referenced but does not exist, repl
 pdfTeX warning (dest): name{thm11} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (22 pages, 621185 bytes).
+Output written on main.pdf (22 pages, 621208 bytes).
 PDF statistics:
  472 PDF objects out of 1000 (max. 8388607)
  372 compressed objects within 4 object streams
