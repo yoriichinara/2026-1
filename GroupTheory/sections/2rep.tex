@@ -4,15 +4,17 @@
     El \emph{caracter} de \((V,\rho)\) es la función \(\chi_\rho:G \ni s \mapsto \operatorname{Tr}(\rho_s) \in \C\). 
 \end{definition}
 
+\hypertarget{prop21}{}
 \begin{proposition}
-    \textbf{1.} Si \(\chi\) es el caracter de \((V, \rho) \ \mid \ \dim V = n\), entonces: (i) \(\chi(\id_{_G}) = n\); (ii) \(\chi(s^{-1}) = \overline{\chi(s)}, \ \forall s \in G\) e (iii) \(\chi(tst^{-1}) = \chi(s), \ \forall s,t \in G\). 
+    \textbf{2.1.} Si \(\chi\) es el caracter de \((V, \rho) \ \mid \ \dim V = n\), entonces: (i) \(\chi(\id_{_G}) = n\); (ii) \(\chi(s^{-1}) = \overline{\chi(s)}, \ \forall s \in G\) e (iii) \(\chi(tst^{-1}) = \chi(s), \ \forall s,t \in G\). 
 \end{proposition}
 
 \demo{(i) \(\chi(\id_{_G}) = \operatorname{Tr}(\id_n) =n\);  (ii) \(|s|< \infty,\ \forall s \in G\), luego \(\exists k \in \N : ([\rho_s]_\alpha^\alpha)^k = (\operatorname{diag}(\lambda_i))^k = \id \ \leftrightharpoons \ |\lambda_i| = 1, \ \forall j\leq n\). Sigue que, \(\overline{\chi(s)} = \sum \overline{\lambda_j} = \sum \lambda_j^{-1} = \chi(s^{-1})\); (iii)  \(\operatorname{Tr}(AB) = \operatorname{Tr}(BA) \ \mid \ A = \rho(ts)\) e \(B= \rho (t^{-1})\).  
 }
 
+\hypertarget{prop22}{}
 \begin{proposition}
-    \textbf{2.} Sean \((V_1, \rho^1)\), \((V_2, \rho^2)\) representaciones de \(G\) e \(\chi_1\), \(\chi_2\) sus caracteres. Entonces,
+    \textbf{2.2.} Sean \((V_1, \rho^1)\), \((V_2, \rho^2)\) representaciones de \(G\) e \(\chi_1\), \(\chi_2\) sus caracteres. Entonces,
     \vspace{-0.3cm}
     \begin{enumerate}[label = \roman*., left = 0.6cm]
         \item El caracter \(\chi\) de \(V_1 \oplus V_2\) es igual a \(\chi_1 + \chi_2\). \comentario{Recuerde que si \(\rho^1_s \sim R^1_s\) e \(\rho^2_s \sim R^2_s\), entonces \(\rho^1 + \rho^2 = \rho \sim \operatorname{diag} (R^1_s, R^2_s)\) }
@@ -21,7 +23,7 @@
 \end{proposition}
 
 \begin{proposition}
-    \textbf{3.} Sean \((V,\rho)\) representación con caracter \(\chi\). Si denotamos por \(\chi_{\odot}^2\) e \(\chi_{\wedge}^2\) los caracteres de los respectivos cuadrados, entonces \(\forall s \in G\): 
+    \textbf{2.3.} Sean \((V,\rho)\) representación con caracter \(\chi\). Si denotamos por \(\chi_{\odot}^2\) e \(\chi_{\wedge}^2\) los caracteres de los respectivos cuadrados, entonces \(\forall s \in G\): 
     \[\chi^2_\odot (s) = \nicefrac{1}{2} (\chi(s)^2 + \chi(s^2));  \  \ \ \ \chi^2_\wedge(s) = \nicefrac{1}{2}(\chi(s)^2 - \chi(s^2)) \ \ \ \text{e} \ \ \ \chi = \chi_\odot^2 + \chi_\wedge^2.\]
 \end{proposition}
 
@@ -34,6 +36,108 @@
 }
 
 \begin{proposition}
-    \textbf{4. (\emph{Lema de Schur})} Sean \((V_1, \rho^1)\) e \((V_2, \rho^2)\) irruducibles e \(f \in \hom(V_1, V_2) : f \circ \rho_s^1 = \rho^2_s \circ f, \ \forall s \in G\). Entonces, \(f\equiv 0\) (\(\rho^1 \nsim \rho^2 \))  o \(f = a\cdot \id : a \in \C\) (\(\rho^1 \sim \rho^2\)).  
+    \textbf{2.4. (\emph{Lema de Schur})} Sean \((V_1, \rho^1)\) e \((V_2, \rho^2)\) irreducibles e \(f \in \hom(V_1, V_2) : f \circ \rho_s^1 = \rho^2_s \circ f, \ \forall s \in G\). Entonces,  
+    \vspace{-0.3cm}
+    \begin{enumerate}[label = (\arabic*), left = 1.7cm]
+        \item \(\rho^1 \nsim \rho^2 \Rightarrow f= 0\).
+        \hspace{1.8cm} (\(2\)) \ \((V_1,\rho^1)  = (V_2, \rho^2) \Rightarrow f = \lambda \cdot \id\).% : \lambda \in \C\).
+    \end{enumerate} 
 \end{proposition}
 
+\demo{
+    (\(1\)) Siendo \(f\neq 0\), muestra que tanto \(\ker f\) como \(\operatorname{Im}f\) son \(\rho\)-inv \(\ \leftrightharpoons \ \ker f = V_1, \ \operatorname{Im}f = V_2\) e \(f : V_1 \cong V_2\); (\(2\)) Sea \(\lambda\) autovalor de \(f\), note que \(f' := f -\lambda \id \) es tal que \(\{0\} < \ker f'\) e \( f'\circ \rho^1 = \rho^2 \circ f' \ \leftrightharpoons \ f' - \lambda \cdot \id = 0\).     
+}
+
+\hypertarget{coro241}{}
+\begin{corollary}
+    \textbf{2.4.1.} Sean \((V_1, \rho^1)\) e \((V_2, \rho^2)\) representaciones irreducibles de \(G\) e \(h\in \hom(V_1, V_2)\), siendo \(h^0:= \nicefrac{1}{g} \underset{t \in G}{\sum} (\rho^2_t)^{-1} h \rho^1_t\), donde \( g = |G|\) tenemos: 
+    \vspace{-0.2cm}
+    \begin{enumerate}[label = (\arabic*), left = 0.5cm]
+        \item \(\rho^1 \nsim \rho^2 \Rightarrow h^0= 0\).
+        \hfill (\(2\)) \ \((V_1,\rho^1)  = (V_2, \rho^2) \Rightarrow h^0 = \nicefrac{1}{\dim V_1} \cdot \operatorname{Tr}(h)\).% : \lambda \in \C\).
+    \end{enumerate} 
+\end{corollary}
+
+\comentario{Muestre que \(\rho^2_s\cdot h^0 \cdot(\rho^1_s)^{-1}= h^0 \), tambien \(\operatorname{Tr}(h^0) = \operatorname{Tr}(h)= \operatorname{\lambda \cdot \operatorname{Tr}(\id)} = \lambda \cdot n\)}
+
+\subsection*{Ortogonalidad}
+
+\begin{definition}
+    Sean \(|G| = g\) e \(\phi, \psi: G \to \C\). Siendo \(\check{\psi}(t):= \overline{\psi(t^{-1})}\), definimos, 
+    \[(\phi\mid \psi) := \frac{1}{g} \sum_{t\in G}\phi(t) \overline{\psi(t)} = \frac{1}{g} \sum_{t\in G}\phi(t) \check{\psi}(t^{-1}) = \langle \phi, \check{\psi}\rangle.\] 
+\end{definition}
+
+\begin{note}
+    Es previsible que tenemos un producto hermitiano. En particular, sigue de la \(\square\) \hyperlink{prop21}{2.1.} que \((\phi \mid \chi ) = \langle \phi, \chi\rangle, \ \forall \phi : G \to \C \). 
+\end{note}
+
+\hypertarget{thm23}{}
+\begin{theorem}
+    \textbf{2.3.} \ \ i. \ Si \(\chi \) es el caracter de \((V,\rho)\) irreducible, entonces \(\langle \chi, \chi\rangle  = 1 \). 
+    \vspace{-0.4cm}
+    \begin{itemize}[left = 1.62cm]
+        \item[ii.] Si \(\chi\) e \(\chi'\) son \(: (V,\rho)\nsim(V', \rho') \) (irreducibles), entonces \(\langle \chi, \chi'\rangle = 0\).  
+    \end{itemize}
+\end{theorem}
+
+\demo{Siguiendo el {\scriptsize \(\boxtimes \)} \hyperlink{coro241}{2.4.1.},  la traza de \(T : \ell \mapsto (\rho_t^2)^{-1} \ell \rho_t^1 \sim B^{-1} \ell A\) (como operador en \(\hom(V_1, V_2)\)) es \(\operatorname{Tr}(T) = \underset{i,j}{\sum} \  b_{ii} a_{jj} = \operatorname{Tr}(B^{-1}) \operatorname{Tr}(A)= \overline{\chi_2(t)} \cdot \chi_1(t)\).  }
+
+\begin{theorem}
+    \textbf{2.4.} Sean \((V,\rho) = \bigoplus^k W_j : W_j\) es irreducible. Si \(\phi\) es el caracter de \(V\) e \(W\) es irreducible de caracter \(\chi\), entonces \(\mu:= \#\{W_j : W_j \cong W\} = \langle \phi, \chi\rangle\). \comentario{De la \(\square \) \hyperlink{prop22}{2.2.}, \(\langle \phi, \chi\rangle = \langle \sum^k \chi_j, \chi\rangle = \sum^k \langle \chi_j, \chi\rangle = \mu\), \(\blacksquare\) \hyperlink{thm23}{2.3.}}
+\end{theorem}
+
+\begin{corollary}
+    \(\mu\) no depende de la descomposición escogida, consecuencia de ello, dos representaciones con mismo caracter son isomorfas.
+\end{corollary}
+
+\begin{theorem}
+    \textbf{2.5.} Si \(\phi\) es el caracter de \(V\), entonces \((\phi\mid \phi) \in \N\) e \((\phi \mid \phi) =1 \ \leftrightharpoons \ \) \(V\) es irreducible.   
+\end{theorem}
+
+\demo{\[(\phi \mid \phi) = \left(\sum m_i\chi_i \mid \sum m_j \chi_j\right) = \sum m_j^2 (\chi_j\mid \chi_j) = \sum m_j^2.\]
+\vspace{-0.5cm}}
+
+\subsection*{Descomposición de la Representación Regular}
+
+\begin{proposition}
+    \textbf{2.5.} Si \(r_{_G}\) es el caracter de la representación regular, entonces \(r_{_G}(s) = \delta_{\id, s} \cdot g \), donde \(g = |G|\). \comentario{\(\rho_s(e_t) = e_{st} \neq e_t\) si \(s \neq \id_{_G}\)} 
+\end{proposition}
+
+\begin{corollary}
+    \textbf{2.5.1.} Toda \((W_j,\rho_j)\) irreducible está contenida en \(r_{_G}\), con multiplicidad equivalente a \(\deg\rho_j =: n_j\).  \comentario{\(\langle r_{_G}, \chi_j\rangle = \nicefrac{1}{g} \sum r_G(s^{-1}) \chi_j(s) = \nicefrac{1}{g} \cdot g \cdot \chi_j(\id_{_G}) = n_j\)}
+\end{corollary}
+
+\begin{corollary}
+    \textbf{2.5.2.} Los grados \(n_j\) satisfacen: (a) \ \(\sum^k n_j^2 = g\) e \ (b) \ Si \(s\neq \id_{_G}\), entonces \(\sum^k n_j \chi_j(s) = 0\). \comentario{Basta testar \(s = \id_{_G}\) e \(s\neq \id_{_G}\)}  
+\end{corollary}
+
+\subsection*{Número de Representaciones Irreducibles}
+
+\begin{definition}
+    \(f: G \to \C\) es \emph{función de clases} si \(f(s^{-1}ts) = f(t), \ \forall s,t \in G\). Denotamos por \(H:= \{f: G \to \C \mid f\text{ es función de clases}\}\leq \mathcal{F}(G, \C)\). 
+\end{definition}
+
+\hypertarget{prop26}{}
+\begin{proposition}
+    \textbf{2.6.} Sean \(f \in H\), \((V,\rho)\) representación de \(\deg \rho = n\) e caracter \(\chi\) e  \( \rho_f\in \hom(V)\) tal que \(\rho_f : t \mapsto \sum f(t)\rho_t\). Si \(V\) es irreducible, entonces \(\rho_f = \lambda \cdot \id \), donde: 
+    \[\lambda = \frac{1}{n} \sum_{t\in G} f(t) \cdot \chi(t) = \frac{g}{n} (f \mid \overline{\chi}).\]  
+\end{proposition}
+
+\demo{Muestre \(\rho_s^{-1} \rho_f \rho_s = \rho_f\), sigue de eso que \(\rho_f = \lambda \cdot \id\), \(\square\) \hyperlink{prop24}{2.4.}. Finalmente, \(\operatorname{Tr}(\lambda \cdot \id) = n\lambda = \sum f(t) \operatorname{Tr}(\rho_t) = \nicefrac{g}{n} (f\mid \overline{\chi})\). }
+
+\hypertarget{thm26}{}
+\begin{theorem}
+    \textbf{2.6.} Los caracteres irreducibles \(\chi_1, \ldots , \chi_k\) forman una base ortonormal de \(H\).
+\end{theorem}
+
+\demo{Por el \(\blacksquare\) \hyperlink{thm23}{2.3.} basta ver que \([\chi_j] = H\). Si \(\exists f \in [\chi_j]^\perp\), entonces \(\forall \rho\), \(\rho_f := \sum f(t)\rho_t \equiv 0 \), \(\square\) \hyperlink{prop26}{2.6.}. En particular, para \(\rho = r_{_G}\) tenemos 
+\[0 = \rho_f (e_1) = \sum_{t \in G} f(t) \rho_t(e_1) = \sum_{t\in G} f(t) e_t \ \leftrightharpoons \ f(t) = 0, \ \forall t \in G.\]
+\vspace{-0.5cm}}
+
+\begin{theorem}
+    \textbf{2.7.} El número de representaciones irreducibles de \(G\) (a menos de isomorfismo) es igual al número de clases de conjugación de \(G\). \comentario{Si \(C_1, \ldots, C_k\) son las clases de conjugación, \(\dim H = k = \# \{\chi_j : W_j \text{ es irreducible}\}\), \(\blacksquare\) \hyperlink{thm26}{2.6.}}
+\end{theorem}
+
+\begin{proposition}
+    \textbf{2.7.} Sean \(s\in G\) e \(c(s)\) el número de clases de conjugación de \(s\). Entonces,  
+\end{proposition}
