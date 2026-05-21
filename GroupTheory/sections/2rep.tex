@@ -15,8 +15,8 @@
 \hypertarget{prop22}{}
 \begin{proposition}
     \textbf{2.2.} Sean \((V_1, \rho^1)\), \((V_2, \rho^2)\) representaciones de \(G\) e \(\chi_1\), \(\chi_2\) sus caracteres. Entonces,
-    \vspace{-0.3cm}
-    \begin{enumerate}[label = \roman*., left = 0.6cm]
+    \vspace{-0.8cm}
+    \begin{enumerate}[label = \roman*., left = 0.35cm]
         \item El caracter \(\chi\) de \(V_1 \oplus V_2\) es igual a \(\chi_1 + \chi_2\). \comentario{Recuerde que si \(\rho^1_s \sim R^1_s\) e \(\rho^2_s \sim R^2_s\), entonces \(\rho^1 + \rho^2 = \rho \sim \operatorname{diag} (R^1_s, R^2_s)\) }
         \item El caracter \(\psi\) de \(V_1 \otimes V_2\) es igual a \(\chi_1 \cdot \chi_2\). \comentario{Producto de Kronecker}
     \end{enumerate}
@@ -73,9 +73,9 @@
 
 \hypertarget{thm23}{}
 \begin{theorem}
-    \textbf{2.3.} \ \ i. \ Si \(\chi \) es el caracter de \((V,\rho)\) irreducible, entonces \(\langle \chi, \chi\rangle  = 1 \). 
-    \vspace{-0.4cm}
-    \begin{itemize}[left = 1.62cm]
+    \textbf{2.3.} \ i. \ Si \(\chi \) es el caracter de \((V,\rho)\) irreducible, entonces \(\langle \chi, \chi\rangle  = 1 \). 
+    \vspace{-0.3cm}
+    \begin{itemize}[left = 1cm]
         \item[ii.] Si \(\chi\) e \(\chi'\) son \(: (V,\rho)\nsim(V', \rho') \) (irreducibles), entonces \(\langle \chi, \chi'\rangle = 0\).  
     \end{itemize}
 \end{theorem}
@@ -97,7 +97,7 @@
 \demo{\[(\phi \mid \phi) = \left(\sum m_i\chi_i \mid \sum m_j \chi_j\right) = \sum m_j^2 (\chi_j\mid \chi_j) = \sum m_j^2.\]
 \vspace{-0.5cm}}
 
-\subsection*{Descomposición de la Representación Regular}
+%\subsection*{Descomposición de la Representación Regular}
 
 \begin{proposition}
     \textbf{2.5.} Si \(r_{_G}\) es el caracter de la representación regular, entonces \(r_{_G}(s) = \delta_{\id, s} \cdot g \), donde \(g = |G|\). \comentario{\(\rho_s(e_t) = e_{st} \neq e_t\) si \(s \neq \id_{_G}\)} 
@@ -139,5 +139,18 @@
 \end{theorem}
 
 \begin{proposition}
-    \textbf{2.7.} Sean \(s\in G\) e \(c(s)\) el número de clases de conjugación de \(s\). Entonces,  
+    \textbf{2.7.} Sean \(s\in G\) e \(c(s)\) el número de clases de conjugación de \(s\). Entonces,  \(\sum_{j=1}^k \overline{\chi(s)} \chi(t) = \delta_{st} \cdot \nicefrac{g}{c(s)} \). \comentario{Use el \(\blacksquare\) \hyperlink{thm26}{2.6.} con \(f_s : [s]  \mapsto 1\), \(0\) e. o. c.}
 \end{proposition}
+
+\subsection*{Descomposición de Representaciones}
+
+Sean \((V, \rho) = \bigoplus^m_{i=1} U_i : U_i\) es irreducible, \((W_j)_{j\leq k }\) las subrepresentaciones irreducibles de caracteres \((\chi_j)\) e grados \(n_j\). Llamamos \emph{descomposición canónica} a: 
+\[V = V_1 \oplus V_2 \oplus \cdots\oplus V_k \ \mid \  V_j := \bigoplus\{ U_i  : U_i \cong W_j\}.\]
+
+\begin{theorem}
+    \textbf{2.8.} \ i. \ La descomposición canónica no depende de la inicial. %\comentario{Sigue de ii.} 
+    \vspace{-0.3cm}
+    \begin{itemize}[left = 1cm]
+        \item[ii.] Las proyecciones asociadas \(p_i : w \mapsto \nicefrac{n_i}{g} \sum   \overline{\chi(t)} \rho_t(w) \). \comentario{Sigue de la \(\square\) \hyperlink{prop26}{2.6.} que \(p_i|_{W_j} (w) = \delta_{ij} (w)\) y de la definición propia de los \(V_j\)}
+    \end{itemize}
+\end{theorem}
