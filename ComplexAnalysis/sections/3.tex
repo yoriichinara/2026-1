@@ -130,3 +130,96 @@ Para la unicidad, si \(f(z) = (z-z_0)^m h(z), \ m>n\), tendríamos \(g(z) = (z-z
 \demo{\(f\) tiene finitos polos \(\{z_1, \ldots, z_n\}\subset \C^*\) (compacto). Escriba \(f(z) = P_k(z) + G_k(z)\) (en \(U_k \in \U_{z_k}\)) e \(f(\nicefrac{1}{z}) = \widetilde{P}_\infty(z) + \widetilde{G}_\infty (z)\) (en \(U_0 \in \U_0\)). Muestre que \(H(z) := f(z)- \widetilde{P}_\infty(\nicefrac{1}{z}) - \sum P_k(z)\) es entera limitada, \(\blacksquare\) \hyperlink{coro45}{4.5. (\emph{Liouville})}. 
 }
 
+\subsection*{Principio del Argumento y Aplicaciones}
+
+\begin{theorem}
+    \textbf{4.1. (\emph{Principio del Argumento})} Sean \(f\) meromorfa en \(\Omega\ab\subset \C\) e \(\gamma \subset \Omega\) una curva cerrada. Si \(f\) no tiene ceros ni polos en \(\gamma\), entonces: %  \(Z:= \#\{z \in \Omega : f(z)= 0 \}\) e \(P:=\#\{z_j \in \Omega : z_j \text{ es polo}\}\). ,  
+    \[\int_{\gamma} \frac{f'(z)}{f(z)} \ dz = Z - P, \]
+    donde \(Z\) e \(P\) son la cantidad de ceros e polos de \(f\) dentro de \(\gamma\) (con multiplicidad). 
+\end{theorem}
+
+\demo{Si \(f(z) = (z-z_0)^n g(z)\) en \(U \in \U_{z_0} : f(z) \neq 0 \) en \(\widehat{U}\), entonces \(\nicefrac{f'}{f} = \nicefrac{n}{z-z_0} + \nicefrac{g'}{g} \), polo simple de residúo \(n\). Analogamente pasa con los polos, pronto.  }
+
+\hypertarget{thm343}{}
+\begin{theorem}
+    \textbf{4.3. (\emph{Rouché})} Sean \(f, g \in \ho(\Omega)\) e \(D : \overline{D} \subset \Omega\ab \). Si \(|f(z)| > |g(z)|, \ \forall z \in \partial D\), entonces \(f \) e \(f+g\) tienen misma cantidad de ceros en \(D\).
+\end{theorem}
+
+\demo{\(f_t := g + t f, \ \forall t \in [0,1]\) no tiene ceros en \(\partial D\). Muestra que \(n_t := \nicefrac{1}{2\pi i} \int_{\partial D} \ \nicefrac{f_t'}{f_t} \ dz \) es constante, \(\blacksquare\) (\emph{TVM - \(\R\)}), contínua en \(t\), luego \(n_0 = n_1\), pronto. }
+
+\hypertarget{thm344}{}
+\begin{theorem}
+    \textbf{4.4. (\emph{Aplicación Abierta})} Si \(f \in \ho(\Omega)\setminus \C\), entonces \(f\) es abierta.
+\end{theorem}
+
+\demo{Sean \(w_0 = f(z_0)\), \(\delta>0 :\overline{D_\delta} := B[z_0;\delta] \subset \Omega\) e \(f(z) \neq w_0\) en \(\partial D_\delta\), también 
+\[g(z) := f(z) - w = (f(z) -w_0) + (w_0 - w)=  F(z) + G(z).\]
+Siendo \(\epsilon>0 : |f(z) - w_0| \geq \epsilon \) en \(\partial D_\delta \), si \(|w - w_0| < \epsilon \), \(|F(z)| > |G(z)|\) en \(\partial D_\delta\), y el resultado sigue del \(\blacksquare\) \hyperlink{thm343}{4.3. (\emph{Rouché})}. }
+
+\hypertarget{thm345}{}
+\begin{theorem}
+    \textbf{4.5. (\emph{Principio del Módulo Máximo})} Si \(f \in \ho(\Omega) \setminus \C\), entonces \(\nexists z_0 \in \Omega : |f(z_0)| \geq \ \underset{z \in \Omega}{\sup} \ |f(z)|\). \comentario{\(f( B(z_0;\epsilon) ) \ab\), \(\blacksquare\) \hyperlink{thm344}{4.4. (\emph{AA})}, luego \(\exists z \in D : |f(z)| > |f(z_0)|\) }
+\end{theorem}
+
+\begin{corollary}
+    \textbf{4.6.} Si \(\Omega\ab\subset \C\) es relativamente compacto e \(f \in \ho(\Omega)\) es continua en \(\overline{\Omega}\), entonces \(\underset{z \in \Omega}{\sup} \ |f(z)| \leq \ \underset{z\in \partial \Omega}{\sup} \ |f(z)|\). \comentario{\(\blacksquare\) (\emph{Bolzano-Weierstrass}) + \(\blacksquare\) \hyperlink{thm345}{4.5. (\emph{PMM})}}   
+\end{corollary}
+
+\subsection*{Homotopía y Dominios Simplemente Conexos}
+
+\begin{definition}
+    Dos curvas \(\gamma_1, \gamma_2: [a,b] \to \Omega\ab \subset \C \ \mid \ \gamma_1(a) = \alpha = \gamma_2(a)\) e \(\gamma_1(b) = \beta = \gamma_2(b)\) son \emph{homotópicas}, \(\gamma_1 \simeq \gamma_2\), se \(\exists H : [0,1] \times [a,b] \to \Omega\) continua tal que:   
+    \[\text{i.} \ \Big|\begin{array}{l}
+    H(s,a) = \alpha\\ 
+    H(s,b) = \beta
+    \end{array}, \ \forall s \in [0,1] \text{ \hspace{1cm} e \hspace{1cm} } \text{ii.} \ \Big| \begin{array}{l}
+        H(0,t) = \gamma_1(t)\\ 
+        H(1,t) = \gamma_2(t)
+    \end{array}, \ \forall t \in [a,b]\]
+\end{definition}
+
+\begin{theorem}
+    \textbf{5.1.} Si \(f \in \ho(\Omega)\) e \(\gamma_1 \simeq \gamma_2 \) en \(\Omega\), entonces \(\displaystyle \int_{\gamma_1 } f(z) \ dz = \int_{\gamma_2} f(z) \ dz\). \comentario{No admite resumen, véase \cite[pag. 93]{stein}}
+\end{theorem}
+
+\begin{definition}
+    \(\Omega \subset \C\) es \emph{simplemente conexo} si \(\forall \gamma_1, \gamma_2 : [a,b] \to \Omega \ \mid \ \gamma_1(a) = \alpha = \gamma_2(a) \)  e \(\gamma_1(a) = \beta = \gamma_2(b)\) se tiene que \(\gamma_1 \simeq \gamma_2\) en \(\Omega\). 
+\end{definition}
+
+\hypertarget{thm352}{}
+\begin{theorem}
+    \textbf{5.2.} Toda función holomorfa en dominio simplemente conexo admite primitiva. 
+\end{theorem}
+
+\demo{Sean \(z_0 \in \Omega \), \(\gamma: z_0 \leadsto z\), \(F(z) := \int_\gamma f(w) \ dw\) (no depende de \(\gamma\), \(\blacksquare\) \hyperlink{thm351}{5.1.}) e \(\eta: z \leadsto z+h\). Copie el argumento del \(\blacksquare\) \hyperlink{thm221}{2.1.} para ver que
+\[F(z+h) -F(z) = \int_\eta f(w) \ dw \hspace{0.5cm} \text{e} \hspace{0.5cm} \lim_{h\to 0}\frac{F(z+h) -F(z)}{h} = f(z). \]}
+
+\begin{corollary}
+    \textbf{5.3.} Si \(f \in \ho(\Omega)\) con \(\Omega\ab\subset \C\) simplemente conexo, entonces \(\int_\gamma f(z) \ dz = 0, \ \forall \gamma \subset \Omega\) curva cerrada.  \comentario{Mogollas, directo del \(\blacksquare\) \hyperlink{thm352}{5.2.}} 
+\end{corollary}
+
+\subsection*{El Logaritmo Complejo}
+
+\begin{theorem}
+    \textbf{6.1.} Sean \(\Omega\ab\subset \C\) simplemente conexo \(: 1 \in \Omega\) e \(0\notin \Omega \). Entonces, \(\exists F \in \ho(\Omega)\), \emph{rama} de \(\log\), esto es, \(F(z) = \log_\Omega(z):= \log |z| + i \arg(z)\) tal que,    
+    \vspace{-0.3cm}
+    \begin{enumerate}[label = \roman*., left = 1cm]
+        \item \(e^{F(z)} = z, \ \forall z \in \Omega\). \hfill ii. \ \(F(r) = \log r, \ r \in \R : |r-1| < \epsilon\).  \hspace{1cm} \-
+    \end{enumerate}
+\end{theorem}
+
+\demo{Copia la demostración del \(\blacksquare\) \hyperlink{thm352}{5.2.} con \(f(z)= \nicefrac{1}{z}\) e \(\gamma: 1 \leadsto z\); (i) Muestra que \(ze^{-F(z)} = 1\), derivando el lado izquierdo e (ii) \(F(r) = \int_1^r \nicefrac{1}{x} \ dx = \log r\).   }
+
+\ejemplo{\centering \emph{Rama Principal de Logaritmo}
+\tcblower
+\[\log : \begin{array}{ll}
+\C \setminus (-\infty, 0] &\to \hspace{1cm} \C  \\ 
+\hspace{1cm}re^{i\theta} &\mapsto \ \ \log r + i\theta 
+\end{array}, \hspace{0.5cm} |\theta| < \pi.\]
+}
+
+\begin{theorem}
+    \textbf{6.2.} Sea \(\Omega\ab \subset \C\) simplemente conexo. Si \(f \in \ho(\Omega)\) e \(f(z) \neq 0, \ \forall z \in \Omega \), entonces \(\exists g \in \ho(\Omega) : f(z) = \exp({g(z)}) \textcolor{gray}{ \ \sim g = \log f}\). 
+\end{theorem}
+
+\demo{Defina \(g(z) := \int_\gamma \nicefrac{f'(w)}{f(w)} \ dw + c_0\), onde \(\gamma: z_0 \leadsto z\) e \(c_0 \in\C : e^{c_0} = f(z_0)\). Ahí \(g' = \nicefrac{f'}{f}\) e derivado \(f(z)\exp(-g(z))\) vemos que es constante igual a \( 1\), pronto.  }

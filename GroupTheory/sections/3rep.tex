@@ -1,0 +1,29 @@
+\section{Subgrupos, Productos e Representaciones Inducidas}
+
+\subsection*{Subgrupos Abelianos}
+
+\hypertarget{thm39}{}
+\begin{theorem}
+    \textbf{3.9.} \(A\) es abeliano \( \ \leftrightharpoons \ \forall (V,\rho)\) irreducible de \(A, \ \deg\rho= 1\). \comentario{Si \((n_j)_{j\leq k}\) son los grados de las irreducibles, \(|A |  = \#\)clases \(= k = \sum^k n_j^2 \  \leftrightharpoons \ n_j = 1, \ \forall j\leq k\) } 
+\end{theorem}
+
+\begin{corollary}
+    \textbf{3.9.1.} Sean \(A \leq G\) subgrupo abeliano \(: |A| = a\) e \(|G| = g\). Entonces, \(\forall (V,\rho)\) irreducible de \(G\), \(\deg \rho \leq \nicefrac{g}{a}\)\textcolor{gray}{\(\ =[G:A]\)}.
+\end{corollary}
+
+\demo{Sean \(W \leq (V, \rho|_{_A})\) subrepresentación irreducible de \(A \) (\(\dim W = 1\), \(\blacksquare\) \hyperlink{thm39}{3.9.}) e \(V':= [\rho_s(W) : s \in G] \leq V = V'\) pues es \(\rho\)-inv. Finalmente, como \(\rho_{st}(W) = \rho_s(\rho_t(W)) = \rho_s(W), \ s \in G, \ t \in A\), de los que existen a lo sumo \(\nicefrac{g}{a}\).  }
+
+\subsection*{Producto Directo}
+
+\begin{definition}
+    Si \((V_1, \rho^1)\) e \((V_2, \rho^2)\) son representaciones de \(G_1\) e \(G_2\) de caracteres \(\chi_1\) e \(\chi_2\) tenemos representación e caracter de \(G_1 \times G_2\) en \(V_1 \otimes V_2\) dados por:   
+    \[\rho^1 \otimes \rho^2 : (s_1,s_2) \mapsto \rho^1(s_1) \otimes \rho^2(s_2) \ \ \ \text{ e } \ \ \ \chi(s_1, s_2) := \chi_1(s_1)\chi_2(s_2). \] 
+\end{definition}
+
+\begin{theorem}
+    \textbf{3.10.} \ i. Si \((V_1, \rho^1)\) e \((V_2, \rho^2)\) son irreducibles de \(G_1\) e \(G_2\), entonces \((V_1 \otimes V_2, \rho^1 \otimes \rho^2)\) es representación irreducible de \(G_1 \times G_2\).  
+    \vspace{-0.4cm}
+    \begin{enumerate}[left = 0cm]
+        \item[ii.] Cada \( (V,\rho)\) irreducible de \(G_1 \times G_2\) es equivalente a algún \(\rho^1 \otimes \rho^2\) de irreducibles. 
+    \end{enumerate}
+\end{theorem}

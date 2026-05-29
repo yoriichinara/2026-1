@@ -553,6 +553,9 @@ INPUT /usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT ./sections/3rep.tex
+INPUT ./sections/3rep.tex
+INPUT sections/3rep.tex
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
