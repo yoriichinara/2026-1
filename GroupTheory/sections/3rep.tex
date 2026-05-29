@@ -21,9 +21,17 @@
 \end{definition}
 
 \begin{theorem}
-    \textbf{3.10.} \ i. Si \((V_1, \rho^1)\) e \((V_2, \rho^2)\) son irreducibles de \(G_1\) e \(G_2\), entonces \((V_1 \otimes V_2, \rho^1 \otimes \rho^2)\) es representación irreducible de \(G_1 \times G_2\).  
-    \vspace{-0.4cm}
-    \begin{enumerate}[left = 0cm]
-        \item[ii.] Cada \( (V,\rho)\) irreducible de \(G_1 \times G_2\) es equivalente a algún \(\rho^1 \otimes \rho^2\) de irreducibles. 
-    \end{enumerate}
+    \textbf{3.10.} En \(G_1 \times G_2\) tenemos (i) \ Producto tensorial de irreducibles es irreducible e (ii) \ Toda irreducible es equivalente a algún producto tensorial de irreducibles. 
 \end{theorem}
+
+\demo{
+    \[\text{(i)} \ \ \frac{1}{g} \sum_{s_1, s_2} |\chi(s_1, s_2)|^2 = \frac{1}{g_1} \sum_{s_1} |\chi_1(s_1)|^2 \cdot \frac{1}{g_2} \sum_{s_2} |\chi_2(s_2)|^2 = 1, \ \blacksquare \ \text{\hyperlink{thm25}{2.5.}};\]
+    Para (ii) muestra que se \((f \mid \chi_1\chi_2) = 0 \ \leftrightharpoons \ f\equiv 0\), desplegando la suma e fijando coordenadas buscando aplicar el \(\blacksquare\) \hyperlink{thm26}{2.6.}.
+%    \begin{align*}
+%        \text{(ii)} \ \ f\in H : (f \mid \chi_1\chi_2)  &= \sum_{s_1, s_2} f(s_1, s_2)\cdot \overline{\chi_1(s_1)}\cdot \overline{\chi_2(s_2)}\\ 
+%        &= \sum_{s_i} [(f(s_i, s_j) \mid \chi_j)]\cdot \overline{\chi_i(s_i)} = \sum_{s_i} g(s_i)\cdot \overline{\chi_i(s_i)}  \\ 
+%        &=0 \ \leftrightharpoons \ g \equiv 0 \equiv f, \ }.
+%    \end{align*} 
+}
+
+\subsection*{Representaciones Inducidas}

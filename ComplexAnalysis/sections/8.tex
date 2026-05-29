@@ -1,3 +1,32 @@
 \setcounter{section}{7}
 \section{Mapeos Conformes}
  
+\begin{definition}
+    \(U\ab, V \ab \subset \C\) son \emph{conformemente equivalentes}, se \(\exists f : U \to V \)  holomorfa e biyectiva (\emph{mapeo conforme}), escribimos \(f: U \simeq V \).  
+\end{definition}
+
+\begin{proposition}
+    \textbf{1.1.} Se \(f \in \ho(U)\) es inyectiva, entonces \(f'(z) \neq 0, \ \forall z \in U\). En particular, la inversa \(f^{-1}: \operatorname{Im}f \to U\) es holomorfa, esto es, tambien es un mapeo conforme. 
+\end{proposition}
+
+\demo{Se \(f'(z_0) = 0 \), entonces \(f(z) -f(z_0) = a_k(z-z_0)^k + o(z^{k+1}) :  k\geq 2, \ a_k \neq 0 \), para \(0 < |w| \ll \epsilon \), tenemos \(f(z) - f(z_0) -w = [F(z) - w ] + o(z^{k+1})\), con al menos \(2\) soluciones distintas, \(\blacksquare\) \hyperlink{thm343}{4.3. (\emph{Rouché})}.\Lightning \ Ahora, siendo \(g:= f^{-1}: \operatorname{Im}f \to U\), 
+\[\frac{g(w) -g(w_0)}{w-w_0} = \left(\frac{w -w_0}{g(w) -g(w_0)}\right)^{-1} = \left(\frac{f(z) - f(z_0)}{z-z_0}\right)^{-1} = \frac{1}{f'(z_0)}. \] }
+
+\begin{definition}
+    \centering \(\mathbb{H}:= \{z \in \C : \operatorname{Im}(z)>0\}\). \ \textcolor{gray}{\(\leftarrow\) \emph{Semi-plano superior}}
+\end{definition}
+
+\newcommand{\Ha}{\mathbb{H}}
+\begin{theorem}
+    \textbf{1.2.} \(\Ha \simeq \D\) vía \(\displaystyle F:  z \mapsto \frac{i-z}{i+z}\) e \(\displaystyle F^{-1}: w \mapsto i\  \frac{1-w}{1 + w} \). \comentario{Mogollas, faz conta}
+\end{theorem}
+
+\begin{definition}
+    \centering \(\displaystyle f : z \mapsto \frac{az + b}{cz + d}\). \ \textcolor{gray}{\(\leftarrow\) \emph{Tranformaciones de Möbius}}
+\end{definition}
+
+\begin{note}
+    En \cite[pags. 208-213]{stein} hay varios ejemplos de algunas de estas equivalencias. 
+\end{note}
+
+\subsection*{Lema de Schwarz e Automorfismos de \(\D\simeq \Ha\)}

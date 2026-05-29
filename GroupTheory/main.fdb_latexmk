@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1780013058.4479 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1780013060.96187 0
+["pdflatex"] 1780060216.52282 "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" "main.pdf" "main" 1780060219.15508 0
   "/home/yoriichinara/Documents/2026-1/GroupTheory/main.tex" 1779993933.08602 8559 a936884dbc11c3374849b6a748c74516 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -273,15 +273,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1777893121 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1777893072 2328180 07044297c04add7a8ff16bc3c93ea75f ""
   "Imagens/Header.png" 1752097914 363895 6890a9cd210a4932f77549a60c1a103c ""
-  "main.aux" 1780013060.81754 1932 50ee686d720fe558854a6860fc78e761 "pdflatex"
-  "main.out" 1780013060.81754 1858 75ced20a0a26a2beb66e5a81ba6d88af "pdflatex"
+  "main.aux" 1780060219.001 1932 aaf47d49870d488f50061c02caf88058 "pdflatex"
+  "main.out" 1780060219.001 1858 75ced20a0a26a2beb66e5a81ba6d88af "pdflatex"
   "main.tex" 1779993933.08602 8559 a936884dbc11c3374849b6a748c74516 ""
   "sections/1.tex" 1776384665.28267 7544 48a87b03499d78b667ffc89f70a712ce ""
   "sections/1rep.tex" 1779993307.08095 5691 16e47ba279fee500f926a2fa7b8e10c8 ""
   "sections/2.tex" 1776798074.67078 15300 709ffb3053ba23eee21395ee84431b96 ""
-  "sections/2rep.tex" 1780011773.6255 10494 f188f0e40acb275c7b483cf3a69451e4 ""
+  "sections/2rep.tex" 1780057678.52079 10516 4a6742330b68786f4462edfe43229811 ""
   "sections/3.tex" 1777637983.93245 9186 68e0422aa263fe4bbcb392aca49b73f0 ""
-  "sections/3rep.tex" 1780013058.16085 1918 313ce6699f6e7f8b4550c0cd3c01dac3 ""
+  "sections/3rep.tex" 1780060213.72095 2524 19eb69bdb9299ad4c41b7a3b3944b923 ""
   "sections/4.tex" 1776776198.99172 6467 f6b03ad99800e16f26d75cfeed9e667a ""
   "sections/5.tex" 1778156845.2029 16042 51d393b366456cec00a0babd77ddafd3 ""
   "sections/6.tex" 1780013041.9807 5830 88438ab425fcf214c17336bdea8d46dd ""
