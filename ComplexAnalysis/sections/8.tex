@@ -22,7 +22,7 @@
 \end{theorem}
 
 \begin{definition}
-    \centering \(\displaystyle f : z \mapsto \frac{az + b}{cz + d}\). \ \textcolor{gray}{\(\leftarrow\) \emph{Tranformaciones de Möbius}}
+    \(\displaystyle f : z \mapsto \frac{az + b}{cz + d} : a,b,c,d \in \C \ \) es una \emph{tranformación de Möbius}.
 \end{definition}
 
 \begin{note}
@@ -30,3 +30,47 @@
 \end{note}
 
 \subsection*{Lema de Schwarz e Automorfismos de \(\D\simeq \Ha\)}
+
+\begin{lemma}
+    \textbf{2.1. (\emph{Schwarz})} Sean \(f: \D \to \D \) tal que \(f(0) = 0 \). Entonces, 
+    \vspace{-0.3cm}
+    \begin{enumerate}[label = \roman*., left = 0.2cm ]
+        \item \(|f(z)| \leq |z|, \ \forall z \in \D \). \hfill ii. \ Si \(\exists z_0 \in \D^\times : |f(z_0)| = |z_0| \Rightarrow f\) es \emph{rotación}. 
+        \item[iii.] \(|f'(0)| \leq 1\), si valiera la igualdad entonces \(f\) es rotación.
+    \end{enumerate}
+\end{lemma}
+
+\demo{(i) \ \(\nicefrac{|f(z)|}{|z|} \leq \nicefrac{1}{r}\) si \(|z| \leq r < 1\), singularidad removible + \(\blacksquare\) \hyperlink{thm245}{4.5. (\emph{PMM})}; (ii) \ \(\nicefrac{f(z)}{z}\) alcanza un máximo en \(\D\) luego \(f(z) = cz\) e \(|c| = 1 \ \leftrightharpoons \ f(z) = e^{i\theta} : \theta \in [0,2\pi]\); (iii) \ \(g(0) := \lim_{z\to 0}\nicefrac{f(z)}{z} = \lim_{z\to 0} \nicefrac{f(z) - f(0)}{z} = f'(0) = 1\), }
+
+\begin{definition}
+    Sea \(\Omega\ab\subset \C\), denotamos el \emph{grupo de automorfismos} de \(\Omega\) en sí mismo como \(\operatorname{Aut}(\Omega):= \{f: \Omega \to \Omega \ \mid \ f \text{ es conforme}\}\). También, dado \(\alpha \in \D\) definimos, 
+    \[\frac{\alpha - z}{1 - \overline{\alpha} z} =: \psi_\alpha(z) \in \operatorname{Aut}(\D)\ \  \leftarrow  \text{\emph{Operadores de Blaschke}}. \]  
+\end{definition}
+
+\begin{theorem}
+    \textbf{2.2.} Si \(f \in \operatorname{Aut}(\D)\), entonces \(\exists \theta \in \R\) e \(\exists \alpha \in \D  : f(z) = e^{i\theta}\cdot \psi_\alpha(z)\).
+\end{theorem}
+
+\demo{\(\exists ! \alpha \in \D : f (\alpha) = 0\), haga \(g(z):= (f \circ \psi_\alpha)(z)\). Note que \(g, g^{-1} \in \operatorname{Aut}(\D)\), \(g(0) = 0\), por el {\scriptsize \(\square\)} \hyperlink{lemma821}{2.1. (\emph{Schwarz})} \(|g(z)| = |z|, \ \forall z \in \D\), luego \(g(z) = e^{i\theta}z\).}% = e^{i\theta} \cdot \psi_\alpha(z)\).}
+
+\begin{corollary}
+    \textbf{2.3.} Las rotaciones son los únicos automorfismos en \(\D\) que fijan el origen. %os automorfismos en \(\D\) que fijan el origen son rotaciones.
+\end{corollary}
+
+\begin{note}
+    \(\Gamma: \operatorname{Aut}(\D) \cong \operatorname{Aut}(\Ha)\) vía conjugación, \(\Gamma : \varphi \mapsto F^{-1} \circ \varphi \circ F\), siendo \(F\) el mapa conforme del \(\blacksquare\) \hyperlink{thm812}{1.2.}. Las transformaciones de Möbius están en \(\operatorname{Aut}(\Ha)\).%\(f_M\in \operatorname{Aut}(\Ha)\) es una transformación de Möbius,
+    \[f_M(z) = \frac{az+ b}{cz+ d} \ \ \Big| \ \ M:= \begin{bmatrix}
+    a & b \\ c & d   
+    \end{bmatrix} \in \operatorname{SL}_2(\R) \leq \operatorname{GL}_2(\R).\]
+\end{note}
+
+\begin{theorem}
+    \textbf{2.4.} \(\varphi \in \operatorname{Aut}(\Ha) \ \leftrightharpoons \ \exists M \in \operatorname{SL}_2(\R)  : \varphi = f_M\). \comentario{Véase \cite[pag. 222]{stein}}
+\end{theorem}
+
+\subsection*{Teorema de la Aplicación de Riemann}
+
+\begin{theorem}
+    \textbf{3.1. (\emph{Riemann Mapping Theorem})} Sean \(\Omega\ab \subsetneq \C\) simplemente conexo e \(z_0 \in \Omega\), entonces \(\exists ! F : \Omega \simeq \D\) tal que \(F(z_0)=0\) e \(F'(z_0)>0\).
+\end{theorem}
+

@@ -35,3 +35,25 @@
 }
 
 \subsection*{Representaciones Inducidas}
+
+\begin{definition}
+    Sean \((V, \rho)\) representación de \(G \geq H\) e \(\rho|_{_H} =: \theta : H \to \GL(W)\) de \(H\), esto es \(W\leq V\) \(\theta\)-inv. Decimos que \((V,\rho)\) es \emph{inducida}  por \((W, \theta)\) si \(V =\bigoplus W_\sigma :  W_\sigma := \rho|_{\sigma} (W), \ \sigma \in \nicefrac{G}{H}\). En particular, \(\dim V = [G:H] \cdot \dim W\). 
+\end{definition}
+
+\begin{lemma}
+    \textbf{3.1.} Sean \((V,\rho)\) inducida por \((W, \theta)\), \((V', \rho')\) otra representación de \(G\) e \(f\in \hom(W, V')  : f \circ \theta_t = \rho'_t \circ f, \ \forall  t \in H\). Entonces, \(\exists! F \in \hom(V, V') : F|_{_W} = f\) e \(F\circ \rho_s = \rho_s' \circ F, \ \forall s \in G\). \comentario{Haga \(F(x) :=  \rho_s'(f(\rho_s^{-1}(x))) : x \in W_\sigma\), \cite[pág. 29]{rep}  }
+\end{lemma}
+
+\begin{theorem}
+    \textbf{3.11.} Sea \((W, \theta)\) representación de \(H\leq G\). Entonces, \(\exists (V,\rho) \) representación de \(G\) inducida por \((W, \theta)\), única a menos de isomorfismo. \comentario{Véase \cite[pág. 30]{rep}}
+\end{theorem}
+
+\begin{theorem}
+    \textbf{3.12.} Sean \((V,\rho)\) inducida por \((W, \theta)\) de caracteres \(\chi_\rho\) e \(\chi_\theta\), \(h:= |H|\) e \(V = \bigoplus rH : r\in G \). Entonces, 
+    \[\chi_\rho(u) = \sum_{\overset{r\in R}{r^{-1}ur \in H}} \chi_\theta(r^{-1}u r)= \frac{1}{h} \sum_{\overset{s\in G}{s^{-1}us \in H}} \chi_\theta(s^{-1}u s).\]
+\end{theorem}
+
+\comentario{No admite resumen, véase \cite[pág. 30]{rep}}
+
+
+

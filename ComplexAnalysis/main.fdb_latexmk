@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1780081781.93837 "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/main.tex" "main.pdf" "main" 1780081784.00281 0
+["pdflatex"] 1780681326.33352 "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/main.tex" "main.pdf" "main" 1780681328.43403 0
   "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/main.tex" 1780062236.53107 8170 3c31006853be97c8a70470f31fb9588e ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -265,14 +265,14 @@
   "Imagens/Header.png" 1752097914 363895 6890a9cd210a4932f77549a60c1a103c ""
   "Imagens/T.pdf" 1774029106.45456 30739 dab8eb417462c91ca3d0c42a4963bfa1 ""
   "Imagens/riemann.pdf" 1777038162.01427 20709 787541dbf8636eedb729ed7ef74726af ""
-  "main.aux" 1780081783.87819 956 df07066226e20a44eb4c7300fdaff147 "pdflatex"
-  "main.out" 1780081783.87819 836 466710fe5e8c2fdc82b9902e824954bd "pdflatex"
+  "main.aux" 1780681328.30145 973 45b1ce2e05326ea47f8d1e96df2a8b77 "pdflatex"
+  "main.out" 1780681328.30145 836 466710fe5e8c2fdc82b9902e824954bd "pdflatex"
   "main.tex" 1780062236.53107 8170 3c31006853be97c8a70470f31fb9588e ""
   "sections/1prel.tex" 1776880411.92185 12826 2cf7d81cbd9f3c5465b1f0e2b34010bf ""
   "sections/2.tex" 1777837397.39953 9351 e9b6e6e6d66e0866d923c5f876593710 ""
   "sections/3.tex" 1780074043.35023 14358 ee5c385d714a5ac71fae5eb98c4c18bb ""
   "sections/6.tex" 1779991022.41299 58 986594def8a753e90d42b46eecdc2923 ""
-  "sections/8.tex" 1780081781.65817 1813 2bfcf15a9aaefdcd3b96b8978a68dfff ""
+  "sections/8.tex" 1780681326.04142 4915 4be033b459858f6b6e9d43bc02c220c2 ""
   (generated)
   "main.aux"
   "main.log"
