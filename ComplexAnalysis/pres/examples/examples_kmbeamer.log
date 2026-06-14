@@ -1,0 +1,140 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=latex 2024.5.16)  28 MAY 2024 09:08
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**examples_kmbeamer.dtx
+(./examples_kmbeamer.dtx
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/usr/share/texmf-dist/tex/latex/base/docstrip.tex
+\blockLevel=\count188
+\emptyLines=\count189
+\processedLines=\count190
+\commentsRemoved=\count191
+\commentsPassed=\count192
+\codeLinesPassed=\count193
+\TotalprocessedLines=\count194
+\TotalcommentsRemoved=\count195
+\TotalcommentsPassed=\count196
+\TotalcodeLinesPassed=\count197
+\NumberOfFiles=\count198
+\inFile=\read2
+\inputcheck=\read3
+\off@0=\count199
+\off@1=\count266
+\off@2=\count267
+\off@3=\count268
+\off@4=\count269
+\off@5=\count270
+\off@6=\count271
+\off@7=\count272
+\off@8=\count273
+\off@9=\count274
+\off@10=\count275
+\off@11=\count276
+\off@12=\count277
+\off@13=\count278
+\off@14=\count279
+\off@15=\count280
+\@maxfiles=\count281
+\@maxoutfiles=\count282
+
+Utility: `docstrip' v2.6b <2022-09-03>
+English documentation    <2023-10-10>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)
+
+Generating file(s) ./example_Blackboard.tex 
+\openout0 = `./example_Blackboard.tex'.
+
+
+Processing file examples_kmbeamer.dtx (Blackboard) -> example_Blackboard.tex
+Lines  processed: 98
+Comments removed: 1
+Comments  passed: 0
+Codelines passed: 83
+
+
+Generating file(s) ./example_DarkConsole.tex 
+\openout0 = `./example_DarkConsole.tex'.
+
+
+Processing file examples_kmbeamer.dtx (DarkConsole) -> example_DarkConsole.tex
+Lines  processed: 98
+Comments removed: 1
+Comments  passed: 0
+Codelines passed: 83
+
+
+Generating file(s) ./example_DarkConsoleFiraRemix.tex 
+\openout0 = `./example_DarkConsoleFiraRemix.tex'.
+
+
+Processing file examples_kmbeamer.dtx (DarkConsoleFiraRemix) -> example_DarkCon
+soleFiraRemix.tex
+Lines  processed: 98
+Comments removed: 1
+Comments  passed: 0
+Codelines passed: 83
+
+
+Generating file(s) ./example_LightConsole.tex 
+\openout0 = `./example_LightConsole.tex'.
+
+
+Processing file examples_kmbeamer.dtx (LightConsole) -> example_LightConsole.te
+x
+Lines  processed: 98
+Comments removed: 1
+Comments  passed: 0
+Codelines passed: 83
+
+
+Generating file(s) ./example_LightConsoleFiraRemix.tex 
+\openout0 = `./example_LightConsoleFiraRemix.tex'.
+
+
+Processing file examples_kmbeamer.dtx (LightConsoleFiraRemix) -> example_LightC
+onsoleFiraRemix.tex
+Lines  processed: 98
+Comments removed: 1
+Comments  passed: 0
+Codelines passed: 83
+
+
+Generating file(s) ./example_Notebook.tex 
+\openout0 = `./example_Notebook.tex'.
+
+
+Processing file examples_kmbeamer.dtx (Notebook) -> example_Notebook.tex
+Lines  processed: 98
+Comments removed: 1
+Comments  passed: 0
+Codelines passed: 83
+
+Overall statistics:
+Files  processed: 6
+Lines  processed: 588
+Comments removed: 6
+Comments  passed: 0
+Codelines passed: 498
+ ) 
+Here is how much of TeX's memory you used:
+ 384 strings out of 476077
+ 4806 string characters out of 5793801
+ 1925184 words of memory out of 5000000
+ 22581 multiletter control sequences out of 15000+600000
+ 558069 words of font info for 36 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 12i,0n,15p,233b,139s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+No pages of output.
