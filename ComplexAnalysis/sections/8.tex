@@ -70,7 +70,30 @@
 
 \subsection*{Teorema de la Aplicación de Riemann}
 
+\begin{definition}
+    Sean \(\Omega \ab \subset \C\) e \(\mathcal{F}\subset \ho(\Omega) \). Decimos que la familia \(\mathcal{F}\) es: 
+    \vspace{-0.2cm}
+    \begin{itemize}[label = \(\star\), left = 1cm]
+        \item \emph{Normal} \(\rightarrow  \ \forall (f_n)_{n\in \N} \subset \mathcal{F}, \exists (f_{n_k})_{n_k \in \N} : f_{n_k} \overset{u}{\longrightarrow} f \in \ho(\Omega)\). 
+        \item \emph{Uniformemente limitada en compactos} \(\rightarrow \ \forall K \subset \Omega\) compacto \(\exists M \in \R_+ : |f(z)| \leq M, \ \forall z \in K, \forall f \in \mathcal{F}\). 
+        \item \emph{Equicontinua} (en \(K\subset \Omega \) compacto) \(\rightarrow \ \forall \epsilon> 0 , \exists \delta > 0 : |f(z) - f(w)|< \epsilon \) se \( |z-w| < \delta, \ \forall z,w \in K, \forall f \in \mathcal{F}\). 
+    \end{itemize}
+\end{definition}
+
 \begin{theorem}
-    \textbf{3.1. (\emph{Riemann Mapping Theorem})} Sean \(\Omega\ab \subsetneq \C\) simplemente conexo e \(z_0 \in \Omega\), entonces \(\exists ! F : \Omega \simeq \D\) tal que \(F(z_0)=0\) e \(F'(z_0)>0\).
+    \textbf{3.3.} Sea \(\mathcal{F}\subset \ho(\Omega)\) uniformemente limitada en compactos, entonces: 
+    \vspace{-0.2cm}
+    \begin{enumerate}[label = \roman*., left = 0.5cm]
+        \item \textbf{(\emph{Montel})}  \(\mathcal{F}\) es equicontinua en compactos. \comentario{\cite[pag. 226]{stein}}
+        \item \textbf{(\emph{Arzela-Ascoli})}\ \ \(\mathcal{F}\) es normal. \comentario{En \cite[pag. 75]{mujica2005} (\textcolor{rojoscuro}{Ex. 21.L., \(\ldots\), Ex. 21.P.})}
+    \end{enumerate}
 \end{theorem}
+
+\begin{theorem}
+    \textbf{3.1. (\emph{Riemann Mapping Theorem})} Sean \(\Omega\ab \subsetneq \C\) simplemente conexo e \(z_0 \in \Omega\), entonces \(\exists ! F : \Omega \simeq \D\) tal que \(F(z_0)=0\) e \(F'(z_0)>0\). \comentario{\cite[pag. 228]{stein}}
+\end{theorem}
+
+\begin{corollary}
+    \textbf{3.2.} Abiertos propios simplemente conexos son conformemente equivalentes.
+\end{corollary}
 

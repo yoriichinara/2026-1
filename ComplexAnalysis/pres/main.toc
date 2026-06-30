@@ -1,5 +1,0 @@
-\beamer@sectionintoc {1}{Retículos}{2}{0}{1}
-\beamer@sectionintoc {2}{\(\wp \)-função de Weierstrass}{6}{0}{2}
-\beamer@sectionintoc {3}{Função \(\lambda \)-Modular}{8}{0}{3}
-\beamer@sectionintoc {4}{Picard}{11}{0}{4}
-\beamer@sectionintoc {5}{De graça}{16}{0}{5}
