@@ -6,7 +6,7 @@
 
 \hypertarget{prop21}{}
 \begin{proposition}
-    \textbf{2.1.} Si \(\chi\) es el caracter de \((V, \rho) \ \mid \ \dim V = n\), entonces: (i) \(\chi(\id_{_G}) = n\); (ii) \(\chi(s^{-1}) = \overline{\chi(s)}, \ \forall s \in G\) e (iii) \(\chi(tst^{-1}) = \chi(s), \ \forall s,t \in G\). 
+    \textbf{2.1.} Si \(\chi\) es el caracter de \((V, \rho)\), donde \(\deg \rho= n\), entonces: (i) \(\chi(\id_{_G}) = n\); (ii) \(\chi(s^{-1}) = \overline{\chi(s)}, \ \forall s \in G\) e (iii) \(\chi(tst^{-1}) = \chi(s), \ \forall s,t \in G\). 
 \end{proposition}
 
 \demo{(i) \(\chi(\id_{_G}) = \operatorname{Tr}(\id_n) =n\);  (ii) \(|s|< \infty,\ \forall s \in G\), luego \(\exists k \in \N : ([\rho_s]_\alpha^\alpha)^k = (\operatorname{diag}(\lambda_i))^k = \id \ \leftrightharpoons \ |\lambda_i| = 1, \ \forall j\leq n\). Sigue que, \(\overline{\chi(s)} = \sum \overline{\lambda_j} = \sum \lambda_j^{-1} = \chi(s^{-1})\); (iii)  \(\operatorname{Tr}(AB) = \operatorname{Tr}(BA) \ \mid \ A = \rho(ts)\) e \(B= \rho (t^{-1})\).  
@@ -27,7 +27,7 @@
     \[\chi^2_\odot (s) = \nicefrac{1}{2} (\chi(s)^2 + \chi(s^2));  \  \ \ \ \chi^2_\wedge(s) = \nicefrac{1}{2}(\chi(s)^2 - \chi(s^2)) \ \ \ \text{e} \ \ \ \chi = \chi_\odot^2 + \chi_\wedge^2.\]
 \end{proposition}
 
-\demo{Escoja base \(\alpha = (e_j)_{j\leq n}\) formada por autovectores de \(\rho_s\). En tal base \(\chi(s) = \sum \lambda_j\) e \(\chi(s^2) = \sum \lambda_j^2\). Manipula las sumas teniendo en cuenta que,   
+\demo{En base formada por autovectores de \(\rho_s\) tenemos \(\chi(s) = \sum \lambda_j\) e \(\chi(s^2) = \sum \lambda_j^2\), el resultado sigue de algunas simplificaciones, teniendo en cuenta que: 
 \vspace{-0.2cm}
 \[
     (\rho_s \otimes \rho_s) (e_i\otimes e_j \pm e_j \otimes e_i)  = \lambda_i\lambda_j (e_i \otimes e_j \pm e_j \otimes e_i).
@@ -35,6 +35,7 @@
 \vspace{-0.8cm}
 }
 
+\hypertarget{lemma24Schur}{}
 \begin{proposition}
     \textbf{2.4. (\emph{Lema de Schur})} Sean \((V_1, \rho^1)\) e \((V_2, \rho^2)\) irreducibles e \(f \in \hom(V_1, V_2) : f \circ \rho_s^1 = \rho^2_s \circ f, \ \forall s \in G\). Entonces,  
     \vspace{-0.3cm}
@@ -54,7 +55,7 @@
     \vspace{-0.2cm}
     \begin{enumerate}[label = (\arabic*), left = 0.5cm]
         \item \(\rho^1 \nsim \rho^2 \Rightarrow h^0= 0\).
-        \hfill (\(2\)) \ \((V_1,\rho^1)  = (V_2, \rho^2) \Rightarrow h^0 = \nicefrac{1}{\dim V_1} \cdot \operatorname{Tr}(h)\).% : \lambda \in \C\).
+        \hfill (\(2\)) \ \((V_1,\rho^1)  = (V_2, \rho^2) \Rightarrow h^0 = \nicefrac{1}{\deg \rho} \cdot \operatorname{Tr}(h)\).% : \lambda \in \C\).
     \end{enumerate} 
 \end{corollary}
 

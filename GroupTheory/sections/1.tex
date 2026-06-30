@@ -12,7 +12,7 @@
 \vspace{-0.7cm}
 \begin{definition}
     \(\alpha  \in S_n\) es un $r$-\emph{ciclo} si fija \(n-r\) posiciones e \(\alpha :  i_1 \mapsto i_2 \mapsto \cdots \mapsto i_r \mapsto i_1\), escribimos \(\alpha = (i_1 \ \  i_2 \ \  \ldots \ \  i_r)\). Para los casos \(r=1, 2\) tenemos
-    \[\star \ \  (i_j) =: \id_X  \ \leftarrow \text{ \emph{Identidad} } \hspace{2cm}\star \ \ (i_1 \ \ i_2) \ \leftarrow \text{ \emph{Transposición}}\]
+    \[\star \ \  (i_j) =: \id_{_X} \  \leftarrow \text{\emph{Identidad} } \hspace{2cm}\star \ \ (i_1 \ \ i_2) \ \leftarrow \text{\emph{Transposición}}\]
 \end{definition}
 
 \ejemplo{
@@ -78,7 +78,7 @@
         %\item[G1.] \(\forall a,b,c \in G, \ (a* b)*c = a * (b*c)\). 
         \item[G1.] \(\exists e \in G : \forall a \in G, \ a*e = e *a = a\). \comentario{Elemento identidad}
         \item[G2.] \(\forall a \in G, \ \exists b \in G  :  \ a*b = b *a = e\). \comentario{Existencia de inversos}
-        \item[+ G3.] \(\forall a,b \in G, \ a*b = b *a  \ \leftarrow\) \ \emph{Grupo abeliano}.
+        \item[+ G3.] \(\forall a,b \in G, \ a*b = b *a  \ \leftarrow\) \emph{Grupo abeliano}.
     \end{enumerate}
 \end{definition}
 
@@ -87,8 +87,8 @@
 \newcommand{\GL}{\operatorname{GL}}
 \newcommand{\SL}{\operatorname{SL}}
 \ejemplo{
-   \textcolor{verdeoscuro}{\underline{\textbf{Examples}}} \ \  {\scriptsize\(\bullet\)} \ \((S_n, \circ)\)  \emph{grupo simétrico}. \hfill \(\mid\) \hfill  {\scriptsize\(\bullet\)} \ \((\F, +)\), cuerpo con la suma. \vspace{0.3cm} \\ 
-   {\scriptsize\(\bullet\)} \ \((\Z_n,+) := \{[a] \in \nicefrac{\Z}{\sim} :  a\sim b \ \leftrightharpoons \ a \equiv b \ (\operatorname{mod} n)\}\).  \hfill \(\mid\) \hfill {\scriptsize\(\bullet\)}  \ \((\GL_n(\F), \cdot)\).
+   \textcolor{verdeoscuro}{\underline{\textbf{Ejemplo}}} \ \  \(\blacktriangleright \ \) \ \((S_n, \circ) \  \leftarrow\)   \emph{Grupo Simétrico}. \hfill \(\mid \) \hfill  \(\blacktriangleright\) \ \ \((\F, +) : \F\) es cuerpo. \vspace{0.3cm} \\ 
+   \(\blacktriangleright \) \ \ \((\Z_n,+) := \{[a] \in \nicefrac{\Z}{\sim} :  a\sim b \ \leftrightharpoons \ a \equiv b \ (\operatorname{mod} n)\}\).  \hfill \(\mid\) \hfill \(\blacktriangleright\) \ \ \((\GL_n(\F), \cdot)\).
 }
 
 \begin{theorem}
@@ -124,7 +124,7 @@
     \textbf{1.13.} Sea \(f : (G,*) \to (H, \circ)\) homomorfismo. Entonces,  
     \vspace{-0.3cm}
     \begin{enumerate}[label = \roman*., left = 0.3cm]
-        \item \(f(\id_{_G}) = \id_{_H}\). \hfill  ii. \ \(f(a^{-1}) = f(a)^{-1}\). \hfill  iii. \ \(f(a^n) = f(a)^n\). 
+        \item \(f(\id_{_G}) = \id_{_H}\). \hfill  ii. \ \(f(a^{-1}) = f(a)^{-1}\). \hfill  iii. \ \(f(a^n) = [f(a)]^n\). 
     \end{enumerate} 
 \end{theorem}
 

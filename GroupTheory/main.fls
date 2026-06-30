@@ -472,8 +472,8 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT ./sections/2.tex
 INPUT ./sections/2.tex
 INPUT sections/2.tex
@@ -506,12 +506,12 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmbi8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmbi8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmbi8t.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmbi8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm
 INPUT /usr/share/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT /usr/share/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT /usr/share/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/marvosym/umvs.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmbi8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm
 INPUT ./sections/3.tex
 INPUT ./sections/3.tex
 INPUT sections/3.tex
@@ -556,6 +556,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT ./sections/3rep.tex
 INPUT ./sections/3rep.tex
 INPUT sections/3rep.tex
+INPUT ./sections/4rep.tex
+INPUT ./sections/4rep.tex
+INPUT sections/4rep.tex
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
@@ -575,7 +578,6 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb

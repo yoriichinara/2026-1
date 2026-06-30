@@ -28,7 +28,7 @@
 }
 
 \begin{corollary}
-    \textbf{2.4.} Si \(|G| < \infty\), entonces \(S \leq G \ \leftrightharpoons \ \forall s,t \in S, \ st \in S\). \textcolor{gray}{(\(\Leftarrow\)) If \(s \in S\), then \(\langle s\rangle \leq S\), \(\exists m \in \N: s^m = \id\) and \(s^{-1} = s^{m-1} \in S\) }  
+    \textbf{2.4.} Si \(|G| < \infty\), entonces \(S \leq G \ \leftrightharpoons \ \forall s,t \in S, \ st \in S\). \textcolor{gray}{(\(\Leftarrow\)) Si \(s \in S\), entonces \(\langle s\rangle \leq S\), \(\exists m \in \N: s^m = \id\) e \(s^{-1} = s^{m-1} \in S\) }  
 \end{corollary}
 
 \begin{note}
@@ -36,15 +36,16 @@
 \end{note}
 
 \ejemplo{
-    \centering Núcleo e Imagen de \(f: G \to H\) homomorfismo 
+    \begin{example}
+    \centering   Núcleo e Imagen de \(f: G \to H\) homomorfismo. 
+    \end{example} 
     \tcblower 
-    \[\text{\scriptsize $\bullet $ \ \ }\{a \in G : f(a) = \id_{_H}\} =: \ker f\leq G;\hspace{5cm}\] 
-    \[\hspace{4cm}\text{\scriptsize $\bullet $ \ \ }\{h \in H : h = f(a), \ a \in G\} =:\operatorname{Im}f\leq H.\]  
+     \(\blacktriangleright \ \{a \in G : f(a) = \id_{_H}\} =: \ker f\leq G\).\hfill \(\mid \) \hfill \(\blacktriangleright \ \{f(a) : a \in G\} =:\operatorname{Im}f\leq H\). 
 }
 
 \hypertarget{thm25}{}
 \begin{theorem}
-    \textbf{2.5.} Sean \((S_i)_{i\in I} : S_i \leq G\), entonces \(\bigcap S_i \leq G\). \comentario{Mogollas }
+    \textbf{2.5.} Sean \((S_i)_{i\in I} : S_i \leq G, \ \forall i \in I\), entonces \(\bigcap S_i \leq G\). \comentario{Mogollas }
 \end{theorem}
 
 %\begin{corollary}
@@ -96,7 +97,7 @@
 \end{theorem}
 
 \begin{theorem}
-    \textbf{2.10.} El número de clases a derecha e izquierda \(S\) en \(G\) coincide. \comentario{Muestre que \(f: \mathscr{L} \to \mathscr{R}\) tal que \(Sa \mapsto a^{-1} S\) es una biyección bien definida}
+    \textbf{2.10.} El número de clases a derecha e izquierda \(S\) en \(G\) coincide. \comentario{Muestre que \(f : Sa \mapsto a^{-1} S\) es una biyección bien definida (no depende del representante)}
 \end{theorem}
 
 \begin{definition}
@@ -133,7 +134,7 @@
 \demo{Sea \(H = \langle b\rangle : |H|=d\) \ (\textcolor{rojoscuro}{Ex. 2.18}), entonces \(b^d = \id = {(a^{m})}^d\), luego \(\exists k \in \N : md = nk\) \ (\textcolor{rojoscuro}{Ex. 2.13}). Finalmente, \(b = a^m = (a^{\nicefrac{n}{d}})^k\) e \(H \leq \langle a^{\nicefrac{n}{d}}\rangle =: S \leq G\) (\textcolor{rojoscuro}{Ex. 2.11}). Como \( |S| = d \), tenemos que \(H= S\). }
 
 \begin{definition}
-    \centering \(\displaystyle \varphi(n) := \# \{k\in \N : k < n \text{ e } (k,n) = 1\}\).
+    \centering \(\displaystyle \varphi(n) := \# \{k\in \N : k < n \text{ e } (k,n) = 1\} = n \cdot \prod_{p \ \mid \  n} \left(1 - \frac{1}{p} \right)\).
 \end{definition}
 \hypertarget{thm216}{}
 \begin{theorem}
@@ -173,7 +174,7 @@
 
 \ejemplo{
 \begin{example}
-    Si \(f : G \to H\) es homomorfismo, entonces \(\ker f \lhd G\). 
+\centering   \(\ker f\lhd  G \ \mid \ f : G \to H\)  homomorfismo. 
 \end{example}
 }
 
@@ -190,7 +191,7 @@
 \end{theorem}
 
 \begin{corollary}
-    \textbf{2.22.} Si \(N \lhd G\), entonces la \emph{proyección natural}, \(\pi: G \to \nicefrac{G}{N}\) tal que \( a\mapsto Na\), es homomorfismo sobrejectivo \(: \ker \pi = N\). \comentario{Mogollas}
+    \textbf{2.22.} Si \(N \lhd G\), entonces \(\pi: G \to \nicefrac{G}{N}\) tal que \(\pi:  a\mapsto Na\), es homomorfismo sobrejectivo (\emph{proyección natural}) \(: \ker \pi = N\). \comentario{Mogollas}
 \end{corollary}
 
 \begin{note}

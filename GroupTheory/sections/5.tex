@@ -1,7 +1,11 @@
 \section{Series Normales (\(|G|< \infty\))}
 
 \begin{definition}
-    Una \emph{serie normal} de \(G\) es una sucesión \(G = G_0 \geq G_1 \geq \cdots \geq G_n = \id\), donde \(G_{i+1}\lhd G_i, \ \forall i \leq n-1\). Los grupos \(\nicefrac{G_{i+1}}{G_i}\) son llamados \emph{factores} de la serie, y el \emph{comprimento} es la cantidad de inclusiones estrictas.
+    Una \emph{serie normal} de \(G\) es una sucesión \(G = G_0 \trianglerighteq G_1 \trianglerighteq \cdots \trianglerighteq G_n = \id\).  %, tambien, el \emph{comprimento} es la cantidad de inclusiones estrictas.
+    \vspace{-0.3cm}
+    \begin{itemize}[label = \(\star\), left = 1cm]
+        \item \(\nicefrac{G_{i}}{G_{i+1}} \ \leftarrow\)  \emph{Factores}. \hfill \(\star\) \ \(n \ \leftarrow \) \emph{Comprimento} (contenciones estrictas).
+    \end{itemize}
 \end{definition}
 
 \begin{note}
@@ -148,10 +152,10 @@ En esta parte introducimos y recuperamos algunas definiciones de secciones anter
     Dados \(H,K \leq G\) definimos \(\displaystyle [H,K]:= \langle[h,k] : h \in H, k \in K \rangle\). Tambien, 
     \vspace{-0.3cm}
 \begin{itemize}[label = \(\star\), left = 1cm]
-    \item \(K < N_G(H) \leftarrow \ K\) \emph{normaliza} \(H\)\textcolor{gray}{\( \  \leftrightharpoons \ [H,K ] \leq H\)}
+    \item \(K < N_G(H) \ \leftarrow K\) \emph{normaliza} \(H\)\textcolor{gray}{\( \  \leftrightharpoons \ [H,K ] \leq H\)}
     \item \(C_G(H)= \{x \in G : [x,h] = \id, \ \forall h \in H\leq G\}\) 
-    \item \(K < C_G(H) \leftarrow \ K \) \emph{centraliza} \(H\) \textcolor{gray}{\( \  \leftrightharpoons \ [H,K ] = \id\)}
-    \item \([x,y] \in K \lhd G \leftarrow \ x  \) e \(y\) \emph{conmutan} \(\operatorname{mod}  K \) (como clases en \(\nicefrac{G}{K}\))
+    \item \(K < C_G(H) \  \leftarrow  K \) \emph{centraliza} \(H\) \textcolor{gray}{\( \  \leftrightharpoons \ [H,K ] = \id\)}
+    \item \([x,y] \in K \lhd G \  \leftarrow  x  \) e \(y\) \emph{conmutan} \(\operatorname{mod}  K \) (como clases en \(\nicefrac{G}{K}\))
 \end{itemize}
 \end{definition}
 
@@ -171,15 +175,14 @@ En esta parte introducimos y recuperamos algunas definiciones de secciones anter
     %\(\star \ \  \leftarrow \) \ \emph{Subgrupos característicos} de \(G\)
     \vspace{-0.33cm}
     \begin{itemize}[label = \(\star\), left=1cm]
-        \item \(\gamma_1 := G; \ \  \gamma_{i+1} := [\gamma_i, G]\)
-        \item \(\zeta^0 := \id; \ \  \nicefrac{\zeta^{i+1}}{\zeta^i} := Z(\nicefrac{G}{\zeta^i})\leftarrow \ \) \emph{Centros de orden superior}
-        \item\( G = \gamma_1 \geq \gamma_2 \geq \cdots  \leftarrow \ \) \emph{Serie central inferior} (\emph{descendente})
-        \item \(\id = \zeta^0 \leq \zeta^1 \leq \cdots  \leftarrow \ \) \emph{Serie central superior} (\emph{ascendente})
+        \item \(\gamma_1 := G; \ \  \gamma_{i+1} := [\gamma_i, G]\) \hfill \(\mid\) \hfill \(\star \ \ \zeta^0 := \id; \ \  \nicefrac{\zeta^{i+1}}{\zeta^i} := Z(\nicefrac{G}{\zeta^i})\). % \leftarrow \). %\emph{Centros de orden superior}
+        \item\( G = \gamma_1 \geq \gamma_2 \geq \cdots \ \leftarrow \) \emph{Serie central inferior} (\emph{descendente}).
+        \item \(\id = \zeta^0 \leq \zeta^1 \leq \cdots \ \leftarrow \) \emph{Serie central superior} (\emph{ascendente}).
     \end{itemize}
 \end{definition}
 
 \begin{note}
-    Es claro que \(\nicefrac{\gamma_i(G)}{\gamma_{i+1}(G)}\leq Z(\nicefrac{G}{\gamma_{i+1}(G)})\), {\scriptsize \(\square\)} \hyperlink{lemma530}{5.30. (i)} e tambien \(\zeta^1 = Z(G)\). Cabe notar que la serie inferior no tiene porque ser normal (puede no conveger). 
+    Es claro que \(\nicefrac{\gamma_i}{\gamma_{i+1}}\leq Z(\nicefrac{G}{\gamma_{i+1}})\), {\scriptsize \(\square\)} \hyperlink{lemma530}{5.30. (i)} e tambien \(\zeta^1 = Z(G)\). Cabe notar que la serie inferior no tiene porque ser normal (puede no conveger). 
 \end{note}
 
 \hypertarget{thm531}{}

@@ -8,11 +8,11 @@
 \end{lemma}
 
 \begin{definition}
-    \hspace{0.08cm}\(\star \ \ \  a^G := [a] \in \nicefrac{G}{\sim} \ \  \leftarrow\)  \emph{Clase de conjugados} de \(a \in G\) 
+    \hspace{0.08cm}\(\star \ \ \  a^G := [a] \in \nicefrac{G}{\sim} \ \  \leftarrow\)  \emph{Clase de conjugados} de \(a \in G\). 
     \vspace{-0.35cm}
     \begin{itemize}[label = \(\star\), left = 1cm]
-        \item \(\{a \in G : a^G = a\} =: Z(G)\lhd G\ \ \leftarrow\)  \emph{Centro} (es abeliano)
-        \item \(\{g \in G : ag = ga\} = : C_G(a) \leq G\ \ \leftarrow\) \emph{Centralizador} de \(a \in G\)
+        \item \(\{a \in G : a^G = a\} =: Z(G)\lhd G\ \ \leftarrow\)  \emph{Centro} (es abeliano).
+        \item \(\{g \in G : ag = ga\} = : C_G(a) \leq G\ \ \leftarrow\) \emph{Centralizador} de \(a \in G\).
     \end{itemize}
 \end{definition}
 
@@ -26,8 +26,8 @@
     Dados \(H \leq G\) e \(g \in G\) tenemos definiciones similares: 
     \vspace{-0.2cm}
     \begin{itemize}[label = \(\star\)]
-        \item \(gHg^{-1} = \{ghg^{-1} : h \in H\} =:H^g \leq G \ \  \leftarrow\)  \emph{Conjugado de \(H\)} 
-        \item \(\{a \in G : aHa^{-1} = H\} = : N_G(H) \leq G\ \ \leftarrow\) \emph{Normalizador} de \(H\) en \( G\)
+        \item \(gHg^{-1} = \{ghg^{-1} : h \in H\} =:H^g \leq G \ \  \leftarrow\)  \emph{Conjugado de \(H\)}. 
+        \item \(\{a \in G : aHa^{-1} = H\} = : N_G(H) \leq G\ \ \leftarrow\) \emph{Normalizador} de \(H\) en \( G\).
     \end{itemize}
 \end{definition}
 
@@ -58,7 +58,7 @@
 \demo{Si \(\beta\) fija \(i\), entonces \(\pi(\alpha (i)) = \alpha(i)\). Sean \(\beta = \gamma_1 \gamma_2 \cdots (\ldots i \ \ j \ldots )\cdots \gamma_t\), \(k = \alpha(i)\) e \(l= \alpha(j)\), concluya que \(\pi: k \mapsto l\). }
 
 \begin{theorem}
-    \textbf{3.5.} \(\alpha \sim \beta \ \leftrightharpoons \ \) tienen misma estructura cíclica.
+    \textbf{3.5.} \(\alpha \sim \beta \ \leftrightharpoons \ \alpha\) e \(\beta\) tienen misma estructura cíclica.
 \end{theorem}
 
 \demo{(\(\Rightarrow\)) Si \(\alpha = \gamma_1 \gamma_2 \cdots (\ldots i \ \ j \ldots)\cdots \gamma_t\) e \(\beta = \delta_1 \delta_2 \cdots (\ldots k \ \ l \ldots)\cdots \delta_t\), defina \(\eta\) tal que \(i \mapsto k\) e \(j \mapsto l\). El resultado sigue del {\scriptsize $\square$} \hyperlink{lemma34}{3.4.}. }
@@ -68,7 +68,7 @@
 \end{corollary}
 
 \begin{definition}
-    \centering \(\{\alpha\in S_n: \alpha \text{ es par}\} =: A_n \leq S_n \).   
+    \centering \(\{\alpha\in S_n: \alpha \text{ es par}\} =: A_n \lhd S_n \).   
 \end{definition}
     
 \begin{theorem}
@@ -143,15 +143,15 @@
     Dados \(X\) un \(G\)-conjunto e \(x \in X\), definimos: 
     \vspace{-0.2cm}
     \begin{itemize}[label = \(\star\), left = 1cm]
-        \item \(\mathcal{O}(x) := \{gx : g\in G \} \subset X\)  \ \ \(\leftarrow\) \emph{\(G\)-órbita} de \(x\)
-        \item \(G_x := \{g \in G: gx = x\} \leq G \)  \ \ \(\leftarrow\) \emph{Estabilizador} de \(x\)
+        \item \(\mathcal{O}(x) := \{gx : g\in G \} \subset X\)  \ \ \(\leftarrow\) \emph{\(G\)-órbita} de \(x\).
+        \item \(G_x := \{g \in G: gx = x\} \leq G \)  \ \ \(\leftarrow\) \emph{Estabilizador} de \(x\).
     \end{itemize}
 \end{definition}
 
 \ejemplo{\centering \(X  = G\) actua sobre sí mismo por conjugación
 \tcblower
-\[\text{\scriptsize $\bullet$ } \  \ \mathcal{O}(x) = [x] \in \nicefrac{G}{\sim } \text{ e } G_x = C_G(x). \hspace{4cm}\]
-\[\- \hspace{4cm}\text{\scriptsize $\bullet$ } \ \ \mathcal{O}(H) = \{H^g : g \in G\} \text{ e } G_H = N_G(H). \]
+\[\blacktriangleright \ \mathcal{O}(x) = [x] \in \nicefrac{G}{\sim } \text{ e } G_x = C_G(x). \hspace{4cm}\]
+\[ \- \hspace{3cm}\blacktriangleright \ \mathcal{O}(H) = \{H^g : g \in G\} \text{ e } G_H = N_G(H). \]
 }
 
 \begin{theorem}

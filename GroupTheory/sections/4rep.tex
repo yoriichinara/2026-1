@@ -1,0 +1,48 @@
+\section{Teorema de Burnside}
+
+\begin{definition}
+    Decimos que \(\lambda \in \C\) es \emph{integral} (en \(\Z\)) si \(\exists f \in \Z[x]\) mónico \( : f(\lambda) = 0\); o más general \(\lambda \) es \emph{algebraico} (en \(\F\leq \C\)) si \(\exists h \in \F[x]\) mónico \(: h(\lambda) = 0\). 
+\end{definition}
+
+\begin{lemma}
+    \textbf{4.1.} Si \(\chi\) es el carácter de \((V,\rho)\), entonces \(\chi(s) \) es integral, \(\forall s \in G\). \comentario{Sea \([\rho_s]^\alpha_\alpha = \operatorname{diag}(\lambda_j)\), si \(m = |s| \), tenemos \(\lambda_j^m = 1\) (\(\lambda_j \) integral) e \(\chi(s) = \sum \lambda_j\) (integral too)}
+\end{lemma}
+
+\begin{theorem}
+    \textbf{4.2.} Sean \((V,\rho)\) irreducible e \(C_s :=\underset{g \in G}{\sum} \ gsg^{-1} = \underset{h \in s^G}{\sum} \ h\). Entonces,
+    \[\textcolor{gray}{f(s) = } \  \rho(C_s) = \sum_{h \in s^G} \rho(h) = w(s) \cdot \id_{_V} : w(s)\in \C \text{ es integral}. \]
+\end{theorem}
+
+\demo{\[\rho_t \circ f \circ \rho^{-1}_t =  \sum_{h \in s^G} \rho(tht^{-1}) = f, \ \forall t \in G. \]
+Por el \(\square\) \hyperlink{lemma24Schur}{2.4. (\emph{Schur})} \(\lambda \cdot n  = \operatorname{Tr}(f)  = |s^G| \cdot \chi(s)\) e \(w(s) := \lambda =  \nicefrac{|s^G|}{n} \cdot \chi(s)\) 
+}
+
+\begin{corollary}
+    \textbf{4.3.} Se \((V,\rho)\) es representación irreducible de \(\operatorname{gr}\rho = n \) e carácter \(\chi\), entonces \(\nicefrac{|s^G|}{n} \cdot \chi(s)\) es integral \(\forall s \in G\). \comentario{Mogollas}
+\end{corollary}
+
+\begin{corollary}
+    \textbf{4.4.} Sea \((V, \rho)\) irreducible \( : \operatorname{gr}\rho = n\), entonces \(n \) divide \(|G|\).  
+\end{corollary}
+\demo{Sean \(\chi\) el carácter de \(\rho\) e \(s_1^G, s_2^G, \ldots, s_k^G\) las clases de conjugación de \(G\). Note que,
+\[\frac{|G|}{n} = \frac{|G|}{n}(\chi, \chi) = \sum_j \left[\frac{|s_j^G| }{n}\cdot\chi(s_j)\right] \cdot \overline{\chi(s_j)},\]
+integral pues es producto y suma de integrales, {\scriptsize \(\boxtimes\)} \hyperlink{coro43}{4.3.} \(\ \leftrightharpoons \  \nicefrac{|G|}{n} \in \Z\). 
+}
+
+\begin{lemma}
+    \textbf{4.5.} Sean \((V, \rho)\) de \(\operatorname{gr}\rho = n\) e carácter \(\chi\) e \( N:= \{s \in G : |\chi(s)| = n\}\).\footnote{Norma compleja \(|\alpha | := \sqrt{\alpha\cdot \overline{\alpha}}\)} Entonces, \(\{s \in G : \exists \lambda \in \C : \rho(s) = \lambda \cdot \id_{_V}\} = N \lhd G\). 
+\end{lemma}
+
+\demo{(\(\subseteq\)) Existe base donde \(\rho_s = \operatorname{diag}(\lambda_j)\), \(\rho_s^m = \id_{_V}\), esto es \( |\lambda_j| =1\). Se \(s \in N\), \(n = |\chi(s)| = |\sum \lambda_j| \leq \sum |\lambda_j| = n\ \leftrightharpoons \ \lambda_j =: \lambda, \ \forall j\leq n \), esto es \(\rho_s = \lambda \cdot \id_{_V}\). (\(\supseteq\)) Es claro pues si \(\rho_s = \lambda \cdot \id_{_V}\), entonces \(|\chi(s)| = |\lambda|n = n \). }
+
+\begin{lemma}
+    \textbf{4.6.} Sean \((V,\rho)\) irreducible de \(\operatorname{gr}\rho = n\) e carácter \(\chi\). Si \(s \in G \)  es tal que \((|s^G|, n) = 1\), entonces \(\chi(s) = 0 \) o \(\exists \lambda \in \C : \rho_s = \lambda \cdot \id_{_V}\).  \comentario{No admite resumen}
+\end{lemma}
+
+\begin{theorem}
+    \textbf{4.7.} Si \( \exists s \in  G  \) finito \(:  |s^G| = p^k > 1\), entonces \(G\) no es simple. 
+\end{theorem}
+
+\begin{theorem}
+    \textbf{4.8. (\emph{Burnside})} Si \( G : |G | = p^mq^n, \ p<q\) ambos primos, entonces \(G\) es soluble. 
+\end{theorem}

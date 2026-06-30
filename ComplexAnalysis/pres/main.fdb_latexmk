@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1781476915.81928 "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/pres/main.tex" "main.pdf" "main" 1781476917.34031 0
-  "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/pres/main.tex" 1781476447.45488 7227 38d99a2773ed34af52e365b9ef4e9e7f ""
+["pdflatex"] 1781610863.33629 "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/pres/main.tex" "main.pdf" "main" 1781610865.0691 0
+  "/home/yoriichinara/Documents/2026-1/ComplexAnalysis/pres/main.tex" 1781610861.40153 7236 2b2fa051078eeefec0783976627d4fa1 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1775415801 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1775415801 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -239,10 +239,10 @@
   "graph1.pdf" 1781473713.86613 32269 64de53a550aa992c92f765712df9e5ae ""
   "kmbeamer_color.sty" 1678437578 1361 8916c7cd6a54f2b802d2aa493e2d4c7b ""
   "kmbeamer_common.sty" 1678437578 443 540322bcac178c8d073b52b17af184ce ""
-  "main.aux" 1781476917.19924 3335 33fc16a07b15b8577015e7b978eece98 "pdflatex"
-  "main.nav" 1781476917.19924 2058 5ddd1af7d395d961f1b17fa3174768a9 "pdflatex"
-  "main.out" 1781476917.19924 545 cbfd14850e4787a16bfef9a611361d38 "pdflatex"
-  "main.tex" 1781476447.45488 7227 38d99a2773ed34af52e365b9ef4e9e7f ""
+  "main.aux" 1781610864.92486 3335 33fc16a07b15b8577015e7b978eece98 "pdflatex"
+  "main.nav" 1781610864.92819 2058 5ddd1af7d395d961f1b17fa3174768a9 "pdflatex"
+  "main.out" 1781610864.92819 545 cbfd14850e4787a16bfef9a611361d38 "pdflatex"
+  "main.tex" 1781610861.40153 7236 2b2fa051078eeefec0783976627d4fa1 ""
   "mf4FundRegionTau.pdf" 1781450409.42882 9209 af0c642948ddc4fa67e6cd1a023899e8 ""
   "ret.pdf" 1781466428.97499 7092 f035c625a6eb7da3ef947425dfd2b154 ""
   "z.pdf" 1781476915.17589 70228 b2883dde3d5b1fbffed4f5e3983e5727 ""
