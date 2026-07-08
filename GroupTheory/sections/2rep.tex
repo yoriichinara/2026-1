@@ -64,13 +64,13 @@
 \subsection*{Ortogonalidad}
 
 \begin{definition}
-    Sean \(|G| = g\) e \(\phi, \psi: G \to \C\). Siendo \(\check{\psi}(t):= \overline{\psi(t^{-1})}\), definimos, 
-    \[(\phi\mid \psi) := \frac{1}{g} \sum_{t\in G}\phi(t) \overline{\psi(t)} = \frac{1}{g} \sum_{t\in G}\phi(t) \check{\psi}(t^{-1}) = \langle \phi, \check{\psi}\rangle.\] 
+    %Sean \(|G| = g\) e \(\phi, \psi: G \to \C\). Siendo \(\check{\psi}(t):= \overline{\psi(t^{-1})}\), definimos, 
+    \centering   \(\displaystyle \langle \phi,\psi\rangle := \frac{1}{|G|} \sum_{t\in G}\phi(t) \overline{\psi(t)} \).\footnote{\(\phi, \psi : G \to \C\) funciones de clases, definidas más adelante.}%\sum_{t\in G}\phi(t) \psi(t^{-1}) =: \langle \phi, \check{\psi}\rangle\).% \footnote{Es previsible que tenemos un producto hermitiano.}
 \end{definition}
 
-\begin{note}
-    Es previsible que tenemos un producto hermitiano. En particular, sigue de la \(\square\) \hyperlink{prop21}{2.1.} que \((\phi \mid \chi ) = \langle \phi, \chi\rangle, \ \forall \phi : G \to \C \). 
-\end{note}
+%\begin{note}
+%    En particular, sigue de la \(\square\) \hyperlink{prop21}{2.1.} que \((\phi \mid \chi ) = \langle \phi, \chi\rangle, \ \forall \phi : G \to \C \). 
+%\end{note}
 
 \hypertarget{thm23}{}
 \begin{theorem}
@@ -142,6 +142,10 @@
 \begin{proposition}
     \textbf{2.7.} Sean \(s\in G\) e \(c(s)\) el número de clases de conjugación de \(s\). Entonces,  \(\sum_{j=1}^k \overline{\chi(s)} \chi(t) = \delta_{st} \cdot \nicefrac{g}{c(s)} \). \comentario{Use el \(\blacksquare\) \hyperlink{thm26}{2.6.} con \(f_s : [s]  \mapsto 1\), \(0\) e. o. c.}
 \end{proposition}
+
+\begin{note}
+    Este últimos es llamado \emph{ortogonalidad por columnas}, sobradamente útil a la hora de llenar tablas de caracteres. 
+\end{note}
 
 \subsection*{Descomposición de Representaciones}
 
